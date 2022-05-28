@@ -1,0 +1,358 @@
+@font-face {
+    font-family: Nimbus;
+    src: url('./Nimbus.ttf');
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('./Nunito.ttf');
+}
+
+$mainHeight:730px;
+#mainDiv{
+    width: 100%;
+    min-width: 1536px;
+    #topMainBox{
+        width: 90%;
+        height: 500px;
+        background: rgb(241, 241, 241);
+        margin-left: 5%;
+        border-radius: 30px;
+        #topMainImage{
+            background: url('./phones.png');
+            background-size: contain;
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            margin: 50px 270px;
+        }
+        #topMainDescription{
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            margin-top: 50px;
+            margin-left: 750px;
+            h1{
+                font-family: Nimbus;
+                font-size: 50px;
+                margin-top: 30px;
+            }
+            p{
+                font-family: Nunito;
+                margin-top: 50px;
+                font-size: 18px;
+            }
+            a{
+                font-family: Nunito;
+                border-width: 2px;
+                border-style: solid;
+                display: inline-block;
+                margin-top: 50px;
+                padding: 20px 32px;
+                border-radius: 15px;
+                color: rgb(0, 162, 255);
+                font-size: 20px;
+            }
+            a:hover{
+                color: rgb(0, 138, 218);
+                cursor: pointer;
+            }
+        }
+        .Arrow{
+            position: absolute;
+            margin-top: 200px;
+            padding: 24px 30px;
+            font-size: 35px;
+            margin-left: 4%;
+            color: white;
+            background: rgb(206, 206, 206);
+            border-radius: 50%;
+        }
+        .Arrow:hover{
+            background: rgb(187, 187, 187);
+            transition: 0.1s;
+        }
+        .rightArrow{
+            direction: rtl;
+            right: 9%;
+
+        }
+        #pager{
+            position: absolute;
+            margin-left: -10px;
+            margin-top: 20px;
+            .pages{
+                background: rgb(153, 153, 153);
+                width: 8px;
+                height: 8px;
+                margin-left: 10px;
+                display: inline-block;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+            .selectedPage{
+                background: rgb(0, 162, 255);
+                box-shadow: 0 0 6px rgb(0, 162, 255);
+            }
+        }
+    }
+    #bottomLeftMainDiv{
+        width: 300px;
+        height: 300px;
+        background: rgb(241, 241, 241);
+        margin-left: 5%;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        border-radius: 30px;
+        font-family: Nunito;
+        h1{
+            width: 100%;
+            text-align: center;
+            padding: 15px 0px;
+            border-bottom-style: solid ;
+            border-bottom-color: rgb(197, 197, 197) ;
+            border-bottom-width: 1px;
+            font-size: 24px;
+            font-family: Nimbus;
+        }
+
+        .range-input{
+            position: relative;
+            margin-top: 25px;
+            div{
+                height: 2px;
+                width: 80%;
+                background: rgb(122, 122, 122);
+                position: absolute;
+                top: 18px;
+                margin-left: 10%;
+            }
+            input{
+                position: absolute;
+                width: 80%;
+                height: 5px;
+                top: 15px;
+                background: none;
+                margin-left: 10%;
+                pointer-events: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+            }
+            input[type="range"]::-webkit-slider-thumb{
+                height: 17px;
+                width: 17px;
+                border: none;
+                border-radius: 50%;
+                background: white;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #17A2B8;
+                pointer-events: auto;
+                -moz-appearance: none;
+                box-shadow: 0 0 6px rgba(94, 94, 94, 0.35);
+            }
+            input[type="range"]::-moz-range-thumb{
+                height: 17px;
+                width: 17px;
+                border: none;
+                border-radius: 50%;
+                background: white;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #17A2B8;
+                pointer-events: auto;
+                -moz-appearance: none;
+                box-shadow: 0 0 6px rgba(94, 94, 94, 0.35);
+            }
+        }
+           
+
+        .setPriceDiv{
+            display: inline-block;
+            margin-left: 9%;
+            margin-top: 55px;
+            width: 22%;
+            p{
+                font-size: 16px;
+            }
+            div{
+                padding: 10px 0px;
+                border-width: 2px;
+                border-style: solid;
+                border-color: rgb(163, 163, 163);
+                color: rgb(92, 92, 92);
+                border-radius: 10px;
+                margin-top: 10px;
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+        #seprator{
+            display: inline-block;
+            width: 20%;
+            height: 2px;
+            background: rgb(175, 175, 175);
+            margin-left: 10%;
+        }
+        #MaxDiv{
+            margin-left: 10%;
+        }
+        button{
+            width: 84%;
+            margin-left: 9%;
+            border-style: none;
+            margin-top: 20px;
+            background: rgb(0, 162, 255);
+            padding: 12px;
+            border-radius: 15px;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover{
+            background:rgb(0, 138, 218);
+            transition: 0.2s;
+        }
+    }
+
+    #leftCheckboxDiv{
+        width: 300px;
+        height: 300px;
+        background: rgb(241, 241, 241);
+        margin-left: 5%;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        border-radius: 30px;
+        font-family: Nunito;
+        h1{
+            width: 100%;
+            text-align: center;
+            padding: 15px 0px;
+            border-bottom-style: solid ;
+            border-bottom-color: rgb(197, 197, 197) ;
+            border-bottom-width: 1px;
+            font-size: 24px;
+            font-family: Nimbus;
+        }
+        div{
+            input{
+                width: 20px;
+                height: 20px;
+                border-radius: 25px;
+                cursor: pointer;
+                top: 2px;
+                margin-left: 20px;
+                margin-top: 20px;
+                display: inline-block;
+
+            }
+            label{
+                margin-left: 15px;
+                display: inline-block;
+                width: 80%;
+                p{
+                    display: inline-block;
+                    float: right;
+                    margin-right: 30px;
+                    background: rgb(0, 162, 255);
+                    padding: 5px 10px;
+                    margin-top: -8px;
+                    border-radius: 20px;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    #leftRatingDiv{
+        width: 300px;
+        height: 250px;
+        background: rgb(241, 241, 241);
+        margin-left: 5%;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        border-radius: 30px;
+        font-family: Nunito;
+        h1{
+            width: 100%;
+            text-align: center;
+            padding: 15px 0px;
+            border-bottom-style: solid ;
+            border-bottom-color: rgb(197, 197, 197) ;
+            border-bottom-width: 1px;
+            font-size: 24px;
+            font-family: Nimbus;
+        }
+        .rateStars{
+            display: block;
+            input{
+                width: 20px;
+                height: 20px;
+                border-radius: 25px;
+                cursor: pointer;
+                top: 2px;
+                margin-left: 20px;
+                margin-top: 20px;
+                display: inline-block;
+            }
+            label{
+                margin-left: 15px;
+                display: inline-block;
+                width: 80%;
+                span{
+                    margin-left: 4px;
+                    font-size: 20px;
+                    color: rgb(148, 209, 245);
+                }
+                .checked{
+                    color: rgb(0, 162, 255);
+                }
+            }
+        }
+    }
+    
+    #Mobile{
+        position: absolute;
+        width: 1005px;
+        top: 650px;
+        left: 500px;
+        .mobileBox{
+            width: 30%;
+            height: 400px;
+            margin-left:3PX;
+            display: inline-block;
+            margin-top: -1PX;
+            //box-shadow: 0 0 2px 2px rgba(116, 116, 116, 0.2);
+            border-radius: 20px;
+            .mobileImage{
+                background: url('./images/iphoneX.png');
+                background-size: cover;
+                width: 50%;
+                height: 300px;
+                background-repeat: no-repeat;
+                margin-left: 25%;
+                margin-top: 25px;
+            }
+            .mobileTitle{
+                font-family: Nunito;
+                text-align: center;
+                margin-top: 30px;
+            }
+            span{
+                color: rgb(255, 217, 0);
+                position: absolute;
+                margin-top: -350px;
+                margin-left: 25px;
+                p{
+                    display: inline-block;
+                    color: black;
+                    font-family: Nunito;
+                }
+            }
+        }
+        .mobileBox:hover{
+            box-shadow: 0 0 7px 7px rgba(116, 116, 116, 0.2);
+            transition: 0.2s;
+        }
+    }
+}
