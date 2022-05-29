@@ -12,6 +12,7 @@ $mainHeight:730px;
 #mainDiv{
     width: 100%;
     min-width: 1536px;
+    min-height: 1500px;
     #topMainBox{
         width: 90%;
         height: 500px;
@@ -105,6 +106,8 @@ $mainHeight:730px;
         margin-bottom: 100px;
         border-radius: 30px;
         font-family: Nunito;
+        position: absolute;
+
         h1{
             width: 100%;
             text-align: center;
@@ -224,6 +227,8 @@ $mainHeight:730px;
         margin-bottom: 100px;
         border-radius: 30px;
         font-family: Nunito;
+        position: absolute;
+        margin-top: 450px;
         h1{
             width: 100%;
             text-align: center;
@@ -273,6 +278,8 @@ $mainHeight:730px;
         margin-bottom: 100px;
         border-radius: 30px;
         font-family: Nunito;
+        position: absolute;
+        margin-top: 850px;
         h1{
             width: 100%;
             text-align: center;
@@ -312,10 +319,10 @@ $mainHeight:730px;
     }
     
     #Mobile{
-        position: absolute;
+        position: relative;
         width: 1005px;
-        top: 650px;
         left: 500px;
+        top: 50px;
         .mobileBox{
             width: 30%;
             height: 400px;

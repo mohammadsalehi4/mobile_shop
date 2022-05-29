@@ -9,6 +9,7 @@
 #mainDiv {
   width: 100%;
   min-width: 1536px;
+  min-height: 1500px;
 }
 #mainDiv #topMainBox {
   width: 90%;
@@ -102,6 +103,7 @@
   margin-bottom: 100px;
   border-radius: 30px;
   font-family: Nunito;
+  position: absolute;
 }
 #mainDiv #bottomLeftMainDiv h1 {
   width: 100%;
@@ -217,6 +219,8 @@
   margin-bottom: 100px;
   border-radius: 30px;
   font-family: Nunito;
+  position: absolute;
+  margin-top: 450px;
 }
 #mainDiv #leftCheckboxDiv h1 {
   width: 100%;
@@ -262,6 +266,8 @@
   margin-bottom: 100px;
   border-radius: 30px;
   font-family: Nunito;
+  position: absolute;
+  margin-top: 850px;
 }
 #mainDiv #leftRatingDiv h1 {
   width: 100%;
@@ -300,10 +306,10 @@
   color: #00a2ff;
 }
 #mainDiv #Mobile {
-  position: absolute;
+  position: relative;
   width: 1005px;
-  top: 650px;
   left: 500px;
+  top: 50px;
 }
 #mainDiv #Mobile .mobileBox {
   width: 30%;

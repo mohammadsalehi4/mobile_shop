@@ -2,46 +2,111 @@ import React,{useEffect,useState} from 'react'
 import './main.css'
 const Main = () => {
 
-  const [minPrice,SetMinPrice]=useState(100)
-  const [maxPrice,SetMaxPrice]=useState(100)
-
-  const devices=[{
+  let devices=[{
     model:'Iphone XS max 2020',
-    rate:4.1
+    rate:4.1,
+    brand:'Apple',
+    price:990
   },
   {
     model:'Iphone 13 pro max 2022',
-    rate:4.9
+    rate:4.9,
+    brand:'Apple',
+    price:880
   },
   {
     model:'Iphone X 2021',
-    rate:3.9
+    rate:3.9,
+    brand:'Apple',
+    price:770
   },
   {
-    model:'Iphone 11 2020',
-    rate:3.7
+    model:'Poco M4 pro',
+    rate:3.7,
+    brand:'Xiaomi',
+    price:220
   },
   {
-    model:'Iphone 12 pro 2021',
-    rate:4.2
+    model:'Redmi note 11 5G',
+    rate:4.2,
+    brand:'Xiaomi',
+    price:160
   },
   {
-    model:'Iphone 12',
-    rate:4
+    model:'Redmi 9T',
+    rate:4,
+    brand:'Xiaomi',
+    price:110
   },
   {
-    model:'Iphone SE 2022',
-    rate:4.4
+    model:'Galaxy A22',
+    rate:4.4,
+    brand:'Samsung',
+    price:650
   },
   {
-    model:'Iphone 13 CH',
-    rate:4.1
+    model:'Galaxy A21s',
+    rate:3.8,
+    brand:'Samsung',
+    price:470
   },
   {
-    model:'Iphone 13 pro 2022',
-    rate:4.7
+    model:'Galaxy A20',
+    rate:4,
+    brand:'Samsung',
+    price:330
   },
-]
+  {
+    model:'Nokia 1100',
+    rate:5,
+    brand:'Nokia',
+    price:20
+  },
+  {
+    model:'Nokia 6600',
+    rate:3.6,
+    brand:'Nokia',
+    price:30
+  },
+  {
+    model:'Nokia N70',
+    rate:4.7,
+    brand:'Nokia',
+    price:40
+  },
+  {
+    model:'Huawei G610',
+    rate:1.3,
+    brand:'Huawei',
+    price:100
+  },
+  {
+    model:'Huawei P10',
+    rate:3.3,
+    brand:'Huawei',
+    price:110
+  },
+  {
+    model:'Huawei P50',
+    rate:2.9,
+    brand:'Huawei',
+    price:220
+  },]
+
+
+  const [minPrice,SetMinPrice]=useState(100)
+  const [maxPrice,SetMaxPrice]=useState(100)
+
+  const [SelectedMin,SetSelectedMin]=useState(0)
+  const [SelectedMax,SetSelectedMax]=useState(1000)
+
+  const[ShowDevice,SetShowDevice]=useState(devices)
+
+  const a=devices
+
+  const[brandFilter,SetbrandFilter]=useState([])
+  const[rateFilter,SetrateFilter]=useState([])
+
 
   const setPrice=(newPrice,index)=>{
     if(index===1){
@@ -58,15 +123,84 @@ const Main = () => {
       SetMaxPrice(minPrice)
       SetMinPrice(a)
     }
+    SetSelectedMax(maxPrice)
+    SetSelectedMin(minPrice)
   }
 
-  const change1=()=>{
-    document.getElementsByClassName('Star55').style.color="yellow"
+  const changeStart=(val,Cid)=>{
+    if(document.getElementById(Cid).checked){
+      SetrateFilter(rateFilter => [...rateFilter,val] );
+    }else{
+      const filteredArray = rateFilter.filter(function(e) { return e !== val })
+      SetrateFilter(filteredArray)
+    }
+    MainFilter()
   }
+
+  const changeBrand=(val,Cid)=>{
+    if(document.getElementById(Cid).checked){
+      SetbrandFilter(brandFilter => [...brandFilter,val] );
+    }else{
+      const filteredArray = brandFilter.filter(function(e) { return e !== val })
+      SetbrandFilter(filteredArray)
+    }
+    console.log(brandFilter)
+    MainFilter()
+  }
+
+  const Apply=()=>{
+    SetSelectedMax(maxPrice)
+    SetSelectedMin(minPrice)
+    MainFilter()
+  }
+
+  const MainFilter=()=>{
+
+  }
+
+  useEffect(()=>{
+    let ShowDevice1=[]
+    if(brandFilter.length===0){
+      for(let i=0;i<devices.length;i++){
+        ShowDevice1.push(devices[i])
+      }
+    }else{
+      for(let i=0;i<brandFilter.length;i++){
+        for(let j=0;j<devices.length;j++){
+          if(devices[j].brand===brandFilter[i]){
+            ShowDevice1.push(devices[j])
+          }
+        }
+      }
+    }
+
+    let ShowDevice2=[]
+    if(rateFilter.length===0){
+      ShowDevice2=ShowDevice1
+    }else{
+      for(let i=0;i<rateFilter.length;i++){
+        for(let j=0;j<ShowDevice1.length;j++){
+          const newRate=Math.floor(ShowDevice1[j].rate)
+          if(newRate===rateFilter[i]-1){
+            ShowDevice2.push(ShowDevice1[j])
+          }else if(newRate===5&&rateFilter[i]===5){
+            ShowDevice2.push(ShowDevice1[j])
+          }
+        }
+      }
+    }
+    
+    let ShowDevice3=[]
+    for(let i=0;i<ShowDevice2.length;i++){
+      if(ShowDevice2[i].price>=SelectedMin&&ShowDevice2[i].price<=SelectedMax){
+        ShowDevice3.push(ShowDevice2[i])
+      }
+    }
+    SetShowDevice(ShowDevice3)
+  },[brandFilter,rateFilter,maxPrice,minPrice])
 
   return (
     <div id='mainDiv'>
-
       <div id='topMainBox'>
           <i class="fa fa-chevron-left Arrow leftArrow" aria-hidden="true"></i>
 
@@ -106,37 +240,37 @@ const Main = () => {
           <p>Max</p>
           <div>${maxPrice}</div>
         </div>
-        <button>Apply</button>
+        <button onClick={Apply}>Apply</button>
       </div>
 
       <div id='leftCheckboxDiv'>
         <h1>Brand</h1>
         <div>
-          <input type="checkbox" id="Samsung" name="Samsung" value="Bike"></input>
+          <input onClick={()=>{changeBrand('Samsung','Samsung')}} type="checkbox" id="Samsung" name="Samsung" value="Bike"></input>
           <label for="Samsung">Samsung<p>+20</p></label><br/>
           
         </div>
 
         <div>
-          <input type="checkbox" id="Apple" name="Apple" value="Bike"/>
+          <input onClick={()=>{changeBrand('Apple','Apple')}} type="checkbox" id="Apple" name="Apple" value="Bike"/>
           <label for="Apple">Apple<p>+30</p></label><br/>
           
         </div>
 
         <div>
-          <input type="checkbox" id="huawei" name="huawei" value="Bike"/>
-          <label for="huawei">huawei<p>+20</p></label><br/>
+          <input onClick={()=>{changeBrand('Huawei','Huawei')}} type="checkbox" id="Huawei" name="Huawei" value="Bike"/>
+          <label for="Huawei">Huawei<p>+20</p></label><br/>
           
         </div>
 
         <div>
-          <input type="checkbox" id="xiaomi" name="xiaomi" value="Bike"/>
-          <label for="xiaomi">xiaomi<p>+10</p></label><br/>
+          <input onClick={()=>{changeBrand('Xiaomi','Xiaomi')}} type="checkbox" id="Xiaomi" name="xiaomi" value="Bike"/>
+          <label for="Xiaomi">Xiaomi<p>+10</p></label><br/>
           
         </div>
 
         <div>
-          <input type="checkbox" id="Nokia" name="Nokia" value="Bike"/>
+          <input onClick={()=>{changeBrand('Nokia','Nokia')}} type="checkbox" id="Nokia" name="Nokia" value="Bike"/>
           <label for="Nokia">Nokia<p>+10</p></label><br/>
           
         </div>
@@ -146,7 +280,7 @@ const Main = () => {
       <div id='leftRatingDiv'>
         <h1>Rating</h1>
         <div id='Star5' className='rateStars'>
-          <input onChange={()=>{change1()}} type="checkbox" id="Star55" name="Star55" value="Star55"/>
+          <input onClick={()=>{changeStart(5,'Star55')}} type="checkbox" id="Star55" name="Star55" value="Star55"/>
           <label for="Star55">
             <span class="fa fa-star checked Star55"></span>
             <span class="fa fa-star checked Star55"></span>
@@ -156,7 +290,7 @@ const Main = () => {
           </label>
         </div>
         <div id='Star4' className='rateStars'>
-          <input type="checkbox" id="Star44" name="Star44" value="Star44"/>
+          <input onClick={()=>{changeStart(4,'Star44')}} type="checkbox" id="Star44" name="Star44" value="Star44"/>
           <label for="Star44">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -166,7 +300,7 @@ const Main = () => {
           </label>
         </div>
         <div id='Star3' className='rateStars'>
-          <input type="checkbox" id="Star33" name="Star33" value="Star33"/>
+          <input onClick={()=>{changeStart(3,'Star33')}} type="checkbox" id="Star33" name="Star33" value="Star33"/>
           <label for="Star33">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -176,7 +310,7 @@ const Main = () => {
           </label>
         </div>
         <div id='Star2' className='rateStars'>
-          <input type="checkbox" id="Star22" name="Star22" value="Star22"/>
+          <input onClick={()=>{changeStart(2,'Star22')}} type="checkbox" id="Star22" name="Star22" value="Star22"/>
           <label for="Star22">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -188,23 +322,20 @@ const Main = () => {
       </div>
 
       <div id='Mobile'>
-        {
-            devices.map((item,index)=>{
-              return(
-                <div className='mobileBox'>
-                  <div className='mobileImage'></div>
-                  <p className='mobileTitle'>{item.model}</p>
-                  <span class="fa fa-star checked"><p>{item.rate}</p></span>
-                </div>
-              )
-            })
+        { 
+          ShowDevice.map((item,index)=>{
+            return(
+              <div className='mobileBox' key={index}>
+                <div className='mobileImage'></div>
+                <p className='mobileTitle'>{item.model}</p>
+                <span class="fa fa-star checked"><p>{item.rate}</p></span>
+              </div>
+            )
+          })
         }
       </div>
-
     </div>
   )
 }
-
-
 
 export default Main
