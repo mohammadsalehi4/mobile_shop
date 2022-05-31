@@ -1,6 +1,11 @@
 import React,{useEffect,useState} from 'react'
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import './main.css'
 const Main = () => {
+
+  const States = useSelector(state => state);
+  const dispatch = useDispatch();
 
   let devices=[{
     model:'Iphone XS max 2020',
@@ -96,14 +101,7 @@ const Main = () => {
 
   const [minPrice,SetMinPrice]=useState(100)
   const [maxPrice,SetMaxPrice]=useState(100)
-
-  const [SelectedMin,SetSelectedMin]=useState(0)
-  const [SelectedMax,SetSelectedMax]=useState(1000)
-
   const[ShowDevice,SetShowDevice]=useState(devices)
-
-  const a=devices
-
   const[brandFilter,SetbrandFilter]=useState([])
   const[rateFilter,SetrateFilter]=useState([])
 
@@ -123,8 +121,6 @@ const Main = () => {
       SetMaxPrice(minPrice)
       SetMinPrice(a)
     }
-    SetSelectedMax(maxPrice)
-    SetSelectedMin(minPrice)
   }
 
   const changeStart=(val,Cid)=>{
@@ -134,7 +130,6 @@ const Main = () => {
       const filteredArray = rateFilter.filter(function(e) { return e !== val })
       SetrateFilter(filteredArray)
     }
-    MainFilter()
   }
 
   const changeBrand=(val,Cid)=>{
@@ -144,18 +139,11 @@ const Main = () => {
       const filteredArray = brandFilter.filter(function(e) { return e !== val })
       SetbrandFilter(filteredArray)
     }
-    console.log(brandFilter)
-    MainFilter()
   }
 
   const Apply=()=>{
-    SetSelectedMax(maxPrice)
-    SetSelectedMin(minPrice)
-    MainFilter()
-  }
-
-  const MainFilter=()=>{
-
+    dispatch({type:"CHANGEMAX",value:maxPrice})
+    dispatch({type:"CHANGEMIN",value:minPrice})
   }
 
   useEffect(()=>{
@@ -192,12 +180,12 @@ const Main = () => {
     
     let ShowDevice3=[]
     for(let i=0;i<ShowDevice2.length;i++){
-      if(ShowDevice2[i].price>=SelectedMin&&ShowDevice2[i].price<=SelectedMax){
+      if(ShowDevice2[i].price>=States.SelectedMin&&ShowDevice2[i].price<=States.SelectedMax){
         ShowDevice3.push(ShowDevice2[i])
       }
     }
     SetShowDevice(ShowDevice3)
-  },[brandFilter,rateFilter,maxPrice,minPrice])
+  },[brandFilter,rateFilter,States.SelectedMin,States.SelectedMax])
 
   return (
     <div id='mainDiv'>
