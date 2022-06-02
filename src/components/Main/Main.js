@@ -98,13 +98,50 @@ const Main = () => {
     price:220
   },]
 
+  const HeaderDetails=[
+    {
+      title:'New Experience Iphone 2022',
+      content:'Because if you understand taste, you can delight people with relevant content and a meaningful experience.'
+    },
+    {
+      title:'New Experience Samsung 2022',
+      content:'Because if you understand taste, you can be stupid and buy it'
+    },
+    {
+      title:'New Experience Huawei 2022',
+      content:'Because if you understand taste, you can fire it'
+    },
+    {
+      title:'New Experience xiaomi 2022',
+      content:'Because if you understand taste, you can eat it'
+    },
+  ]
 
   const [minPrice,SetMinPrice]=useState(100)
   const [maxPrice,SetMaxPrice]=useState(100)
   const[ShowDevice,SetShowDevice]=useState(devices)
   const[brandFilter,SetbrandFilter]=useState([])
   const[rateFilter,SetrateFilter]=useState([])
+  const [topBoxPage,SettopBoxPage]=useState(0)
 
+  const nextTopPage=(side)=>{
+    const all=HeaderDetails.length
+    if(side===true){
+      const getPageNum=topBoxPage
+      if(getPageNum<=all-2){
+        SettopBoxPage(getPageNum+1)
+      }else{
+        SettopBoxPage(0)
+      }
+    }else{
+      const getPageNum=topBoxPage
+      if(getPageNum>=1){
+        SettopBoxPage(getPageNum-1)
+      }else{
+        SettopBoxPage(all-1)
+      }
+    }
+  }
 
   const setPrice=(newPrice,index)=>{
     if(index===1){
@@ -190,26 +227,32 @@ const Main = () => {
   return (
     <div id='mainDiv'>
       <div id='topMainBox'>
-          <i class="fa fa-chevron-left Arrow leftArrow" aria-hidden="true"></i>
-
+        <i class="fa fa-chevron-left Arrow leftArrow" aria-hidden="true" onClick={()=>{nextTopPage(false)}}></i>
           <div id='topMainImage'></div>
           <div id='topMainDescription'>
             <h1>
-              New Experience Iphone 2022
+              {HeaderDetails[topBoxPage].title}
             </h1>
             <p>
-              Because if you understand taste, you can delight people with relevant content and a meaningful experience.
+              {HeaderDetails[topBoxPage].content}
             </p>
             <a>Show more</a>
             <div id='pager'>
-              <div id='page1' className='pages selectedPage'></div>
-              <div id='page2' className='pages'></div>
-              <div id='page3' className='pages'></div>
-              <div id='page4' className='pages'></div>
+              {
+                HeaderDetails.map((item,index)=>{
+                  if(index===topBoxPage){return(
+                    <div id='page1' className='pages selectedPage'></div>
+                  )}
+                  else{
+                    return(
+                      <div id='page1' className='pages'></div>
+                    )
+                  }
+                })
+              }
             </div>
-          </div>
-          <i class="fa fa-chevron-right Arrow rightArrow" aria-hidden="true"></i>
-
+        </div>
+        <i class="fa fa-chevron-right Arrow rightArrow" aria-hidden="true" onClick={()=>{nextTopPage(true)}}></i>
       </div>
 
       <div id='bottomLeftMainDiv'>
