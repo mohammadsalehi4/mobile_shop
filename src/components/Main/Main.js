@@ -11,109 +11,128 @@ const Main = () => {
     model:'Iphone XS max 2020',
     rate:4.1,
     brand:'Apple',
-    price:990
+    price:990,
+    imageAddress:'iphoneX.png'
   },
   {
     model:'Iphone 13 pro max 2022',
     rate:4.9,
     brand:'Apple',
-    price:880
+    price:880,
+    imageAddress:'iphoneX.png'
   },
   {
     model:'Iphone X 2021',
     rate:3.9,
     brand:'Apple',
-    price:770
+    price:770,
+    imageAddress:'iphoneX.png'
   },
   {
     model:'Poco M4 pro',
     rate:3.7,
     brand:'Xiaomi',
-    price:220
+    price:220,
+    imageAddress:'iphoneX.png'
   },
   {
     model:'Redmi note 11 5G',
     rate:4.2,
     brand:'Xiaomi',
-    price:160
+    price:160,
+    imageAddress:'iphoneX.png'
   },
   {
     model:'Redmi 9T',
     rate:4,
     brand:'Xiaomi',
-    price:110
+    price:110,
+    imageAddress:'iphoneX.png'
   },
   {
     model:'Galaxy A22',
     rate:4.4,
     brand:'Samsung',
-    price:650
+    price:650,
+    imageAddress:'iphoneX.png'
   },
   {
     model:'Galaxy A21s',
     rate:3.8,
     brand:'Samsung',
-    price:470
+    price:470,
+    imageAddress:'iphoneX.png'
   },
   {
     model:'Galaxy A20',
     rate:4,
     brand:'Samsung',
-    price:330
+    price:330,
+    imageAddress:'iphoneX.png'
   },
   {
     model:'Nokia 1100',
     rate:5,
     brand:'Nokia',
-    price:20
+    price:20,
+    imageAddress:'iphoneX.png'
   },
   {
     model:'Nokia 6600',
     rate:3.6,
     brand:'Nokia',
-    price:30
+    price:30,
+    imageAddress:'iphoneX.png'
   },
   {
     model:'Nokia N70',
     rate:4.7,
     brand:'Nokia',
-    price:40
+    price:40,
+    imageAddress:'iphoneX.png'
   },
   {
     model:'Huawei G610',
     rate:1.3,
     brand:'Huawei',
-    price:100
+    price:100,
+    imageAddress:'iphoneX.png'
   },
   {
     model:'Huawei P10',
     rate:3.3,
     brand:'Huawei',
-    price:110
+    price:110,
+    imageAddress:'iphoneX.png'
   },
   {
     model:'Huawei P50',
     rate:2.9,
     brand:'Huawei',
-    price:220
+    price:220,
+    imageAddress:'iphoneX.png'
   },]
 
   const HeaderDetails=[
     {
       title:'New Experience Iphone 2022',
-      content:'Because if you understand taste, you can delight people with relevant content and a meaningful experience.'
+      content:'Because if you understand taste, you can delight people with relevant content and a meaningful experience.',
+      imageAddress:'phones.png'
     },
     {
       title:'New Experience Samsung 2022',
-      content:'Because if you understand taste, you can be stupid and buy it'
+      content:'Because if you understand taste, you can be stupid and buy it',
+      imageAddress:'phones.png'
     },
     {
       title:'New Experience Huawei 2022',
-      content:'Because if you understand taste, you can fire it'
+      content:'Because if you understand taste, you can fire it',
+      imageAddress:'phones.png'
     },
     {
       title:'New Experience xiaomi 2022',
-      content:'Because if you understand taste, you can eat it'
+      content:'Because if you understand taste, you can eat it',
+      imageAddress:'phones.png'
     },
   ]
 
@@ -143,16 +162,21 @@ const Main = () => {
     }
   }
 
-  const setPrice=(newPrice,index)=>{
-    if(index===1){
-      if(newPrice<maxPrice){
-        SetMinPrice(newPrice)
-      }
-    }else if(index===2){
+  const setminPrice=(newPrice,index)=>{
+    if(newPrice<maxPrice){
+      SetMinPrice(newPrice)
+    }
+    if(maxPrice<minPrice){
+      let a=maxPrice
+      SetMaxPrice(minPrice)
+      SetMinPrice(a)
+    }
+  }
+
+  const setmaxPrice=(newPrice,index)=>{
       if(newPrice>minPrice){
         SetMaxPrice(newPrice)
       }
-    }
     if(maxPrice<minPrice){
       let a=maxPrice
       SetMaxPrice(minPrice)
@@ -228,7 +252,7 @@ const Main = () => {
     <div id='mainDiv'>
       <div id='topMainBox'>
         <i class="fa fa-chevron-left Arrow leftArrow" aria-hidden="true" onClick={()=>{nextTopPage(false)}}></i>
-          <div id='topMainImage'></div>
+          <img id='topMainImage' src={HeaderDetails[topBoxPage].imageAddress}></img>
           <div id='topMainDescription'>
             <h1>
               {HeaderDetails[topBoxPage].title}
@@ -259,8 +283,8 @@ const Main = () => {
         <h1>Price</h1>
         <div class="range-input">
           <div></div>
-          <input type="range" id='range-min' className="range-max" min="0" onChange={()=>{setPrice(document.getElementById('range-min').value,1);if(document.getElementById('range-min').value>=document.getElementById('range-max').value){document.getElementById('range-min').value=document.getElementById('range-max').value}}} max="1000"/>
-          <input type="range" id='range-max' className="range-max" min="0" onChange={()=>{setPrice(document.getElementById('range-max').value,2);if(document.getElementById('range-max').value<=document.getElementById('range-min').value){document.getElementById('range-max').value=document.getElementById('range-min').value}}} max="1000"/>
+          <input type="range" id='range-min' className="range-max" min="0" onChange={()=>{setminPrice(document.getElementById('range-min').value,1);if(document.getElementById('range-min').value>=document.getElementById('range-max').value){document.getElementById('range-min').value=document.getElementById('range-max').value}}} max="1000"/>
+          <input type="range" id='range-max' className="range-max" min="0" onChange={()=>{setmaxPrice(document.getElementById('range-max').value,2);if(document.getElementById('range-max').value<=document.getElementById('range-min').value){document.getElementById('range-max').value=document.getElementById('range-min').value}}} max="1000"/>
         </div>
         <div id='MinDiv' className='setPriceDiv'>
           <p>min</p>
@@ -305,6 +329,8 @@ const Main = () => {
           <label for="Nokia">Nokia<p>+10</p></label><br/>
           
         </div>
+        
+        
 
       </div>
 
@@ -357,7 +383,7 @@ const Main = () => {
           ShowDevice.map((item,index)=>{
             return(
               <div className='mobileBox' key={index}>
-                <div className='mobileImage'></div>
+                <img className='mobileImage' src={item.imageAddress}></img>
                 <p className='mobileTitle'>{item.model}</p>
                 <span class="fa fa-star checked"><p>{item.rate}</p></span>
               </div>
