@@ -11,10 +11,11 @@
   height: 200px;
   margin-left: 5%;
   margin-top: 250px;
+  min-width: 1382px;
 }
 #Footer .par {
   display: inline-block;
-  width: 17%;
+  width: 22%;
   margin-left: 40px;
 }
 #Footer .par h1 {

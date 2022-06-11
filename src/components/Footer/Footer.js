@@ -3,10 +3,6 @@ import './footer.css'
 const Footer = () => {
   return (
     <div id='Footer'>
-        <div className='par' id='par1'>
-            <h1>Happe</h1>
-            <p>this is example text. this is example text. this is example text. this is example text. this is example text. this is example text.</p>
-        </div>
         <div className='par' id='par2'>
             <h1>Hot Links</h1>
             <a>Home</a>

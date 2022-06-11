@@ -1,0 +1,106 @@
+@font-face {
+    font-family: Nimbus;
+    src: url('../Main/Nunito.ttf');
+}
+
+#productDiv{
+    width: 100%;
+    min-width: 1536px;
+    #innerPDiv{
+        width: 90%;
+        margin-left: 5%;
+        #selectImageBox{
+            width: 100px;
+            display: inline-block;
+            .PImage{
+                width: 100%;
+                height: 100%;
+                margin-top: 20px;
+                border-radius: 20px;
+                img{
+                    width: 40px;
+                    height: 80px;
+                    margin: 10px 30px;
+                }
+            }
+            .PImage:hover {
+                background: rgb(245, 245, 245);
+                transition: 0.2s;
+            }
+        }
+        #bigPImage{
+            display: inline-block;
+            width: 170px;
+            height: 340px;
+            margin-left: 100px;
+
+        }
+        #PDescription{
+            display: inline-block;
+            margin-left: 200px;
+            width: 800px;
+            margin-top: 50px;
+            h1{
+                font-size: 70px;
+                font-family: Nimbus;
+                font-weight: 100;
+            }
+            p{
+                font-family: Nimbus;
+                font-size: 18px;
+                margin-top: 40px;
+            }
+            #storage{
+                margin-top: 50px;
+                h2{
+                    font-family: Nimbus;
+                    font-size: 22px;
+                    font-weight: 800;
+                }
+                .PStorages{
+                    font-family: Nimbus;
+                    display: inline-block;
+                    padding: 12px 10px;
+                    border-width: 3px;
+                    border-style: solid;
+                    border-color: rgb(167, 167, 167);
+                    color: rgb(167, 167, 167);
+                    margin-left: 20px;
+                    margin-top: 20px;
+                    border-radius: 10px;
+                }
+                .PStorages:hover{
+                    color: rgb(0, 162, 255);
+                    border-color: rgb(0, 162, 255);
+                    cursor: pointer;
+                    transition: 0.2s;
+                }
+                .PStorages1{
+                    margin-left: 0px;
+                }
+            }
+            #PPrice{
+                display: inline-block;
+                font-family: Nimbus;
+                font-size: 30px;
+                font-weight: bolder;
+            }
+            button{
+                margin-top: 40px;
+                background: rgb(0, 162, 255);
+                color: white;
+                padding: 20px 30px;
+                border-style: none;
+                border-radius: 20px;
+                font-size: 22px;
+                display: inline-block;
+                margin-left: 30px;
+            }
+            button:hover{
+                background: rgb(0, 140, 221);
+                cursor: pointer;
+                transition: 0.2s;
+            }
+        }
+    }
+}
