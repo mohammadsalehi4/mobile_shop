@@ -1,0 +1,144 @@
+@font-face {
+    font-family:nunito ;
+    src: url('../Main/Nunito.ttf');
+}
+
+#Cart{
+    width: 90%;
+    margin-left: 5%;
+    min-width: 1383px;
+    #leftCart{
+        display: inline-block;
+        .LCODiv{
+            width: 60px;
+            height: 60px;
+            background: rgb(233, 233, 233);
+            border-radius: 100%;
+            margin-top: 20px;
+            i{
+                width: 100%;
+                text-align: center;
+                margin-top: 18px;
+                font-size: 23px;
+                color: rgb(107, 107, 107);
+            }
+        }
+        .LCOSeprator{
+            width: 2px;
+            margin-left: 30px;
+            height: 80px;
+            background: rgb(233, 233, 233);
+            margin-top: 20px;
+        }
+        .LCOSelected{
+            background: rgb(0, 162, 255);
+            .LCOSelected1{
+                color: white;
+            }
+        }
+
+    }
+    #rightCart{
+        display: inline-block;
+        position: absolute;
+        .cartProductDiv{
+            height: 100px;
+            margin-left: 100px;
+            margin-top: 50px;
+            img{
+                width: 45px;
+                height: 90px;
+                display: inline-block;
+            }
+            .CPDescription{
+                display: inline-block;
+                margin-left: 20px;
+                position: absolute;
+                margin-top: 20px;
+                width: 300px;
+                h1{
+                    font-family: nunito;
+                    font-size: 17px;
+
+                }
+                p{
+                    display: inline-block;
+                    font-family: nunito;
+                    margin-top: 25px;
+                    font-size: 14px;
+                }
+                .CPCC{
+                    margin-left: 10px;
+                }
+                .CPCS{
+                    color: rgb(141, 141, 141);
+                }
+            }
+            .CPNumber{
+                display: inline-block;
+                position: absolute;
+                margin-left: 350px;
+                margin-top: 30px;
+                width: 200px;
+                div{
+                    border-width: 2px;
+                    border-color: black;
+                    border-radius: 15px;
+                    border-style: solid;
+                    display: inline-block;
+                    cursor: pointer;
+                    i{
+                        padding: 8px 10px;
+                        display: inline-block;
+                    }
+                }
+                .minus{
+                    color: rgb(141, 141, 141);
+                    border-color: rgb(141, 141, 141);
+                }
+                p{
+                    display: inline-block;
+                    font-family: nunito;
+                    padding: 0px 20px;
+                }
+            }
+            .CPPrice{
+                display: inline-block;
+                position: absolute;
+                margin-left: 600px;
+                margin-top: 40px;
+                font-family: nunito;
+                font-size: 20px;
+            }
+        }
+        #checkout{
+            margin-left: 585px;
+            margin-top: 30px;
+            font-family: nunito;
+            font-size: 20px;
+            p{
+                display: inline-block;
+                color: rgb(141, 141, 141);
+            }
+            #CPShowPrice{
+                margin-left: 10px;
+                color: black;
+            }
+            button{
+                display: block;
+                border-style: none;
+                background: rgb(0, 162, 255);
+                color: white;
+                padding: 10px 20px;
+                border-radius: 10px;
+                margin: 20px 30px;
+                font-size: 22px;
+            }
+            button:hover{
+                background: rgb(0, 152, 240);
+                transition: 0.2s;
+                cursor: pointer;
+            }
+        }
+    }
+}
