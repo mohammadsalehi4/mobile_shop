@@ -6,343 +6,693 @@
   font-family: Nunito;
   src: url("./Nunito.ttf");
 }
-#mainDiv {
-  width: 100%;
-  min-width: 1536px;
-  min-height: 1500px;
+@media only screen and (min-device-width: 769px) {
+  #mainDiv {
+    width: 100%;
+    min-width: 1536px;
+    min-height: 1500px;
+  }
+  #mainDiv #topMainBox {
+    width: 90%;
+    height: 500px;
+    background: #f1f1f1;
+    margin-left: 5%;
+    border-radius: 30px;
+  }
+  #mainDiv #topMainBox #topMainImage {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    margin: 50px 270px;
+  }
+  #mainDiv #topMainBox #topMainDescription {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 750px;
+  }
+  #mainDiv #topMainBox #topMainDescription h1 {
+    font-family: Nimbus;
+    font-size: 50px;
+    margin-top: 30px;
+  }
+  #mainDiv #topMainBox #topMainDescription p {
+    font-family: Nunito;
+    margin-top: 50px;
+    font-size: 18px;
+    height: 60px;
+  }
+  #mainDiv #topMainBox #topMainDescription a {
+    font-family: Nunito;
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;
+    margin-top: 50px;
+    padding: 20px 32px;
+    border-radius: 15px;
+    color: #00a2ff;
+    font-size: 20px;
+  }
+  #mainDiv #topMainBox #topMainDescription a:hover {
+    color: #008ada;
+    cursor: pointer;
+  }
+  #mainDiv #topMainBox .Arrow {
+    position: absolute;
+    margin-top: 200px;
+    padding: 24px 30px;
+    font-size: 35px;
+    margin-left: 4%;
+    color: white;
+    background: #cecece;
+    border-radius: 50%;
+  }
+  #mainDiv #topMainBox .Arrow:hover {
+    background: #bbbbbb;
+    transition: 0.1s;
+  }
+  #mainDiv #topMainBox .rightArrow {
+    direction: rtl;
+    right: 9%;
+  }
+  #mainDiv #topMainBox #pager {
+    position: absolute;
+    margin-left: -10px;
+    margin-top: 20px;
+  }
+  #mainDiv #topMainBox #pager .pages {
+    background: #999999;
+    width: 8px;
+    height: 8px;
+    margin-left: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  #mainDiv #topMainBox #pager .selectedPage {
+    background: #00a2ff;
+    box-shadow: 0 0 6px #00a2ff;
+  }
+  #mainDiv #bottomLeftMainDiv {
+    width: 300px;
+    height: 300px;
+    background: #f1f1f1;
+    margin-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    font-family: Nunito;
+    position: absolute;
+  }
+  #mainDiv #bottomLeftMainDiv h1 {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 1px;
+    font-size: 24px;
+    font-family: Nimbus;
+  }
+  #mainDiv #bottomLeftMainDiv .range-input {
+    position: relative;
+    margin-top: 25px;
+  }
+  #mainDiv #bottomLeftMainDiv .range-input div {
+    height: 2px;
+    width: 80%;
+    background: #7a7a7a;
+    position: absolute;
+    top: 18px;
+    margin-left: 10%;
+  }
+  #mainDiv #bottomLeftMainDiv .range-input input {
+    position: absolute;
+    width: 80%;
+    height: 5px;
+    top: 15px;
+    background: none;
+    margin-left: 10%;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  #mainDiv #bottomLeftMainDiv .range-input input[type=range]::-webkit-slider-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #17A2B8;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(94, 94, 94, 0.35);
+  }
+  #mainDiv #bottomLeftMainDiv .range-input input[type=range]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #17A2B8;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(94, 94, 94, 0.35);
+  }
+  #mainDiv #bottomLeftMainDiv .setPriceDiv {
+    display: inline-block;
+    margin-left: 9%;
+    margin-top: 55px;
+    width: 22%;
+  }
+  #mainDiv #bottomLeftMainDiv .setPriceDiv p {
+    font-size: 16px;
+  }
+  #mainDiv #bottomLeftMainDiv .setPriceDiv div {
+    padding: 10px 0px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #a3a3a3;
+    color: #5c5c5c;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+  #mainDiv #bottomLeftMainDiv #seprator {
+    display: inline-block;
+    width: 20%;
+    height: 2px;
+    background: #afafaf;
+    margin-left: 10%;
+  }
+  #mainDiv #bottomLeftMainDiv #MaxDiv {
+    margin-left: 10%;
+  }
+  #mainDiv #bottomLeftMainDiv button {
+    width: 84%;
+    margin-left: 9%;
+    border-style: none;
+    margin-top: 20px;
+    background: #00a2ff;
+    padding: 12px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  #mainDiv #bottomLeftMainDiv button:hover {
+    background: #008ada;
+    transition: 0.2s;
+  }
+  #mainDiv #leftCheckboxDiv {
+    width: 300px;
+    height: 300px;
+    background: #f1f1f1;
+    margin-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    font-family: Nunito;
+    position: absolute;
+    margin-top: 450px;
+  }
+  #mainDiv #leftCheckboxDiv h1 {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 1px;
+    font-size: 24px;
+    font-family: Nimbus;
+  }
+  #mainDiv #leftCheckboxDiv div input {
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    top: 2px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  #mainDiv #leftCheckboxDiv div label {
+    margin-left: 15px;
+    display: inline-block;
+    width: 80%;
+  }
+  #mainDiv #leftCheckboxDiv div label p {
+    display: inline-block;
+    float: right;
+    margin-right: 30px;
+    background: #00a2ff;
+    padding: 5px 10px;
+    margin-top: -8px;
+    border-radius: 20px;
+    color: white;
+  }
+  #mainDiv #leftRatingDiv {
+    width: 300px;
+    height: 250px;
+    background: #f1f1f1;
+    margin-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    font-family: Nunito;
+    position: absolute;
+    margin-top: 850px;
+  }
+  #mainDiv #leftRatingDiv h1 {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 1px;
+    font-size: 24px;
+    font-family: Nimbus;
+  }
+  #mainDiv #leftRatingDiv .rateStars {
+    display: block;
+  }
+  #mainDiv #leftRatingDiv .rateStars input {
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    top: 2px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  #mainDiv #leftRatingDiv .rateStars label {
+    margin-left: 15px;
+    display: inline-block;
+    width: 80%;
+  }
+  #mainDiv #leftRatingDiv .rateStars label span {
+    margin-left: 4px;
+    font-size: 20px;
+    color: #94d1f5;
+  }
+  #mainDiv #leftRatingDiv .rateStars label .checked {
+    color: #00a2ff;
+  }
+  #mainDiv #Mobile {
+    position: relative;
+    width: 1005px;
+    left: 500px;
+    top: 50px;
+  }
+  #mainDiv #Mobile .mobileBox {
+    width: 30%;
+    height: 400px;
+    margin-left: 3PX;
+    display: inline-block;
+    margin-top: -1PX;
+    border-radius: 20px;
+  }
+  #mainDiv #Mobile .mobileBox .mobileImage {
+    width: 50%;
+    height: 300px;
+    margin-left: 25%;
+    margin-top: 25px;
+  }
+  #mainDiv #Mobile .mobileBox .mobileTitle {
+    font-family: Nunito;
+    text-align: center;
+    margin-top: 30px;
+  }
+  #mainDiv #Mobile .mobileBox span {
+    color: #ffd900;
+    position: absolute;
+    margin-top: -350px;
+    margin-left: 25px;
+  }
+  #mainDiv #Mobile .mobileBox span p {
+    display: inline-block;
+    color: black;
+    font-family: Nunito;
+  }
+  #mainDiv #Mobile .mobileBox:hover {
+    box-shadow: 0 0 7px 7px rgba(116, 116, 116, 0.2);
+    transition: 0.2s;
+  }
 }
-#mainDiv #topMainBox {
-  width: 90%;
-  height: 500px;
-  background: #f1f1f1;
-  margin-left: 5%;
-  border-radius: 30px;
-}
-#mainDiv #topMainBox #topMainImage {
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  margin: 50px 270px;
-}
-#mainDiv #topMainBox #topMainDescription {
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  margin-top: 50px;
-  margin-left: 750px;
-}
-#mainDiv #topMainBox #topMainDescription h1 {
-  font-family: Nimbus;
-  font-size: 50px;
-  margin-top: 30px;
-}
-#mainDiv #topMainBox #topMainDescription p {
-  font-family: Nunito;
-  margin-top: 50px;
-  font-size: 18px;
-  height: 60px;
-}
-#mainDiv #topMainBox #topMainDescription a {
-  font-family: Nunito;
-  border-width: 2px;
-  border-style: solid;
-  display: inline-block;
-  margin-top: 50px;
-  padding: 20px 32px;
-  border-radius: 15px;
-  color: #00a2ff;
-  font-size: 20px;
-}
-#mainDiv #topMainBox #topMainDescription a:hover {
-  color: #008ada;
-  cursor: pointer;
-}
-#mainDiv #topMainBox .Arrow {
-  position: absolute;
-  margin-top: 200px;
-  padding: 24px 30px;
-  font-size: 35px;
-  margin-left: 4%;
-  color: white;
-  background: #cecece;
-  border-radius: 50%;
-}
-#mainDiv #topMainBox .Arrow:hover {
-  background: #bbbbbb;
-  transition: 0.1s;
-}
-#mainDiv #topMainBox .rightArrow {
-  direction: rtl;
-  right: 9%;
-}
-#mainDiv #topMainBox #pager {
-  position: absolute;
-  margin-left: -10px;
-  margin-top: 20px;
-}
-#mainDiv #topMainBox #pager .pages {
-  background: #999999;
-  width: 8px;
-  height: 8px;
-  margin-left: 10px;
-  display: inline-block;
-  border-radius: 50%;
-  cursor: pointer;
-}
-#mainDiv #topMainBox #pager .selectedPage {
-  background: #00a2ff;
-  box-shadow: 0 0 6px #00a2ff;
-}
-#mainDiv #bottomLeftMainDiv {
-  width: 300px;
-  height: 300px;
-  background: #f1f1f1;
-  margin-left: 5%;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  border-radius: 30px;
-  font-family: Nunito;
-  position: absolute;
-}
-#mainDiv #bottomLeftMainDiv h1 {
-  width: 100%;
-  text-align: center;
-  padding: 15px 0px;
-  border-bottom-style: solid;
-  border-bottom-color: #c5c5c5;
-  border-bottom-width: 1px;
-  font-size: 24px;
-  font-family: Nimbus;
-}
-#mainDiv #bottomLeftMainDiv .range-input {
-  position: relative;
-  margin-top: 25px;
-}
-#mainDiv #bottomLeftMainDiv .range-input div {
-  height: 2px;
-  width: 80%;
-  background: #7a7a7a;
-  position: absolute;
-  top: 18px;
-  margin-left: 10%;
-}
-#mainDiv #bottomLeftMainDiv .range-input input {
-  position: absolute;
-  width: 80%;
-  height: 5px;
-  top: 15px;
-  background: none;
-  margin-left: 10%;
-  pointer-events: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-#mainDiv #bottomLeftMainDiv .range-input input[type=range]::-webkit-slider-thumb {
-  height: 17px;
-  width: 17px;
-  border: none;
-  border-radius: 50%;
-  background: white;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #17A2B8;
-  pointer-events: auto;
-  -moz-appearance: none;
-  box-shadow: 0 0 6px rgba(94, 94, 94, 0.35);
-}
-#mainDiv #bottomLeftMainDiv .range-input input[type=range]::-moz-range-thumb {
-  height: 17px;
-  width: 17px;
-  border: none;
-  border-radius: 50%;
-  background: white;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #17A2B8;
-  pointer-events: auto;
-  -moz-appearance: none;
-  box-shadow: 0 0 6px rgba(94, 94, 94, 0.35);
-}
-#mainDiv #bottomLeftMainDiv .setPriceDiv {
-  display: inline-block;
-  margin-left: 9%;
-  margin-top: 55px;
-  width: 22%;
-}
-#mainDiv #bottomLeftMainDiv .setPriceDiv p {
-  font-size: 16px;
-}
-#mainDiv #bottomLeftMainDiv .setPriceDiv div {
-  padding: 10px 0px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #a3a3a3;
-  color: #5c5c5c;
-  border-radius: 10px;
-  margin-top: 10px;
-  font-size: 16px;
-  text-align: center;
-}
-#mainDiv #bottomLeftMainDiv #seprator {
-  display: inline-block;
-  width: 20%;
-  height: 2px;
-  background: #afafaf;
-  margin-left: 10%;
-}
-#mainDiv #bottomLeftMainDiv #MaxDiv {
-  margin-left: 10%;
-}
-#mainDiv #bottomLeftMainDiv button {
-  width: 84%;
-  margin-left: 9%;
-  border-style: none;
-  margin-top: 20px;
-  background: #00a2ff;
-  padding: 12px;
-  border-radius: 15px;
-  font-size: 20px;
-  color: white;
-  cursor: pointer;
-}
-#mainDiv #bottomLeftMainDiv button:hover {
-  background: #008ada;
-  transition: 0.2s;
-}
-#mainDiv #leftCheckboxDiv {
-  width: 300px;
-  height: 300px;
-  background: #f1f1f1;
-  margin-left: 5%;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  border-radius: 30px;
-  font-family: Nunito;
-  position: absolute;
-  margin-top: 450px;
-}
-#mainDiv #leftCheckboxDiv h1 {
-  width: 100%;
-  text-align: center;
-  padding: 15px 0px;
-  border-bottom-style: solid;
-  border-bottom-color: #c5c5c5;
-  border-bottom-width: 1px;
-  font-size: 24px;
-  font-family: Nimbus;
-}
-#mainDiv #leftCheckboxDiv div input {
-  width: 20px;
-  height: 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  top: 2px;
-  margin-left: 20px;
-  margin-top: 20px;
-  display: inline-block;
-}
-#mainDiv #leftCheckboxDiv div label {
-  margin-left: 15px;
-  display: inline-block;
-  width: 80%;
-}
-#mainDiv #leftCheckboxDiv div label p {
-  display: inline-block;
-  float: right;
-  margin-right: 30px;
-  background: #00a2ff;
-  padding: 5px 10px;
-  margin-top: -8px;
-  border-radius: 20px;
-  color: white;
-}
-#mainDiv #leftRatingDiv {
-  width: 300px;
-  height: 250px;
-  background: #f1f1f1;
-  margin-left: 5%;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  border-radius: 30px;
-  font-family: Nunito;
-  position: absolute;
-  margin-top: 850px;
-}
-#mainDiv #leftRatingDiv h1 {
-  width: 100%;
-  text-align: center;
-  padding: 15px 0px;
-  border-bottom-style: solid;
-  border-bottom-color: #c5c5c5;
-  border-bottom-width: 1px;
-  font-size: 24px;
-  font-family: Nimbus;
-}
-#mainDiv #leftRatingDiv .rateStars {
-  display: block;
-}
-#mainDiv #leftRatingDiv .rateStars input {
-  width: 20px;
-  height: 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  top: 2px;
-  margin-left: 20px;
-  margin-top: 20px;
-  display: inline-block;
-}
-#mainDiv #leftRatingDiv .rateStars label {
-  margin-left: 15px;
-  display: inline-block;
-  width: 80%;
-}
-#mainDiv #leftRatingDiv .rateStars label span {
-  margin-left: 4px;
-  font-size: 20px;
-  color: #94d1f5;
-}
-#mainDiv #leftRatingDiv .rateStars label .checked {
-  color: #00a2ff;
-}
-#mainDiv #Mobile {
-  position: relative;
-  width: 1005px;
-  left: 500px;
-  top: 50px;
-}
-#mainDiv #Mobile .mobileBox {
-  width: 30%;
-  height: 400px;
-  margin-left: 3PX;
-  display: inline-block;
-  margin-top: -1PX;
-  border-radius: 20px;
-}
-#mainDiv #Mobile .mobileBox .mobileImage {
-  width: 50%;
-  height: 300px;
-  margin-left: 25%;
-  margin-top: 25px;
-}
-#mainDiv #Mobile .mobileBox .mobileTitle {
-  font-family: Nunito;
-  text-align: center;
-  margin-top: 30px;
-}
-#mainDiv #Mobile .mobileBox span {
-  color: #ffd900;
-  position: absolute;
-  margin-top: -350px;
-  margin-left: 25px;
-}
-#mainDiv #Mobile .mobileBox span p {
-  display: inline-block;
-  color: black;
-  font-family: Nunito;
-}
-#mainDiv #Mobile .mobileBox:hover {
-  box-shadow: 0 0 7px 7px rgba(116, 116, 116, 0.2);
-  transition: 0.2s;
+@media only screen and (max-device-width: 768px) {
+  #mainDiv {
+    width: 100%;
+    min-width: 0px;
+    background: #eeeeee;
+  }
+  #mainDiv #topMainBox {
+    width: 100%;
+    height: 600px;
+    margin-top: 10px;
+    background: white;
+  }
+  #mainDiv #topMainBox #topMainImage {
+    width: 90%;
+    margin-left: 5%;
+    top: 240px;
+    position: absolute;
+  }
+  #mainDiv #topMainBox #topMainDescription {
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+  }
+  #mainDiv #topMainBox #topMainDescription h1 {
+    font-family: Nimbus;
+    font-size: 40px;
+    margin-top: 30px;
+    font-weight: bolder;
+  }
+  #mainDiv #topMainBox #topMainDescription p {
+    font-family: Nunito;
+    margin-top: 30px;
+    font-size: 16px;
+    height: 60px;
+    display: inline-block;
+  }
+  #mainDiv #topMainBox #topMainDescription a {
+    font-family: Nunito;
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 10px;
+    background-color: #00a2ff;
+    font-size: 20px;
+    color: white;
+    box-shadow: 0 0 8px rgba(0, 162, 255, 0.4);
+    max-width: 40%;
+    position: absolute;
+    left: 0%;
+    margin-top: 430px;
+  }
+  #mainDiv #topMainBox #topMainDescription a:hover {
+    background-color: #008ada;
+    cursor: pointer;
+  }
+  #mainDiv #topMainBox .Arrow {
+    display: none;
+  }
+  #mainDiv #topMainBox #pager {
+    display: none;
+    position: absolute;
+    margin-left: -10px;
+    margin-top: 20px;
+  }
+  #mainDiv #topMainBox #pager .pages {
+    background: #999999;
+    width: 8px;
+    height: 8px;
+    margin-left: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  #mainDiv #topMainBox #pager .selectedPage {
+    background: #00a2ff;
+    box-shadow: 0 0 6px #00a2ff;
+  }
+  #mainDiv #bottomLeftMainDiv {
+    display: none;
+    width: 300px;
+    height: 300px;
+    background: #f1f1f1;
+    margin-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    font-family: Nunito;
+    position: absolute;
+  }
+  #mainDiv #bottomLeftMainDiv h1 {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 1px;
+    font-size: 24px;
+    font-family: Nimbus;
+  }
+  #mainDiv #bottomLeftMainDiv .range-input {
+    position: relative;
+    margin-top: 25px;
+  }
+  #mainDiv #bottomLeftMainDiv .range-input div {
+    height: 2px;
+    width: 80%;
+    background: #7a7a7a;
+    position: absolute;
+    top: 18px;
+    margin-left: 10%;
+  }
+  #mainDiv #bottomLeftMainDiv .range-input input {
+    position: absolute;
+    width: 80%;
+    height: 5px;
+    top: 15px;
+    background: none;
+    margin-left: 10%;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  #mainDiv #bottomLeftMainDiv .range-input input[type=range]::-webkit-slider-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #17A2B8;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(94, 94, 94, 0.35);
+  }
+  #mainDiv #bottomLeftMainDiv .range-input input[type=range]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #17A2B8;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(94, 94, 94, 0.35);
+  }
+  #mainDiv #bottomLeftMainDiv .setPriceDiv {
+    display: inline-block;
+    margin-left: 9%;
+    margin-top: 55px;
+    width: 22%;
+  }
+  #mainDiv #bottomLeftMainDiv .setPriceDiv p {
+    font-size: 16px;
+  }
+  #mainDiv #bottomLeftMainDiv .setPriceDiv div {
+    padding: 10px 0px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #a3a3a3;
+    color: #5c5c5c;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+  #mainDiv #bottomLeftMainDiv #seprator {
+    display: inline-block;
+    width: 20%;
+    height: 2px;
+    background: #afafaf;
+    margin-left: 10%;
+  }
+  #mainDiv #bottomLeftMainDiv #MaxDiv {
+    margin-left: 10%;
+  }
+  #mainDiv #bottomLeftMainDiv button {
+    width: 84%;
+    margin-left: 9%;
+    border-style: none;
+    margin-top: 20px;
+    background: #00a2ff;
+    padding: 12px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  #mainDiv #bottomLeftMainDiv button:hover {
+    background: #008ada;
+    transition: 0.2s;
+  }
+  #mainDiv #leftCheckboxDiv {
+    width: 300px;
+    display: none;
+    height: 300px;
+    background: #f1f1f1;
+    margin-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    font-family: Nunito;
+    position: absolute;
+    margin-top: 450px;
+  }
+  #mainDiv #leftCheckboxDiv h1 {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 1px;
+    font-size: 24px;
+    font-family: Nimbus;
+  }
+  #mainDiv #leftCheckboxDiv div input {
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    top: 2px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  #mainDiv #leftCheckboxDiv div label {
+    margin-left: 15px;
+    display: inline-block;
+    width: 80%;
+  }
+  #mainDiv #leftCheckboxDiv div label p {
+    display: inline-block;
+    float: right;
+    margin-right: 30px;
+    background: #00a2ff;
+    padding: 5px 10px;
+    margin-top: -8px;
+    border-radius: 20px;
+    color: white;
+  }
+  #mainDiv #leftRatingDiv {
+    display: none;
+    width: 300px;
+    height: 250px;
+    background: #f1f1f1;
+    margin-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    font-family: Nunito;
+    position: absolute;
+    margin-top: 850px;
+  }
+  #mainDiv #leftRatingDiv h1 {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 1px;
+    font-size: 24px;
+    font-family: Nimbus;
+  }
+  #mainDiv #leftRatingDiv .rateStars {
+    display: block;
+  }
+  #mainDiv #leftRatingDiv .rateStars input {
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    top: 2px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  #mainDiv #leftRatingDiv .rateStars label {
+    margin-left: 15px;
+    display: inline-block;
+    width: 80%;
+  }
+  #mainDiv #leftRatingDiv .rateStars label span {
+    margin-left: 4px;
+    font-size: 20px;
+    color: #94d1f5;
+  }
+  #mainDiv #leftRatingDiv .rateStars label .checked {
+    color: #00a2ff;
+  }
+  #mainDiv #Mobile {
+    position: relative;
+    width: 100%;
+    top: 10px;
+    background: white;
+    box-shadow: 0 0 3px #cccccc;
+  }
+  #mainDiv #Mobile .mobileBox {
+    width: 90%;
+    height: 190px;
+    margin-left: 5%;
+    display: inline-block;
+    border-bottom-width: 3px;
+    border-color: #eeeeee;
+    border-style: solid;
+  }
+  #mainDiv #Mobile .mobileBox .mobileImage {
+    height: 170px;
+    margin-left: 2%;
+    margin-top: 10px;
+  }
+  #mainDiv #Mobile .mobileBox .mobileTitle {
+    font-family: Nunito;
+    text-align: center;
+    position: absolute;
+    margin-top: -150px;
+    margin-left: 130px;
+    color: black;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bolder;
+    max-width: 50%;
+  }
+  #mainDiv #Mobile .mobileBox .mobilePrice {
+    position: absolute;
+    margin-top: -90px;
+    margin-left: 130px;
+    font-family: nunito;
+    font-weight: bolder;
+    color: black;
+    font-size: 20px;
+  }
+  #mainDiv #Mobile .mobileBox span {
+    color: #ffd900;
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 35px;
+  }
+  #mainDiv #Mobile .mobileBox span p {
+    display: inline-block;
+    color: black;
+    font-family: Nunito;
+  }
+  #mainDiv #Mobile .mobileBox:hover {
+    box-shadow: 0 0 7px 7px rgba(116, 116, 116, 0.2);
+    transition: 0.2s;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

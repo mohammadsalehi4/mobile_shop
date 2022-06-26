@@ -416,6 +416,7 @@ const Main = () => {
                 <div className='mobileBox' key={index}>
                   <img className='mobileImage' src={item.imageAddress}></img>
                   <p className='mobileTitle'>{item.model}</p>
+                  <p className='mobilePrice JP'>${item.price}</p>
                   <span class="fa fa-star checked"><p>{item.rate}</p></span>
                 </div>
               </a>

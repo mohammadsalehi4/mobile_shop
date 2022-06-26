@@ -8,71 +8,79 @@
     src: url('../Main/Nunito.ttf');
 }
 
-#Footer{
-    width: 90%;
-    height: 200px;
-    margin-left: 5%;
-    margin-top: 250px;
-    min-width: 1382px;
-    .par{
-        display: inline-block;
-        width: 22%;
-        margin-left: 40px;
-        h1{
-            font-family: Araboto;
-            font-size: 22px;
-        }
-        p{
-            font-family: Nunito;
-            margin-top: 27px;
-        }
-        a{
-            font-family: Nunito;
-            margin-top: 10px;
-            display: block;
-        }
-        div{
-            width: 100%;
-            margin-top: 34px;
-            input{
-                border-radius: 10px;
-                border-style: solid;
-                height: 35px;
-                width: 80%;
+@media only screen and(min-device-width:769px) {
+    #Footer{
+        width: 90%;
+        height: 200px;
+        margin-left: 5%;
+        margin-top: 250px;
+        min-width: 1382px;
+        .par{
+            display: inline-block;
+            width: 22%;
+            margin-left: 40px;
+            h1{
+                font-family: Araboto;
+                font-size: 22px;
             }
-            button{
-                height: 42px;
-                margin-left: -30px;
-                width: 60px;
-                border-radius: 10px;
-                border-style: none;
-                background: rgb(0, 162, 255);
-                color: white;
-                cursor: pointer;
+            p{
+                font-family: Nunito;
+                margin-top: 27px;
             }
-        }
-
-    }
-    #underFooter{
-        width: 100%;
-        height: 65px;
-        margin-top: 30px;
-        background: rgb(0, 162, 255);
-        border-bottom-left-radius: 12px;
-        border-bottom-right-radius: 12px;
-        p{
-            color: white;
-            font-family: Nunito;
-            margin-top: 25px;
-            position: absolute;
-            margin-left: 20px;
-            width: 85%;
             a{
-                float: right;
+                font-family: Nunito;
+                margin-top: 10px;
+                display: block;
+            }
+            div{
+                width: 100%;
+                margin-top: 34px;
+                input{
+                    border-radius: 10px;
+                    border-style: solid;
+                    height: 35px;
+                    width: 80%;
+                }
+                button{
+                    height: 42px;
+                    margin-left: -30px;
+                    width: 60px;
+                    border-radius: 10px;
+                    border-style: none;
+                    background: rgb(0, 162, 255);
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+    
+        }
+        #underFooter{
+            width: 100%;
+            height: 65px;
+            margin-top: 30px;
+            background: rgb(0, 162, 255);
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            p{
                 color: white;
-                font-size:35px;
-                margin-top: -10px;
+                font-family: Nunito;
+                margin-top: 25px;
+                position: absolute;
+                margin-left: 20px;
+                width: 85%;
+                a{
+                    float: right;
+                    color: white;
+                    font-size:35px;
+                    margin-top: -10px;
+                }
             }
         }
+    }
+}
+
+@media only screen and(min-device-width:769px) {
+    #Footer{
+        display: none;
     }
 }

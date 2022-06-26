@@ -9,7 +9,10 @@ const Header = () => {
             <h3>Collections</h3>
             <h3>Blog</h3>
             <h3>Categorys</h3>
-
+            <div id='mobileRightHeader'>
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
         </div>
         <div id='rightHeader'>
             <a id='login' className='headerLink'>Log In</a>

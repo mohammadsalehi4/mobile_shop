@@ -6,72 +6,79 @@
   font-family: Nunito;
   src: url("../Main/Nunito.ttf");
 }
-#Footer {
-  width: 90%;
-  height: 200px;
-  margin-left: 5%;
-  margin-top: 250px;
-  min-width: 1382px;
+@media only screen and (min-device-width: 769px) {
+  #Footer {
+    width: 90%;
+    height: 200px;
+    margin-left: 5%;
+    margin-top: 250px;
+    min-width: 1382px;
+  }
+  #Footer .par {
+    display: inline-block;
+    width: 22%;
+    margin-left: 40px;
+  }
+  #Footer .par h1 {
+    font-family: Araboto;
+    font-size: 22px;
+  }
+  #Footer .par p {
+    font-family: Nunito;
+    margin-top: 27px;
+  }
+  #Footer .par a {
+    font-family: Nunito;
+    margin-top: 10px;
+    display: block;
+  }
+  #Footer .par div {
+    width: 100%;
+    margin-top: 34px;
+  }
+  #Footer .par div input {
+    border-radius: 10px;
+    border-style: solid;
+    height: 35px;
+    width: 80%;
+  }
+  #Footer .par div button {
+    height: 42px;
+    margin-left: -30px;
+    width: 60px;
+    border-radius: 10px;
+    border-style: none;
+    background: #00a2ff;
+    color: white;
+    cursor: pointer;
+  }
+  #Footer #underFooter {
+    width: 100%;
+    height: 65px;
+    margin-top: 30px;
+    background: #00a2ff;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  #Footer #underFooter p {
+    color: white;
+    font-family: Nunito;
+    margin-top: 25px;
+    position: absolute;
+    margin-left: 20px;
+    width: 85%;
+  }
+  #Footer #underFooter p a {
+    float: right;
+    color: white;
+    font-size: 35px;
+    margin-top: -10px;
+  }
 }
-#Footer .par {
-  display: inline-block;
-  width: 22%;
-  margin-left: 40px;
-}
-#Footer .par h1 {
-  font-family: Araboto;
-  font-size: 22px;
-}
-#Footer .par p {
-  font-family: Nunito;
-  margin-top: 27px;
-}
-#Footer .par a {
-  font-family: Nunito;
-  margin-top: 10px;
-  display: block;
-}
-#Footer .par div {
-  width: 100%;
-  margin-top: 34px;
-}
-#Footer .par div input {
-  border-radius: 10px;
-  border-style: solid;
-  height: 35px;
-  width: 80%;
-}
-#Footer .par div button {
-  height: 42px;
-  margin-left: -30px;
-  width: 60px;
-  border-radius: 10px;
-  border-style: none;
-  background: #00a2ff;
-  color: white;
-  cursor: pointer;
-}
-#Footer #underFooter {
-  width: 100%;
-  height: 65px;
-  margin-top: 30px;
-  background: #00a2ff;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-}
-#Footer #underFooter p {
-  color: white;
-  font-family: Nunito;
-  margin-top: 25px;
-  position: absolute;
-  margin-left: 20px;
-  width: 85%;
-}
-#Footer #underFooter p a {
-  float: right;
-  color: white;
-  font-size: 35px;
-  margin-top: -10px;
+@media only screen and (min-device-width: 769px) {
+  #Footer {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */
