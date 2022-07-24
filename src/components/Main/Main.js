@@ -418,6 +418,7 @@ const Main = () => {
                   <p className='mobileTitle'>{item.model}</p>
                   <p className='mobilePrice JP'>${item.price}</p>
                   <span class="fa fa-star checked"><p>{item.rate}</p></span>
+                  <div class="archive"><i class="fa fa-archive" aria-hidden="true"></i><p>available in store</p></div>
                 </div>
               </a>
             )

@@ -362,6 +362,9 @@
             }
         }
     }    
+    .JP{
+        display: none;
+    }
 }
 
 @media only screen and (max-device-width:768px) {
@@ -699,22 +702,36 @@
                 }
                 .mobilePrice{
                     position: absolute;
-                    margin-top: -90px;
+                    margin-top: -110px;
                     margin-left: 130px;
                     font-family: nunito;
-                    font-weight: bolder;
+                    font-weight: bold;
                     color: black;
-                    font-size: 20px;
+                    font-size: 15px;
                 }
                 span{
                     color: rgb(255, 217, 0);
                     position: absolute;
-                    margin-top: 140px;
+                    margin-top: 110px;
                     margin-left: 35px;
                     p{
                         display: inline-block;
                         color: black;
                         font-family: Nunito;
+                    }
+                }
+                .archive{
+                    position: absolute;
+                    margin-left: 130px;
+                    margin-top: -40px;
+                    i{
+                        color: #17A2B8;
+                    }
+                    p{
+                        display: inline-block;
+                        color: black;
+                        font-family: Nunito;
+                        margin-left: 10px;
                     }
                 }
             }

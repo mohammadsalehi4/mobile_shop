@@ -345,6 +345,10 @@
     box-shadow: 0 0 7px 7px rgba(116, 116, 116, 0.2);
     transition: 0.2s;
   }
+
+  .JP {
+    display: none;
+  }
 }
 @media only screen and (max-device-width: 768px) {
   #mainDiv {
@@ -671,23 +675,37 @@
   }
   #mainDiv #Mobile .mobileBox .mobilePrice {
     position: absolute;
-    margin-top: -90px;
+    margin-top: -110px;
     margin-left: 130px;
     font-family: nunito;
-    font-weight: bolder;
+    font-weight: bold;
     color: black;
-    font-size: 20px;
+    font-size: 15px;
   }
   #mainDiv #Mobile .mobileBox span {
     color: #ffd900;
     position: absolute;
-    margin-top: 140px;
+    margin-top: 110px;
     margin-left: 35px;
   }
   #mainDiv #Mobile .mobileBox span p {
     display: inline-block;
     color: black;
     font-family: Nunito;
+  }
+  #mainDiv #Mobile .mobileBox .archive {
+    position: absolute;
+    margin-left: 130px;
+    margin-top: -40px;
+  }
+  #mainDiv #Mobile .mobileBox .archive i {
+    color: #17A2B8;
+  }
+  #mainDiv #Mobile .mobileBox .archive p {
+    display: inline-block;
+    color: black;
+    font-family: Nunito;
+    margin-left: 10px;
   }
   #mainDiv #Mobile .mobileBox:hover {
     box-shadow: 0 0 7px 7px rgba(116, 116, 116, 0.2);
