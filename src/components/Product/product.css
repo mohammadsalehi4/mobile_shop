@@ -2,105 +2,236 @@
   font-family: Nimbus;
   src: url("../Main/Nunito.ttf");
 }
-#productDiv {
-  width: 100%;
-  min-width: 1536px;
+@media only screen and (min-device-width: 769px) {
+  #productDiv {
+    width: 100%;
+    min-width: 1536px;
+  }
+  #productDiv #innerPDiv {
+    width: 90%;
+    margin-left: 5%;
+  }
+  #productDiv #innerPDiv #selectImageBox {
+    width: 100px;
+    display: inline-block;
+  }
+  #productDiv #innerPDiv #selectImageBox .PImage {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+  #productDiv #innerPDiv #selectImageBox .PImage img {
+    width: 40px;
+    height: 80px;
+    margin: 10px 30px;
+  }
+  #productDiv #innerPDiv #selectImageBox .PImage:hover {
+    background: whitesmoke;
+    transition: 0.2s;
+  }
+  #productDiv #innerPDiv #selectImageBox .PImage1 {
+    background: whitesmoke;
+  }
+  #productDiv #innerPDiv #bigPImage {
+    display: inline-block;
+    width: 170px;
+    height: 340px;
+    margin-left: 100px;
+  }
+  #productDiv #innerPDiv #PDescription {
+    display: inline-block;
+    margin-left: 200px;
+    width: 800px;
+    margin-top: 50px;
+  }
+  #productDiv #innerPDiv #PDescription h1 {
+    font-size: 70px;
+    font-family: Nimbus;
+    font-weight: 100;
+  }
+  #productDiv #innerPDiv #PDescription p {
+    font-family: Nimbus;
+    font-size: 18px;
+    margin-top: 40px;
+  }
+  #productDiv #innerPDiv #PDescription #storage {
+    margin-top: 50px;
+  }
+  #productDiv #innerPDiv #PDescription #storage h2 {
+    font-family: Nimbus;
+    font-size: 22px;
+    font-weight: 800;
+  }
+  #productDiv #innerPDiv #PDescription #storage .PStorages {
+    font-family: Nimbus;
+    display: inline-block;
+    padding: 12px 10px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #a7a7a7;
+    color: #a7a7a7;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  #productDiv #innerPDiv #PDescription #storage .PStorages:hover {
+    color: #00a2ff;
+    border-color: #00a2ff;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  #productDiv #innerPDiv #PDescription #storage .PStorages1 {
+    color: #00a2ff;
+    border-color: #00a2ff;
+  }
+  #productDiv #innerPDiv #PDescription #storage #selectStorageBox {
+    margin-left: -20px;
+  }
+  #productDiv #innerPDiv #PDescription #PPrice {
+    display: inline-block;
+    font-family: Nimbus;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  #productDiv #innerPDiv #PDescription button {
+    margin-top: 40px;
+    background: #00a2ff;
+    color: white;
+    padding: 20px 30px;
+    border-style: none;
+    border-radius: 20px;
+    font-size: 22px;
+    display: inline-block;
+    margin-left: 30px;
+  }
+  #productDiv #innerPDiv #PDescription button:hover {
+    background: #008cdd;
+    cursor: pointer;
+    transition: 0.2s;
+  }
 }
-#productDiv #innerPDiv {
-  width: 90%;
-  margin-left: 5%;
-}
-#productDiv #innerPDiv #selectImageBox {
-  width: 100px;
-  display: inline-block;
-}
-#productDiv #innerPDiv #selectImageBox .PImage {
-  width: 100%;
-  height: 100%;
-  margin-top: 20px;
-  border-radius: 20px;
-}
-#productDiv #innerPDiv #selectImageBox .PImage img {
-  width: 40px;
-  height: 80px;
-  margin: 10px 30px;
-}
-#productDiv #innerPDiv #selectImageBox .PImage:hover {
-  background: whitesmoke;
-  transition: 0.2s;
-}
-#productDiv #innerPDiv #bigPImage {
-  display: inline-block;
-  width: 170px;
-  height: 340px;
-  margin-left: 100px;
-}
-#productDiv #innerPDiv #PDescription {
-  display: inline-block;
-  margin-left: 200px;
-  width: 800px;
-  margin-top: 50px;
-}
-#productDiv #innerPDiv #PDescription h1 {
-  font-size: 70px;
-  font-family: Nimbus;
-  font-weight: 100;
-}
-#productDiv #innerPDiv #PDescription p {
-  font-family: Nimbus;
-  font-size: 18px;
-  margin-top: 40px;
-}
-#productDiv #innerPDiv #PDescription #storage {
-  margin-top: 50px;
-}
-#productDiv #innerPDiv #PDescription #storage h2 {
-  font-family: Nimbus;
-  font-size: 22px;
-  font-weight: 800;
-}
-#productDiv #innerPDiv #PDescription #storage .PStorages {
-  font-family: Nimbus;
-  display: inline-block;
-  padding: 12px 10px;
-  border-width: 3px;
-  border-style: solid;
-  border-color: #a7a7a7;
-  color: #a7a7a7;
-  margin-left: 20px;
-  margin-top: 20px;
-  border-radius: 10px;
-}
-#productDiv #innerPDiv #PDescription #storage .PStorages:hover {
-  color: #00a2ff;
-  border-color: #00a2ff;
-  cursor: pointer;
-  transition: 0.2s;
-}
-#productDiv #innerPDiv #PDescription #storage .PStorages1 {
-  margin-left: 0px;
-}
-#productDiv #innerPDiv #PDescription #PPrice {
-  display: inline-block;
-  font-family: Nimbus;
-  font-size: 30px;
-  font-weight: bolder;
-}
-#productDiv #innerPDiv #PDescription button {
-  margin-top: 40px;
-  background: #00a2ff;
-  color: white;
-  padding: 20px 30px;
-  border-style: none;
-  border-radius: 20px;
-  font-size: 22px;
-  display: inline-block;
-  margin-left: 30px;
-}
-#productDiv #innerPDiv #PDescription button:hover {
-  background: #008cdd;
-  cursor: pointer;
-  transition: 0.2s;
+@media only screen and (max-device-width: 768px) {
+  #productDiv {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  #productDiv #innerPDiv #selectImageBox {
+    background: #f4f4f4;
+    width: 100%;
+    height: 530px;
+    position: absolute;
+    z-index: 1;
+    margin-top: 20px;
+  }
+  #productDiv #innerPDiv #selectImageBox #SIB {
+    margin-top: 60px;
+  }
+  #productDiv #innerPDiv #selectImageBox .PImage {
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-left: 75%;
+  }
+  #productDiv #innerPDiv #selectImageBox .PImage img {
+    height: 55px;
+    margin: 10px 27px;
+  }
+  #productDiv #innerPDiv #selectImageBox .PImage:hover {
+    background: #e7e7e7;
+    transition: 0.2s;
+  }
+  #productDiv #innerPDiv #selectImageBox .PImage1 {
+    background: #e7e7e7;
+  }
+  #productDiv #innerPDiv #bigPImage {
+    display: inline-block;
+    position: absolute;
+    height: 400px;
+    z-index: 2;
+    margin-left: 10%;
+    margin-top: 70px;
+  }
+  #productDiv #innerPDiv #PDescription {
+    display: inline-block;
+    margin-top: 580px;
+  }
+  #productDiv #innerPDiv #PDescription h1 {
+    font-size: 30px;
+    font-family: Nimbus;
+    font-weight: bolder;
+    margin-left: 20px;
+  }
+  #productDiv #innerPDiv #PDescription p {
+    font-family: Nimbus;
+    font-size: 15px;
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+  #productDiv #innerPDiv #PDescription #storage {
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+  #productDiv #innerPDiv #PDescription #storage h2 {
+    font-family: Nimbus;
+    font-size: 22px;
+    font-weight: 800;
+  }
+  #productDiv #innerPDiv #PDescription #storage .PStorages {
+    font-family: Nimbus;
+    display: inline-block;
+    padding: 10px 8px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #a7a7a7;
+    color: #a7a7a7;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  #productDiv #innerPDiv #PDescription #storage .PStorages:hover {
+    color: #00a2ff;
+    border-color: #00a2ff;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  #productDiv #innerPDiv #PDescription #storage .PStorages1 {
+    color: #00a2ff;
+    border-color: #00a2ff;
+  }
+  #productDiv #innerPDiv #PDescription #storage #selectStorageBox {
+    margin-left: -20px;
+  }
+  #productDiv #innerPDiv #PDescription #PPrice {
+    font-family: Nimbus;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    display: inline-block;
+    margin-top: 50px;
+  }
+  #productDiv #innerPDiv #PDescription button {
+    background: #00a2ff;
+    color: white;
+    padding: 15px 25px;
+    border-style: none;
+    border-radius: 13px;
+    font-size: 17px;
+    display: inline-block;
+    margin-left: 20px;
+    z-index: 6;
+    position: absolute;
+    margin-top: 40px;
+    width: 65%;
+    margin-bottom: 50px;
+    margin-left: 10%;
+  }
+  #productDiv #innerPDiv #PDescription button:hover {
+    background: #008cdd;
+    cursor: pointer;
+    transition: 0.2s;
+  }
 }
 
 /*# sourceMappingURL=product.css.map */

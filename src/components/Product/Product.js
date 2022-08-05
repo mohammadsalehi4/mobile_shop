@@ -13,7 +13,7 @@ const Product = (props) => {
         rate:4.1,
         brand:'Apple',
         price:990,
-        imageAddress:'iphoneX.png',
+        imageAddress:['iphoneX.png','phone2.png','phone3.png'],
         Capacities:['128GB','256GB','512GB'],
         id:'XS_max_2022'
       },
@@ -22,7 +22,7 @@ const Product = (props) => {
         rate:4.9,
         brand:'Apple',
         price:880,
-        imageAddress:'iphoneX.png',
+        imageAddress:['iphoneX.png','phone2.png','phone3.png'],
         Capacities:['128GB','256GB','512GB'],
         id:'13_pro_max'
       },
@@ -31,7 +31,7 @@ const Product = (props) => {
         rate:3.9,
         brand:'Apple',
         price:770,
-        imageAddress:'iphoneX.png',
+        imageAddress:['iphoneX.png','phone2.png','phone3.png'],
         Capacities:['128GB','256GB','512GB'],
         id:'X_2021'
       },
@@ -40,7 +40,7 @@ const Product = (props) => {
         rate:3.7,
         brand:'Xiaomi',
         price:220,
-        imageAddress:'iphoneX.png',
+        imageAddress:['iphoneX.png','phone2.png','phone3.png'],
         Capacities:['128GB','256GB','512GB'],
         id:'Poco_M4'
       },
@@ -49,7 +49,7 @@ const Product = (props) => {
         rate:4.2,
         brand:'Xiaomi',
         price:160,
-        imageAddress:'iphoneX.png',
+        imageAddress:['iphoneX.png','phone2.png','phone3.png'],
         Capacities:['128GB','256GB','512GB'],
         id:'Redmi_note_11'
       },
@@ -58,7 +58,7 @@ const Product = (props) => {
         rate:4,
         brand:'Xiaomi',
         price:110,
-        imageAddress:'iphoneX.png',
+        imageAddress:['iphoneX.png','phone2.png','phone3.png'],
         Capacities:['128GB','256GB','512GB'],
         id:'Redmi_9_t'
       },
@@ -67,7 +67,7 @@ const Product = (props) => {
         rate:4.4,
         brand:'Samsung',
         price:650,
-        imageAddress:'iphoneX.png',
+        imageAddress:['iphoneX.png','phone2.png','phone3.png'],
         Capacities:['128GB','256GB','512GB'],
         id:'A22'
       },
@@ -76,7 +76,7 @@ const Product = (props) => {
         rate:3.8,
         brand:'Samsung',
         price:470,
-        imageAddress:'iphoneX.png',
+        imageAddress:['iphoneX.png','phone2.png','phone3.png'],
         Capacities:['128GB','256GB','512GB'],
         id:'A21s'
       },
@@ -85,7 +85,7 @@ const Product = (props) => {
         rate:4,
         brand:'Samsung',
         price:330,
-        imageAddress:'iphoneX.png',
+        imageAddress:['iphoneX.png','phone2.png','phone3.png'],
         Capacities:['128GB','256GB','512GB'],
         id:'A20'
       },
@@ -94,7 +94,7 @@ const Product = (props) => {
         rate:5,
         brand:'Nokia',
         price:20,
-        imageAddress:'iphoneX.png',
+        imageAddress:['iphoneX.png','phone2.png','phone3.png'],
         Capacities:['128GB','256GB','512GB'],
         id:'Nokia_1100'
       },
@@ -103,7 +103,7 @@ const Product = (props) => {
         rate:3.6,
         brand:'Nokia',
         price:30,
-        imageAddress:'iphoneX.png',
+        imageAddress:['iphoneX.png','phone2.png','phone3.png'],
         Capacities:['128GB','256GB','512GB'],
         id:'Nokia_6600'
       },
@@ -112,7 +112,7 @@ const Product = (props) => {
         rate:4.7,
         brand:'Nokia',
         price:40,
-        imageAddress:'iphoneX.png',
+        imageAddress:['iphoneX.png','phone2.png','phone3.png'],
         Capacities:['128GB','256GB','512GB'],
         id:'Nokia_n70'
       },
@@ -121,7 +121,7 @@ const Product = (props) => {
         rate:1.3,
         brand:'Huawei',
         price:100,
-        imageAddress:'iphoneX.png',
+        imageAddress:['iphoneX.png','phone2.png','phone3.png'],
         Capacities:['128GB','256GB','512GB'],
         id:'G610'
       },
@@ -130,7 +130,7 @@ const Product = (props) => {
         rate:3.3,
         brand:'Huawei',
         price:110,
-        imageAddress:'iphoneX.png',
+        imageAddress:['iphoneX.png','phone2.png','phone3.png'],
         Capacities:['128GB','256GB','512GB'],
         id:'P10'
       },
@@ -139,59 +139,83 @@ const Product = (props) => {
         rate:2.9,
         brand:'Huawei',
         price:220,
-        imageAddress:'iphoneX.png',
+        imageAddress:['iphoneX.png','phone2.png','phone3.png'],
         Capacities:['128GB','256GB','512GB'],
         id:'P50'
       },]
 
       const [getDevice,SetDevice]=useState({})
       const [getCapacities,SetCapacities]=useState([])
+      const [selectedCap,SetselectedCap]=useState(0)
+      const [selectedImage,SetselectedImage]=useState(0)
+      const [getImage,SetImage]=useState([])
 
        useEffect(()=>{
         for(let i=0;i<devices.length;i++){
             if(devices[i].id===props.match.params.id){
                 SetDevice(devices[i])
                 SetCapacities(devices[i].Capacities)
+                SetImage(devices[i].imageAddress)
             }
         }
        },[])
 
+       const SClick=(val,num)=>{
+        SetselectedCap(num)
+       }
 
+       
+       const iClick=(val,num)=>{
+        SetselectedImage(num)
+       }
 
   return (
     <div id='productDiv'>
         <div id='innerPDiv'>
             <div id='selectImageBox'>
-                <div className='PImage'>
-                    <img src={'../'+getDevice.imageAddress}></img>
-                </div>
+              <div id='SIB'>
 
-                <div className='PImage'>
-                    <img src={'../'+getDevice.imageAddress}></img>
-                </div>
+                {
+                  getImage.map((item,index)=>{
+                    if(index===selectedImage){
+                      return(
+                        <div className='PImage PImage1' onClick={()=>{iClick(item,index)}}>
+                            <img src={'../'+item}></img>
+                        </div>
+                      )
+                    }else{
+                        return(
+                          <div className='PImage' onClick={()=>{iClick(item,index)}}>
+                              <img src={'../'+item}></img>
+                          </div>
+                        )
+                    }
+                  })
+                }
+              </div>
 
-                <div className='PImage'>
-                    <img src={'../'+getDevice.imageAddress}></img>
-                </div>
             </div>
-            <img id='bigPImage' src={'../'+getDevice.imageAddress}></img>
+            <img id='bigPImage' src={'../'+getImage[selectedImage]}></img>
             <div id='PDescription'>
                 <h1>{getDevice.model}</h1>
                 <p id='PrDesc'>this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description.</p>
                 <div id='storage'>
                     <h2>Storage</h2>
+                    <div id='selectStorageBox'>
                     {getCapacities.map((item,index)=>{
-                        if(index===0){
+                        if(index===selectedCap){
                             return(
-                                <div className='PStorages PStorages1'>{item}</div>
+                                <div className='PStorages PStorages1' onClick={()=>{SClick(item,index)}}>{item}</div>
                             )
                         }else{
                             return(
-                                <div className='PStorages'>{item}</div>
+                                <div className='PStorages' onClick={()=>{SClick(item,index)}}>{item}</div>
                             )
                         }
                     })}
+                    </div>
                 </div>
+                
                 <p id='PPrice'>${getDevice.price}</p>
                 <button>Add to Cart</button>
             </div>

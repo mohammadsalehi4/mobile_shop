@@ -15,7 +15,6 @@ const App = () => {
           <Route path="/product/:id" component={Product} exact/>
           <Route path="/cart" component={Cart} />
         </Router>
-        <Footer/>
       </div>
   )
 }
