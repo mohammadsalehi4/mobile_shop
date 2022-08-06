@@ -199,6 +199,7 @@ const Product = (props) => {
             <div id='PDescription'>
                 <h1>{getDevice.model}</h1>
                 <p id='PrDesc'>this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description.</p>
+                <div className='JM seprator'></div>
                 <div id='storage'>
                     <h2>Storage</h2>
                     <div id='selectStorageBox'>
@@ -215,6 +216,7 @@ const Product = (props) => {
                     })}
                     </div>
                 </div>
+                <div className='JM seprator'></div>
                 
                 <p id='PPrice'>${getDevice.price}</p>
                 <button>Add to Cart</button>

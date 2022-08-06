@@ -269,6 +269,7 @@ const Main = () => {
       }
     }
     
+    
     let ShowDevice3=[]
     for(let i=0;i<ShowDevice2.length;i++){
       if(ShowDevice2[i].price>=States.SelectedMin&&ShowDevice2[i].price<=States.SelectedMax){

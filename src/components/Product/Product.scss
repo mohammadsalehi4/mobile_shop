@@ -112,6 +112,9 @@
             }
         }
     }
+    .JM{
+        display: none;
+    }
 }
 
 @media only screen and (max-device-width:768px) {
@@ -159,6 +162,7 @@
             #PDescription{
                 display: inline-block;
                 margin-top: 580px;
+                overflow: hidden;
                 h1{
                     font-size: 30px;
                     font-family: Nimbus;
@@ -173,7 +177,7 @@
                     margin-left: 20px;
                 }
                 #storage{
-                    margin-top: 50px;
+                    margin-top: 30px;
                     margin-left: 20px;
                     h2{
                         font-family: Nimbus;
@@ -222,20 +226,28 @@
                     border-radius: 13px;
                     font-size: 17px;
                     display: inline-block;
-                    margin-left: 20px;
                     z-index: 6;
                     position: absolute;
-                    margin-top: 40px;
                     width: 65%;
-                    margin-bottom: 50px;
                     margin-left: 10%;
+                    margin-top: 40px;
                 }
                 button:hover{
                     background: rgb(0, 140, 221);
                     cursor: pointer;
                     transition: 0.2s;
                 }
+                .seprator{
+                    height: 2px;
+                    width: 90%;
+                    background: rgb(193, 193, 193);
+                    margin-left: 5%;
+                    margin-top: 30px;
+                }
             }
         }
+    }
+    .JD{
+        display: none;
     }
 }
