@@ -172,6 +172,7 @@ const Main = () => {
   const[brandFilter,SetbrandFilter]=useState([])
   const[rateFilter,SetrateFilter]=useState([])
   const [topBoxPage,SettopBoxPage]=useState(0)
+  const [openMenu,SetOpenMenu]=useState(false)
 
   const nextTopPage=(side)=>{
     const all=HeaderDetails.length
@@ -269,7 +270,7 @@ const Main = () => {
       }
     }
     
-    
+
     let ShowDevice3=[]
     for(let i=0;i<ShowDevice2.length;i++){
       if(ShowDevice2[i].price>=States.SelectedMin&&ShowDevice2[i].price<=States.SelectedMax){
@@ -278,6 +279,10 @@ const Main = () => {
     }
     SetShowDevice(ShowDevice3)
   },[brandFilter,rateFilter,States.SelectedMin,States.SelectedMax])
+
+  const closeMenu=()=>{
+    dispatch({type:"CHANGEOPENMENU",value:false})
+  }
 
   return (
     <div id='mainDiv'>
@@ -426,6 +431,114 @@ const Main = () => {
           })
         }
       </div>
+        {
+          States.openMenu===true?
+            <div id='MMenu' className='JM'>
+            <div id='mobileMenu' className='JM'>
+              <div className='closeMenu JM' onClick={closeMenu}>
+                <i class="fa fa-chevron-right JM" aria-hidden="true"></i>
+              </div>
+    
+              <div id='bottomLeftMainDiv' className='JM'>
+                <h1>Price</h1>
+                <div class="range-input">
+                  <div></div>
+                  <input type="range" id='range-min1' className="range-max" min="0" onChange={()=>{setminPrice(document.getElementById('range-min1').value,1);if(document.getElementById('range-min1').value>=document.getElementById('range-max1').value){document.getElementById('range-min1').value=document.getElementById('range-max1').value}}} max="1000"/>
+                  <input type="range" id='range-max1' className="range-max" min="0" onChange={()=>{setmaxPrice(document.getElementById('range-max1').value,2);if(document.getElementById('range-max1').value<=document.getElementById('range-min1').value){document.getElementById('range-max1').value=document.getElementById('range-min1').value}}} max="1000"/>
+                </div>
+                <div id='MinDiv' className='setPriceDiv'>
+                  <p>min</p>
+                  <div>${minPrice}</div>
+                </div>
+                <div id='seprator'></div>
+                <div id='MaxDiv' className='setPriceDiv'>
+                  <p>Max</p>
+                  <div>${maxPrice}</div>
+                </div>
+                <button onClick={Apply}>Apply</button>
+              </div>
+    
+              <div id='leftCheckboxDiv' className='JM'>
+                <h1>Brand</h1>
+    
+                <div>
+                  <input onClick={()=>{changeBrand('Samsung','Samsung1')}} type="checkbox" id="Samsung1" name="Samsung" value="Bike"></input>
+                  <label for="Samsung1">Samsung<p>+20</p></label><br/>
+                </div>
+    
+                <div>
+                  <input onClick={()=>{changeBrand('Apple','Apple1')}} type="checkbox" id="Apple1" name="Apple" value="Bike"/>
+                  <label for="Apple1">Apple<p>+30</p></label><br/>
+                </div>
+    
+                <div>
+                  <input onClick={()=>{changeBrand('Huawei','Huawei1')}} type="checkbox" id="Huawei1" name="Huawei" value="Bike"/>
+                  <label for="Huawei1">Huawei<p>+20</p></label><br/>
+                </div>
+    
+                <div>
+                  <input onClick={()=>{changeBrand('Xiaomi','Xiaomi1')}} type="checkbox" id="Xiaomi1" name="xiaomi" value="Bike"/>
+                  <label for="Xiaomi1">Xiaomi<p>+10</p></label><br/>
+                </div>
+    
+                <div>
+                  <input onClick={()=>{changeBrand('Nokia','Nokia1')}} type="checkbox" id="Nokia1" name="Nokia" value="Bike"/>
+                  <label for="Nokia1">Nokia<p>+10</p></label><br/>
+                </div>
+    
+              </div>
+    
+              <div id='leftRatingDiv'  className='JM'>
+                  <h1>Rating</h1>
+                  <div id='Star5' className='rateStars'>
+                    <input onClick={()=>{changeStart(5,'Star555')}} type="checkbox" id="Star555" name="Star555" value="Star55"/>
+                    <label for="Star555">
+                      <span class="fa fa-star checked Star55"></span>
+                      <span class="fa fa-star checked Star55"></span>
+                      <span class="fa fa-star checked Star55"></span>
+                      <span class="fa fa-star checked Star55"></span>
+                      <span class="fa fa-star checked Star55"></span>
+                    </label>
+                  </div>
+                <div id='Star4' className='rateStars'>
+                  <input onClick={()=>{changeStart(4,'Star444')}} type="checkbox" id="Star444" name="Star444" value="Star44"/>
+                  <label for="Star444">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                  </label>
+                </div>
+                <div id='Star3' className='rateStars'>
+                  <input onClick={()=>{changeStart(3,'Star333')}} type="checkbox" id="Star333" name="Star333" value="Star33"/>
+                  <label for="Star333">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star "></span>
+                  </label>
+                </div>
+                <div id='Star2' className='rateStars'>
+                  <input onClick={()=>{changeStart(2,'Star222')}} type="checkbox" id="Star222" name="Star222" value="Star22"/>
+                  <label for="Star222">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star "></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div id='hidder' className='JM' onClick={closeMenu}></div>
+            </div>
+          :
+            null
+        }
+
+
     </div>
   )
 }

@@ -1,7 +1,8 @@
 const initialState={
     SelectedMax:1000,
     SelectedMin:0,
-    cartProduuct:[]
+    cartProduuct:[],
+    openMenu:false
 }
 
 const reducer=(state=initialState,action)=>{
@@ -21,6 +22,12 @@ const reducer=(state=initialState,action)=>{
         return {
             ...state,
             cartProduuct:[...state.cartProduuct,action.newItem]
+        }
+    }
+    if(action.type==="CHANGEOPENMENU"){
+        return {
+            ...state,
+            openMenu:action.value
         }
     }
     return state

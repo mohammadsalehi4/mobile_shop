@@ -400,7 +400,7 @@
         background: rgb(238, 238, 238);
         #topMainBox{
             width: 100%;
-            height: 600px;
+            height: 650px;
             margin-top: 10px;
 
             background: white;
@@ -440,7 +440,7 @@
                     max-width: 40%;
                     position: absolute;
                     left: 0%;
-                    margin-top: 430px;
+                    margin-top: 480px;
                     
                 }
                 a:hover{
@@ -452,7 +452,7 @@
             #pager{
                 position: absolute;
                 margin-left: 250px;
-                margin-top: 350px;
+                margin-top: 400px;
                 .pages{
                     background: rgb(153, 153, 153);
                     width: 8px;
@@ -592,8 +592,8 @@
     
         #leftCheckboxDiv{
             width: 300px;
-        display: none;
-        height: 300px;
+            display: none;
+            height: 300px;
             background: rgb(241, 241, 241);
             margin-left: 5%;
             margin-top: 50px;
@@ -760,5 +760,267 @@
                 }
             }
         }
+        #MMenu{
+            $radius:10px;
+            #mobileMenu{
+                width: 60%;
+                height: 100%;
+                background: rgb(214, 214, 214);
+                position: fixed;
+                top: 0px;
+                margin-left: 40%;
+                overflow-y: scroll;
+
+                .closeMenu{
+                    z-index: 10;
+                    width: 30px;
+                    height: 30px;
+                    position: absolute;
+                    margin-left: 5%;
+                    margin-top: 15px;
+                    i{
+                        color: rgb(59, 59, 59);
+                        font-size: 20px;
+                    }
+                }
+
+                #bottomLeftMainDiv{
+                    display: block;
+                    width: 220px;
+                    height: 220px;
+                    background: rgb(241, 241, 241);
+                    margin-left: 5%;
+                    margin-top: 50px;
+                    border-radius: $radius;
+                    font-family: Nunito;
+                    position: absolute;
+            
+                    h1{
+                        width: 100%;
+                        text-align: center;
+                        padding: 10px 0px;
+                        border-bottom-style: solid ;
+                        border-bottom-color: rgb(197, 197, 197) ;
+                        border-bottom-width: 1px;
+                        font-size: 18px;
+                        font-family: Nimbus;
+                    }
+            
+                    .range-input{
+                        position: relative;
+                        margin-top: 5px;
+                        div{
+                            height: 2px;
+                            width: 80%;
+                            background: rgb(122, 122, 122);
+                            position: absolute;
+                            top: 18px;
+                            margin-left: 10%;
+                        }
+                        input{
+                            position: absolute;
+                            width: 80%;
+                            height: 5px;
+                            top: 15px;
+                            background: none;
+                            margin-left: 10%;
+                            pointer-events: none;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                        }
+                        input[type="range"]::-webkit-slider-thumb{
+                            height: 17px;
+                            width: 17px;
+                            border: none;
+                            border-radius: 50%;
+                            background: white;
+                            border-style: solid;
+                            border-width: 2px;
+                            border-color: #17A2B8;
+                            pointer-events: auto;
+                            -moz-appearance: none;
+                            box-shadow: 0 0 6px rgba(94, 94, 94, 0.35);
+                        }
+                        input[type="range"]::-moz-range-thumb{
+                            height: 17px;
+                            width: 17px;
+                            border: none;
+                            border-radius: 50%;
+                            background: white;
+                            border-style: solid;
+                            border-width: 2px;
+                            border-color: #17A2B8;
+                            pointer-events: auto;
+                            -moz-appearance: none;
+                            box-shadow: 0 0 6px rgba(94, 94, 94, 0.35);
+                        }
+                    }
+                        
+            
+                    .setPriceDiv{
+                        display: inline-block;
+                        margin-left: 9%;
+                        margin-top: 45px;
+                        width: 22%;
+                        p{
+                            font-size: 14px;
+                        }
+                        div{
+                            padding: 6px 0px;
+                            border-width: 2px;
+                            border-style: solid;
+                            border-color: rgb(163, 163, 163);
+                            color: rgb(92, 92, 92);
+                            border-radius: 10px;
+                            margin-top: 10px;
+                            font-size: 13px;
+                            text-align: center;
+                        }
+                    }
+                    #seprator{
+                        display: inline-block;
+                        width: 20%;
+                        height: 2px;
+                        background: rgb(175, 175, 175);
+                        margin-left: 10%;
+                    }
+                    #MaxDiv{
+                        margin-left: 10%;
+                    }
+                    button{
+                        width: 84%;
+                        margin-left: 9%;
+                        border-style: none;
+                        margin-top: 20px;
+                        background: rgb(0, 162, 255);
+                        padding: 8px 12px;
+                        border-radius: 15px;
+                        font-size: 15px;
+                        color: white;
+                        cursor: pointer;
+                    }
+                    button:hover{
+                        background:rgb(0, 138, 218);
+                        transition: 0.2s;
+                    }
+                }
+                #leftCheckboxDiv{
+                    width: 220px;
+                    display: block;
+                    height: 250px;
+                    background: rgb(241, 241, 241);
+                    margin-left: 5%;
+                    border-radius: $radius;
+                    font-family: Nunito;
+                    position: absolute;
+                    margin-top: 300px;
+                    h1{
+                        width: 100%;
+                        text-align: center;
+                        padding: 10px 0px;
+                        border-bottom-style: solid ;
+                        border-bottom-color: rgb(197, 197, 197) ;
+                        border-bottom-width: 1px;
+                        font-size: 18px;
+                        font-family: Nimbus;
+                    }
+                    div{
+                        input{
+                            width: 16px;
+                            height: 16px;
+                            border-radius: 25px;
+                            cursor: pointer;
+                            top: 2px;
+                            margin-left: 20px;
+                            margin-top: 20px;
+                            display: inline-block;
+            
+                        }
+                        label{
+                            margin-left: 0px;
+                            display: inline-block;
+                            width: 80%;
+                            font-size: 14px;
+                            p{
+                                display: inline-block;
+                                float: right;
+                                margin-right: 30px;
+                                background: rgb(0, 162, 255);
+                                padding: 3px 6px;
+                                margin-top: -8px;
+                                border-radius: 20px;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+                #leftRatingDiv{
+                    width: 220px;
+                    display: block;
+                    height: 220px;
+                    background: rgb(241, 241, 241);
+                    margin-left: 5%;
+                    border-radius: $radius;
+                    font-family: Nunito;
+                    position: absolute;
+                    margin-top: 580px;
+                    h1{
+                        width: 100%;
+                        text-align: center;
+                        padding: 10px 0px;
+                        border-bottom-style: solid ;
+                        border-bottom-color: rgb(197, 197, 197) ;
+                        border-bottom-width: 1px;
+                        font-size: 18px;
+                        font-family: Nimbus;
+                    }
+                    .rateStars{
+                        display: block;
+                        input{
+                            width: 16px;
+                            height: 16px;
+                            border-radius: 25px;
+                            cursor: pointer;
+                            top: 2px;
+                            margin-left: 20px;
+                            margin-top: 20px;
+                            display: inline-block;
+                        }
+                        label{
+                            margin-left: 0px;
+                            display: inline-block;
+                            width: 80%;
+                            font-size: 14px;
+                            span{
+                                margin-left: 4px;
+                                font-size: 20px;
+                                color: rgb(148, 209, 245);
+                            }
+                            .checked{
+                                color: rgb(0, 162, 255);
+                            }
+                        }
+                    }
+                }
+            }
+            #mobileMenu {
+                -ms-overflow-style: none;  /* Internet Explorer 10+ */
+                scrollbar-width: none;  /* Firefox */
+            }
+            #mobileMenu::-webkit-scrollbar { 
+                display: none;  /* Safari and Chrome */
+            }
+            #hidder{
+                width: 40%;
+                height: 100%;
+                background: rgb(214, 214, 214);
+                position: fixed;
+                top: 0px;
+                opacity: 0.5;
+            }
+        }
     }  
+    .JD{
+        display: none;
+    }
 }

@@ -1,6 +1,11 @@
 import React from 'react'
 import './Header.css'
+import { useDispatch } from "react-redux";
 const Header = () => {
+  const dispatch = useDispatch();
+  const openmenu=()=>{
+    dispatch({type:"CHANGEOPENMENU",value:true})
+  }
   return (
     <div id='Header'>
         <div id='leftHeader'>
@@ -11,7 +16,7 @@ const Header = () => {
             <h3>Categorys</h3>
             <div id='mobileRightHeader'>
               <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-              <i class="fa fa-bars" aria-hidden="true"></i>
+              <i class="fa fa-bars" aria-hidden="true" onClick={openmenu}></i>
             </div>
         </div>
         <div id='rightHeader'>
