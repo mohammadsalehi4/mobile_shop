@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div id='Header'>
         <div id='leftHeader'>
-            <h2>Mobile Shop</h2>
+            <h2><a href='/'>Mobile Shop</a></h2>
             <h3 id='HLHF' className='thisPage'><a href='/'>Home</a> <div className='kuft'></div></h3>
             <h3>Collections</h3>
             <h3>Blog</h3>
