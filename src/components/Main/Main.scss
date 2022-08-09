@@ -790,7 +790,7 @@
                     height: 220px;
                     background: rgb(241, 241, 241);
                     margin-left: 5%;
-                    margin-top: 50px;
+                    margin-top: 20px;
                     border-radius: $radius;
                     font-family: Nunito;
                     position: absolute;
@@ -913,7 +913,7 @@
                     border-radius: $radius;
                     font-family: Nunito;
                     position: absolute;
-                    margin-top: 300px;
+                    margin-top: 260px;
                     h1{
                         width: 100%;
                         text-align: center;
@@ -963,7 +963,7 @@
                     border-radius: $radius;
                     font-family: Nunito;
                     position: absolute;
-                    margin-top: 580px;
+                    margin-top: 530px;
                     h1{
                         width: 100%;
                         text-align: center;
@@ -1016,7 +1016,7 @@
                 background: rgb(214, 214, 214);
                 position: fixed;
                 top: 0px;
-                opacity: 0.5;
+                transition: 0.4s;
             }
         }
     }  

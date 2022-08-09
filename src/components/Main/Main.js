@@ -1,6 +1,7 @@
 import React,{useEffect,useState} from 'react'
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
+import { Swiper, SwiperSlide } from 'swiper/react';
 import './main.css'
 const Main = () => {
 
@@ -166,13 +167,13 @@ const Main = () => {
     },
   ]
 
-  const [minPrice,SetMinPrice]=useState(100)
-  const [maxPrice,SetMaxPrice]=useState(100)
+  const [minPrice,SetMinPrice]=useState(0)
+  const [maxPrice,SetMaxPrice]=useState(1000)
   const[ShowDevice,SetShowDevice]=useState(devices)
   const[brandFilter,SetbrandFilter]=useState([])
   const[rateFilter,SetrateFilter]=useState([])
   const [topBoxPage,SettopBoxPage]=useState(0)
-  const [openMenu,SetOpenMenu]=useState(false)
+  const [aa,setaa]=useState(0.6)
 
   const nextTopPage=(side)=>{
     const all=HeaderDetails.length
@@ -197,23 +198,22 @@ const Main = () => {
     if(newPrice<maxPrice){
       SetMinPrice(newPrice)
     }
-    if(maxPrice<minPrice){
-      let a=maxPrice
-      SetMaxPrice(minPrice)
-      SetMinPrice(a)
-    }
   }
 
   const setmaxPrice=(newPrice,index)=>{
       if(newPrice>minPrice){
         SetMaxPrice(newPrice)
       }
-    if(maxPrice<minPrice){
-      let a=maxPrice
-      SetMaxPrice(minPrice)
-      SetMinPrice(a)
-    }
   }
+
+  useEffect(()=>{
+    if(maxPrice<minPrice){
+      SetMaxPrice(minPrice)
+    }
+    if(minPrice>maxPrice){
+      setminPrice(maxPrice)
+    }
+  },[maxPrice,minPrice])
 
   const changeStart=(val,Cid)=>{
     if(document.getElementById(Cid).checked){
@@ -286,19 +286,40 @@ const Main = () => {
 
   useEffect(()=>{
     if(States.openMenu===false){
+      document.getElementById('hidder').style.opacity=0
       document.getElementById('MMenu').style.display='none'
     }
     if(States.openMenu===true){
       document.getElementById('MMenu').style.display='block'
+      document.getElementById('hidder').style.opacity=0.5
     }
   },[States.openMenu])
 
+  let touchstartX = 0
+  let touchendX = 0
+  function checkDirection() {
+    if (touchendX < touchstartX) {
+      nextTopPage(true)
+    }
+    if (touchendX > touchstartX) {
+      nextTopPage(false)
+    }
+  }
+
+  const touchstart=(e)=>{
+    touchstartX = e.changedTouches[0].screenX
+  }
+  const touchend=(e)=>{
+    touchendX = e.changedTouches[0].screenX
+    checkDirection()
+  }
+
   return (
     <div id='mainDiv'>
-      <div id='topMainBox'>
+      <div id='topMainBox' onTouchStart={(event)=>{touchstart(event)}} onTouchEnd={(event)=>{touchend(event)}}>
         <i class="fa fa-chevron-left Arrow leftArrow" aria-hidden="true" onClick={()=>{nextTopPage(false)}}></i>
-          <img id='topMainImage' src={HeaderDetails[topBoxPage].imageAddress}></img>
-          <div id='topMainDescription'>
+          <img id='topMainImage' src={HeaderDetails[topBoxPage].imageAddress} ></img>
+          <div id='topMainDescription' >
             <h1>
               {HeaderDetails[topBoxPage].title}
             </h1>
@@ -328,8 +349,12 @@ const Main = () => {
         <h1>Price</h1>
         <div class="range-input">
           <div></div>
-          <input type="range" id='range-min' className="range-max" min="0" onChange={()=>{setminPrice(document.getElementById('range-min').value,1);if(document.getElementById('range-min').value>=document.getElementById('range-max').value){document.getElementById('range-min').value=document.getElementById('range-max').value}}} max="1000"/>
-          <input type="range" id='range-max' className="range-max" min="0" onChange={()=>{setmaxPrice(document.getElementById('range-max').value,2);if(document.getElementById('range-max').value<=document.getElementById('range-min').value){document.getElementById('range-max').value=document.getElementById('range-min').value}}} max="1000"/>
+          <input type="range" id='range-min' className="range-max" min="0" onChange={()=>{
+              setminPrice(document.getElementById('range-min').value,1); 
+            }} 
+            value={minPrice}
+            max="1000" />
+          <input type="range" id='range-max' className="range-max" min="0" onChange={()=>{setmaxPrice(document.getElementById('range-max').value,2);}} max="1000" value={maxPrice}/>
         </div>
         <div id='MinDiv' className='setPriceDiv'>
           <p>min</p>
@@ -443,9 +468,6 @@ const Main = () => {
 
       <div id='MMenu' className='JM'>
         <div id='mobileMenu' className='JM'>
-          <div className='closeMenu JM' onClick={closeMenu}>
-            <i class="fa fa-chevron-right JM" aria-hidden="true"></i>
-          </div>
 
           <div id='bottomLeftMainDiv' className='JM'>
             <h1>Price</h1>

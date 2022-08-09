@@ -758,7 +758,7 @@
     height: 220px;
     background: #f1f1f1;
     margin-left: 5%;
-    margin-top: 50px;
+    margin-top: 20px;
     border-radius: 10px;
     font-family: Nunito;
     position: absolute;
@@ -877,7 +877,7 @@
     border-radius: 10px;
     font-family: Nunito;
     position: absolute;
-    margin-top: 300px;
+    margin-top: 260px;
   }
   #mainDiv #MMenu #mobileMenu #leftCheckboxDiv h1 {
     width: 100%;
@@ -924,7 +924,7 @@
     border-radius: 10px;
     font-family: Nunito;
     position: absolute;
-    margin-top: 580px;
+    margin-top: 530px;
   }
   #mainDiv #MMenu #mobileMenu #leftRatingDiv h1 {
     width: 100%;
@@ -979,7 +979,7 @@
     background: #d6d6d6;
     position: fixed;
     top: 0px;
-    opacity: 0.5;
+    transition: 0.4s;
   }
 
   .JD {
