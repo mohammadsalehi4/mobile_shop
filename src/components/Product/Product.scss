@@ -120,7 +120,7 @@
 @media only screen and (max-device-width:768px) {
     #productDiv{
         width: 100%;
-        overflow-x: hidden;
+        overflow: hidden;
         #innerPDiv{
             #selectImageBox{
                 background: rgb(244, 244, 244);
@@ -129,6 +129,7 @@
                 position: absolute;
                 z-index: 1;
                 margin-top: 20px;
+                
                 #SIB{
                     margin-top: 60px;
                 }
@@ -152,6 +153,7 @@
                 }
             }
             #bigPImage{
+                
                 display: inline-block;
                 position: absolute;
                 height: 400px;
@@ -162,49 +164,52 @@
             #PDescription{
                 display: inline-block;
                 margin-top: 580px;
-                overflow: hidden;
+                margin-left: 6%;
+                width: 88%;
+                height: 360px;
                 h1{
                     font-size: 30px;
                     font-family: Nimbus;
                     font-weight: bolder;
-                    margin-left: 20px;
-
+                    width: 70%;
                 }
                 p{
                     font-family: Nimbus;
                     font-size: 15px;
-                    margin-top: 40px;
-                    margin-left: 20px;
+                    margin-top: 100px;
+                    position: absolute;
+                    width: 88%;
+                    
                 }
                 #storage{
                     margin-top: 30px;
-                    margin-left: 20px;
+                    width: 100%;
                     h2{
-                        font-family: Nimbus;
-                        font-size: 22px;
-                        font-weight: 800;
+                        display: none;
                     }
                     .PStorages{
                         font-family: Nimbus;
                         display: inline-block;
                         padding: 10px 8px;
-                        border-width: 3px;
+                        border-width: 2px;
                         border-style: solid;
                         border-color: rgb(167, 167, 167);
                         color: rgb(167, 167, 167);
                         margin-left: 20px;
-                        margin-top: 20px;
+                        margin-top: 0px;
                         border-radius: 10px;
+                        transition: 0.2s;
                     }
                     .PStorages:hover{
-                        color: rgb(0, 162, 255);
+                        background: rgb(0, 162, 255);
                         border-color: rgb(0, 162, 255);
                         cursor: pointer;
                         transition: 0.2s;
                     }
                     .PStorages1{
-                        color: rgb(0, 162, 255);
+                        background: rgb(0, 162, 255);
                         border-color: rgb(0, 162, 255);
+                        color: white;
                     }
                     #selectStorageBox{
                         margin-left: -20px;
@@ -212,39 +217,35 @@
                 }
                 #PPrice{
                     font-family: Nimbus;
-                    font-size: 20px;
-                    font-weight: bold;
-                    margin-left: 20px;
+                    font-size: 25px;
+                    font-weight: 500;
                     display: inline-block;
                     margin-top: 50px;
-                }
-                button{
-                    background: rgb(0, 162, 255);
-                    color: white;
-                    padding: 15px 25px;
-                    border-style: none;
-                    border-radius: 13px;
-                    font-size: 17px;
-                    display: inline-block;
-                    z-index: 6;
                     position: absolute;
-                    width: 65%;
-                    margin-left: 10%;
-                    margin-top: 40px;
-                }
-                button:hover{
-                    background: rgb(0, 140, 221);
-                    cursor: pointer;
-                    transition: 0.2s;
-                }
-                .seprator{
-                    height: 2px;
-                    width: 90%;
-                    background: rgb(193, 193, 193);
-                    margin-left: 5%;
-                    margin-top: 30px;
+                    top:570px;
+                    margin-left: 70%;
+                    width: 15%;
+                    padding: 5px 10px;
                 }
             }
+            #addToCart{
+                position: fixed;
+            }
+        }
+        #AddButton{
+            top: 87%;
+            margin-left: 6%;
+            width: 88%;
+            padding: 17px 0px;
+            border-style: none;
+            background: rgb(0, 162, 255);
+            color: white;
+            font-size: 20px;
+            position: fixed;
+            z-index: 13;
+            border-radius: 20px;
+            box-shadow: 0 0 12px 12px white;
+
         }
     }
     .JD{

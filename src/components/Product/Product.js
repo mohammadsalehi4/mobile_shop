@@ -7,7 +7,9 @@ const Product = (props) => {
 
   const States = useSelector(state => state);
   const dispatch = useDispatch();
-
+  useEffect(()=>{
+    dispatch({type:"CHANGEPRODUCTPAGE",value:false})
+  },[])
     let devices=[{
         model:'Iphone XS max 2022',
         rate:4.1,
@@ -198,8 +200,7 @@ const Product = (props) => {
             <img id='bigPImage' src={'../'+getImage[selectedImage]}></img>
             <div id='PDescription'>
                 <h1>{getDevice.model}</h1>
-                <p id='PrDesc'>this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description.</p>
-                <div className='JM seprator'></div>
+                <p id='PrDesc'>this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description.</p>
                 <div id='storage'>
                     <h2>Storage</h2>
                     <div id='selectStorageBox'>
@@ -216,14 +217,14 @@ const Product = (props) => {
                     })}
                     </div>
                 </div>
-                <div className='JM seprator'></div>
                 
                 <p id='PPrice'>${getDevice.price}</p>
-                <button>Add to Cart</button>
             </div>
         </div>
+        <button id='AddButton'>Add to Cart</button>
     </div>
   )
 }
+
 
 export default Product

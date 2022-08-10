@@ -111,10 +111,13 @@ a {
   }
   #Header #leftHeader h2 {
     font-family: Araboto;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 15px;
     position: relative;
     display: inline-block;
+  }
+  #Header #leftHeader .PRD {
+    margin-left: 50%;
   }
   #Header #leftHeader h3 {
     position: relative;
@@ -153,6 +156,41 @@ a {
     padding: 5px 10px;
     border-radius: 10px;
     cursor: pointer;
+  }
+  #Header #leftHeader #mobileRightHeader i p {
+    font-size: 13px;
+    display: inline-block;
+    background: #4b4bff;
+    display: inline-block;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: -5px;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 50%;
+    font-family: ThinAraboto;
+    min-width: 7px;
+    min-height: 7px;
+    text-align: center;
+  }
+  #Header #leftHeader #mobileRightHeader .PI {
+    margin-left: 80px;
+  }
+  #Header #leftHeader #mobileRightHeader .PI p {
+    font-size: 13px;
+    display: inline-block;
+    background: #4b4bff;
+    display: inline-block;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: -5px;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 50%;
+    font-family: ThinAraboto;
+    min-width: 7px;
+    min-height: 7px;
+    text-align: center;
   }
   #Header #rightHeader {
     display: none;

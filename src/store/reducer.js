@@ -2,7 +2,9 @@ const initialState={
     SelectedMax:1000,
     SelectedMin:0,
     cartProduuct:[],
-    openMenu:false
+    openMenu:false,
+    productPage:true,
+    cartPNumber:3
 }
 
 const reducer=(state=initialState,action)=>{
@@ -28,6 +30,18 @@ const reducer=(state=initialState,action)=>{
         return {
             ...state,
             openMenu:action.value
+        }
+    }
+    if(action.type==="CHANGEPRODUCTPAGE"){
+        return {
+            ...state,
+            productPage:action.value
+        }
+    }
+    if(action.type==="CHANGECARTPNUMBER"){
+        return {
+            ...state,
+            cartPNumber:action.value
         }
     }
     return state

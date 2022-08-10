@@ -2,12 +2,16 @@ import React,{useEffect,useState} from 'react'
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Footer from '../Footer/Footer';
 import './main.css'
 const Main = () => {
 
   const States = useSelector(state => state);
   const dispatch = useDispatch();
+  useEffect(()=>{
+    dispatch({type:"CHANGEPRODUCTPAGE",value:true})
 
+  },[])
   let devices=[{
     model:'Iphone XS max 2022',
     rate:4.1,
@@ -564,7 +568,7 @@ const Main = () => {
         </div>
         <div id='hidder' className='JM' onClick={closeMenu}></div>
       </div>
-
+      <Footer/>
     </div>
   )
 }

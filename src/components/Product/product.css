@@ -118,7 +118,7 @@
 @media only screen and (max-device-width: 768px) {
   #productDiv {
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
   }
   #productDiv #innerPDiv #selectImageBox {
     background: #f4f4f4;
@@ -160,87 +160,85 @@
   #productDiv #innerPDiv #PDescription {
     display: inline-block;
     margin-top: 580px;
-    overflow: hidden;
+    margin-left: 6%;
+    width: 88%;
+    height: 360px;
   }
   #productDiv #innerPDiv #PDescription h1 {
     font-size: 30px;
     font-family: Nimbus;
     font-weight: bolder;
-    margin-left: 20px;
+    width: 70%;
   }
   #productDiv #innerPDiv #PDescription p {
     font-family: Nimbus;
     font-size: 15px;
-    margin-top: 40px;
-    margin-left: 20px;
+    margin-top: 100px;
+    position: absolute;
+    width: 88%;
   }
   #productDiv #innerPDiv #PDescription #storage {
     margin-top: 30px;
-    margin-left: 20px;
+    width: 100%;
   }
   #productDiv #innerPDiv #PDescription #storage h2 {
-    font-family: Nimbus;
-    font-size: 22px;
-    font-weight: 800;
+    display: none;
   }
   #productDiv #innerPDiv #PDescription #storage .PStorages {
     font-family: Nimbus;
     display: inline-block;
     padding: 10px 8px;
-    border-width: 3px;
+    border-width: 2px;
     border-style: solid;
     border-color: #a7a7a7;
     color: #a7a7a7;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 0px;
     border-radius: 10px;
+    transition: 0.2s;
   }
   #productDiv #innerPDiv #PDescription #storage .PStorages:hover {
-    color: #00a2ff;
+    background: #00a2ff;
     border-color: #00a2ff;
     cursor: pointer;
     transition: 0.2s;
   }
   #productDiv #innerPDiv #PDescription #storage .PStorages1 {
-    color: #00a2ff;
+    background: #00a2ff;
     border-color: #00a2ff;
+    color: white;
   }
   #productDiv #innerPDiv #PDescription #storage #selectStorageBox {
     margin-left: -20px;
   }
   #productDiv #innerPDiv #PDescription #PPrice {
     font-family: Nimbus;
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 20px;
+    font-size: 25px;
+    font-weight: 500;
     display: inline-block;
     margin-top: 50px;
+    position: absolute;
+    top: 570px;
+    margin-left: 70%;
+    width: 15%;
+    padding: 5px 10px;
   }
-  #productDiv #innerPDiv #PDescription button {
+  #productDiv #innerPDiv #addToCart {
+    position: fixed;
+  }
+  #productDiv #AddButton {
+    top: 87%;
+    margin-left: 6%;
+    width: 88%;
+    padding: 17px 0px;
+    border-style: none;
     background: #00a2ff;
     color: white;
-    padding: 15px 25px;
-    border-style: none;
-    border-radius: 13px;
-    font-size: 17px;
-    display: inline-block;
-    z-index: 6;
-    position: absolute;
-    width: 65%;
-    margin-left: 10%;
-    margin-top: 40px;
-  }
-  #productDiv #innerPDiv #PDescription button:hover {
-    background: #008cdd;
-    cursor: pointer;
-    transition: 0.2s;
-  }
-  #productDiv #innerPDiv #PDescription .seprator {
-    height: 2px;
-    width: 90%;
-    background: #c1c1c1;
-    margin-left: 5%;
-    margin-top: 30px;
+    font-size: 20px;
+    position: fixed;
+    z-index: 13;
+    border-radius: 20px;
+    box-shadow: 0 0 12px 12px white;
   }
 
   .JD {

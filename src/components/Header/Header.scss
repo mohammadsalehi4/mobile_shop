@@ -112,10 +112,13 @@ a{
             margin-left: 5%;
             h2{
                 font-family: Araboto;
-                font-size: 25px;
+                font-size: 20px;
                 margin-top: 15px;
                 position: relative;
                 display: inline-block;
+            }
+            .PRD{
+                margin-left: 50%;
             }
             h3{
                 position: relative;
@@ -153,7 +156,45 @@ a{
                     padding: 5px 10px;
                     border-radius: 10px;
                     cursor: pointer;
+                    p{
+                        font-size: 13px;
+                        display: inline-block;
+                        background: rgb(75, 75, 255);
+                        display: inline-block;
+                        position: absolute;
+                        margin-left: 5px;
+                        margin-top: -5px;
+                        color: white;
+                        padding: 2px 4px;
+                        border-radius: 50%;
+                        font-family: ThinAraboto;
+                        min-width: 7px;
+                        min-height: 7px;
+                        text-align: center;
+
+                    }
                 }
+                .PI{
+                    margin-left: 80px;
+                    p{
+                        font-size: 13px;
+                        display: inline-block;
+                        background: rgb(75, 75, 255);
+                        display: inline-block;
+                        position: absolute;
+                        margin-left: 5px;
+                        margin-top: -5px;
+                        color: white;
+                        padding: 2px 4px;
+                        border-radius: 50%;
+                        font-family: ThinAraboto;
+                        min-width: 7px;
+                        min-height: 7px;
+                        text-align: center;
+
+                    }
+                }
+
             }
         }
         #rightHeader{
