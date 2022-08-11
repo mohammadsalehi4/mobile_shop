@@ -215,6 +215,7 @@ const Product = (props) => {
                                 <div className='PStorages' onClick={()=>{SClick(item,index)}}>{item}</div>
                             )
                         }
+                        
                     })}
                     </div>
                 </div>
