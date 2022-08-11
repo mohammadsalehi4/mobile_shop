@@ -60,8 +60,8 @@ const Cart = () => {
                 <div className='cartProductDiv'>
                     <img src={'../'+item.imageAddress}></img>
                     <div className='CPDescription'>
-                      <h1>{item.model}</h1>
-                      <p className='CPCS'>storage</p>
+                      <h1><i class="fa fa-pencil JM" aria-hidden="true"></i>{' '}{item.model}</h1>
+                      <p className='CPCS'><i class="fa fa-floppy-o JM" aria-hidden="true"></i>{' '}storage</p>
                       <p className='CPCC'>{item.Capacities}</p>
                     </div>
                     <div className='CPNumber'>

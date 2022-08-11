@@ -209,13 +209,18 @@
                     h1{
                         font-family: nunito;
                         font-size: 17px;
-    
+                        i{
+                            color: rgb(0, 162, 255);
+                        }
                     }
                     p{
                         display: inline-block;
                         font-family: nunito;
                         margin-top: 25px;
                         font-size: 14px;
+                        i{
+                            color: rgb(255, 119, 0);
+                        }
                     }
                     .CPCC{
                         margin-left: 10px;

@@ -210,11 +210,17 @@
     font-family: nunito;
     font-size: 17px;
   }
+  #Cart #rightCart .cartProductDiv .CPDescription h1 i {
+    color: #00a2ff;
+  }
   #Cart #rightCart .cartProductDiv .CPDescription p {
     display: inline-block;
     font-family: nunito;
     margin-top: 25px;
     font-size: 14px;
+  }
+  #Cart #rightCart .cartProductDiv .CPDescription p i {
+    color: #ff7700;
   }
   #Cart #rightCart .cartProductDiv .CPDescription .CPCC {
     margin-left: 10px;

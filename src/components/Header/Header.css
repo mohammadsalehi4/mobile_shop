@@ -97,6 +97,10 @@ a {
   #Header {
     width: 100%;
     height: 40px;
+    padding-bottom: 20px;
+    border-bottom-color: #c9c9c9;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
   }
   #Header a {
     text-decoration: none;
