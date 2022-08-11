@@ -70,10 +70,16 @@ const Cart = () => {
                       <div className='plus'><i class="fa fa-plus" aria-hidden="true"></i></div>
                     </div>
                     <div className='CPPrice'>${item.price}</div>
+                    <div id='seprator' className='JM'></div>
                 </div>
               )
             })
           }
+          <div id='sendToBox' className='JM'>
+          <i class="fa fa-location-arrow" aria-hidden="true"></i>
+
+            <p>send to {'tehran'}</p>
+          </div>
           <div id='checkout'>
             <p>Total Ammount</p>
             <p id='CPShowPrice'>${AllPrice}</p>

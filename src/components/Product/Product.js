@@ -7,6 +7,7 @@ const Product = (props) => {
 
   const States = useSelector(state => state);
   const dispatch = useDispatch();
+
   useEffect(()=>{
     dispatch({type:"CHANGEPRODUCTPAGE",value:false})
   },[])

@@ -162,7 +162,6 @@
     margin-top: 580px;
     margin-left: 6%;
     width: 88%;
-    height: 360px;
   }
   #productDiv #innerPDiv #PDescription h1 {
     font-size: 30px;
@@ -176,6 +175,7 @@
     margin-top: 100px;
     position: absolute;
     width: 88%;
+    height: 250px;
   }
   #productDiv #innerPDiv #PDescription #storage {
     margin-top: 30px;

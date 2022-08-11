@@ -34,7 +34,7 @@ const Header = () => {
               {
                 States.productPage? 
                 <div>                  
-                  <i class="fa fa-shopping-cart" aria-hidden="true"><p>{States.cartPNumber}</p></i>
+                  <a href='/cart'><i class="fa fa-shopping-cart" aria-hidden="true"><p>{States.cartPNumber}</p></i></a>
                   <i class="fa fa-bars" aria-hidden="true" onClick={openmenu}></i>
                   
                 </div>

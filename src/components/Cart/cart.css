@@ -2,142 +2,317 @@
   font-family: nunito;
   src: url("../Main/Nunito.ttf");
 }
-#Cart {
-  width: 90%;
-  margin-left: 5%;
-  min-width: 1383px;
+@media only screen and (min-device-width: 769px) {
+  #Cart {
+    width: 90%;
+    margin-left: 5%;
+    min-width: 1383px;
+  }
+  #Cart #leftCart {
+    display: inline-block;
+  }
+  #Cart #leftCart .LCODiv {
+    width: 60px;
+    height: 60px;
+    background: #e9e9e9;
+    border-radius: 100%;
+    margin-top: 20px;
+  }
+  #Cart #leftCart .LCODiv i {
+    width: 100%;
+    text-align: center;
+    margin-top: 18px;
+    font-size: 23px;
+    color: #6b6b6b;
+  }
+  #Cart #leftCart .LCOSeprator {
+    width: 2px;
+    margin-left: 30px;
+    height: 80px;
+    background: #e9e9e9;
+    margin-top: 20px;
+  }
+  #Cart #leftCart .LCOSelected {
+    background: #00a2ff;
+  }
+  #Cart #leftCart .LCOSelected .LCOSelected1 {
+    color: white;
+  }
+  #Cart #rightCart {
+    display: inline-block;
+    position: absolute;
+  }
+  #Cart #rightCart .cartProductDiv {
+    height: 100px;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+  #Cart #rightCart .cartProductDiv img {
+    width: 45px;
+    height: 90px;
+    display: inline-block;
+  }
+  #Cart #rightCart .cartProductDiv .CPDescription {
+    display: inline-block;
+    margin-left: 20px;
+    position: absolute;
+    margin-top: 20px;
+    width: 300px;
+  }
+  #Cart #rightCart .cartProductDiv .CPDescription h1 {
+    font-family: nunito;
+    font-size: 17px;
+  }
+  #Cart #rightCart .cartProductDiv .CPDescription p {
+    display: inline-block;
+    font-family: nunito;
+    margin-top: 25px;
+    font-size: 14px;
+  }
+  #Cart #rightCart .cartProductDiv .CPDescription .CPCC {
+    margin-left: 10px;
+  }
+  #Cart #rightCart .cartProductDiv .CPDescription .CPCS {
+    color: #8d8d8d;
+  }
+  #Cart #rightCart .cartProductDiv .CPNumber {
+    display: inline-block;
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 30px;
+    width: 200px;
+  }
+  #Cart #rightCart .cartProductDiv .CPNumber div {
+    border-width: 2px;
+    border-color: black;
+    border-radius: 15px;
+    border-style: solid;
+    display: inline-block;
+    cursor: pointer;
+  }
+  #Cart #rightCart .cartProductDiv .CPNumber div i {
+    padding: 8px 10px;
+    display: inline-block;
+  }
+  #Cart #rightCart .cartProductDiv .CPNumber .minus {
+    color: #8d8d8d;
+    border-color: #8d8d8d;
+  }
+  #Cart #rightCart .cartProductDiv .CPNumber p {
+    display: inline-block;
+    font-family: nunito;
+    padding: 0px 20px;
+  }
+  #Cart #rightCart .cartProductDiv .CPPrice {
+    display: inline-block;
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 40px;
+    font-family: nunito;
+    font-size: 20px;
+  }
+  #Cart #rightCart #checkout {
+    margin-left: 585px;
+    margin-top: 30px;
+    font-family: nunito;
+    font-size: 20px;
+  }
+  #Cart #rightCart #checkout p {
+    display: inline-block;
+    color: #8d8d8d;
+  }
+  #Cart #rightCart #checkout #CPShowPrice {
+    margin-left: 10px;
+    color: black;
+  }
+  #Cart #rightCart #checkout button {
+    display: block;
+    border-style: none;
+    background: #00a2ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 20px 30px;
+    font-size: 22px;
+  }
+  #Cart #rightCart #checkout button:hover {
+    background: #0098f0;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+
+  .JM {
+    display: none;
+  }
 }
-#Cart #leftCart {
-  display: inline-block;
-}
-#Cart #leftCart .LCODiv {
-  width: 60px;
-  height: 60px;
-  background: #e9e9e9;
-  border-radius: 100%;
-  margin-top: 20px;
-}
-#Cart #leftCart .LCODiv i {
-  width: 100%;
-  text-align: center;
-  margin-top: 18px;
-  font-size: 23px;
-  color: #6b6b6b;
-}
-#Cart #leftCart .LCOSeprator {
-  width: 2px;
-  margin-left: 30px;
-  height: 80px;
-  background: #e9e9e9;
-  margin-top: 20px;
-}
-#Cart #leftCart .LCOSelected {
-  background: #00a2ff;
-}
-#Cart #leftCart .LCOSelected .LCOSelected1 {
-  color: white;
-}
-#Cart #rightCart {
-  display: inline-block;
-  position: absolute;
-}
-#Cart #rightCart .cartProductDiv {
-  height: 100px;
-  margin-left: 100px;
-  margin-top: 50px;
-}
-#Cart #rightCart .cartProductDiv img {
-  width: 45px;
-  height: 90px;
-  display: inline-block;
-}
-#Cart #rightCart .cartProductDiv .CPDescription {
-  display: inline-block;
-  margin-left: 20px;
-  position: absolute;
-  margin-top: 20px;
-  width: 300px;
-}
-#Cart #rightCart .cartProductDiv .CPDescription h1 {
-  font-family: nunito;
-  font-size: 17px;
-}
-#Cart #rightCart .cartProductDiv .CPDescription p {
-  display: inline-block;
-  font-family: nunito;
-  margin-top: 25px;
-  font-size: 14px;
-}
-#Cart #rightCart .cartProductDiv .CPDescription .CPCC {
-  margin-left: 10px;
-}
-#Cart #rightCart .cartProductDiv .CPDescription .CPCS {
-  color: #8d8d8d;
-}
-#Cart #rightCart .cartProductDiv .CPNumber {
-  display: inline-block;
-  position: absolute;
-  margin-left: 350px;
-  margin-top: 30px;
-  width: 200px;
-}
-#Cart #rightCart .cartProductDiv .CPNumber div {
-  border-width: 2px;
-  border-color: black;
-  border-radius: 15px;
-  border-style: solid;
-  display: inline-block;
-  cursor: pointer;
-}
-#Cart #rightCart .cartProductDiv .CPNumber div i {
-  padding: 8px 10px;
-  display: inline-block;
-}
-#Cart #rightCart .cartProductDiv .CPNumber .minus {
-  color: #8d8d8d;
-  border-color: #8d8d8d;
-}
-#Cart #rightCart .cartProductDiv .CPNumber p {
-  display: inline-block;
-  font-family: nunito;
-  padding: 0px 20px;
-}
-#Cart #rightCart .cartProductDiv .CPPrice {
-  display: inline-block;
-  position: absolute;
-  margin-left: 600px;
-  margin-top: 40px;
-  font-family: nunito;
-  font-size: 20px;
-}
-#Cart #rightCart #checkout {
-  margin-left: 585px;
-  margin-top: 30px;
-  font-family: nunito;
-  font-size: 20px;
-}
-#Cart #rightCart #checkout p {
-  display: inline-block;
-  color: #8d8d8d;
-}
-#Cart #rightCart #checkout #CPShowPrice {
-  margin-left: 10px;
-  color: black;
-}
-#Cart #rightCart #checkout button {
-  display: block;
-  border-style: none;
-  background: #00a2ff;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 10px;
-  margin: 20px 30px;
-  font-size: 22px;
-}
-#Cart #rightCart #checkout button:hover {
-  background: #0098f0;
-  transition: 0.2s;
-  cursor: pointer;
+@media only screen and (max-device-width: 768px) {
+  #Cart {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  #Cart #leftCart {
+    display: none;
+  }
+  #Cart #leftCart .LCODiv {
+    width: 60px;
+    height: 60px;
+    background: #e9e9e9;
+    border-radius: 100%;
+    margin-top: 20px;
+  }
+  #Cart #leftCart .LCODiv i {
+    width: 100%;
+    text-align: center;
+    margin-top: 18px;
+    font-size: 23px;
+    color: #6b6b6b;
+  }
+  #Cart #leftCart .LCOSeprator {
+    width: 2px;
+    margin-left: 30px;
+    height: 80px;
+    background: #e9e9e9;
+    margin-top: 20px;
+  }
+  #Cart #leftCart .LCOSelected {
+    background: #00a2ff;
+  }
+  #Cart #leftCart .LCOSelected .LCOSelected1 {
+    color: white;
+  }
+  #Cart #rightCart {
+    display: inline-block;
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    box-sizing: border-box;
+  }
+  #Cart #rightCart .cartProductDiv {
+    height: 100px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  #Cart #rightCart .cartProductDiv img {
+    width: 65px;
+    height: 130px;
+    display: inline-block;
+  }
+  #Cart #rightCart .cartProductDiv .CPDescription {
+    display: inline-block;
+    margin-left: 20px;
+    position: absolute;
+    margin-top: 20px;
+    width: 70%;
+  }
+  #Cart #rightCart .cartProductDiv .CPDescription h1 {
+    font-family: nunito;
+    font-size: 17px;
+  }
+  #Cart #rightCart .cartProductDiv .CPDescription p {
+    display: inline-block;
+    font-family: nunito;
+    margin-top: 25px;
+    font-size: 14px;
+  }
+  #Cart #rightCart .cartProductDiv .CPDescription .CPCC {
+    margin-left: 10px;
+  }
+  #Cart #rightCart .cartProductDiv .CPDescription .CPCS {
+    color: #8d8d8d;
+  }
+  #Cart #rightCart .cartProductDiv .CPNumber {
+    display: inline-block;
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 20px;
+    border-radius: 7px;
+    border-width: 1px;
+    border-color: #969696;
+    border-style: solid;
+    padding: 7px 10px;
+    width: 75px;
+  }
+  #Cart #rightCart .cartProductDiv .CPNumber div {
+    display: inline-block;
+    cursor: pointer;
+  }
+  #Cart #rightCart .cartProductDiv .CPNumber div i {
+    display: inline-block;
+  }
+  #Cart #rightCart .cartProductDiv .CPNumber .minus {
+    color: #8d8d8d;
+    border-color: #8d8d8d;
+    display: inline-block;
+  }
+  #Cart #rightCart .cartProductDiv .CPNumber p {
+    display: inline-block;
+    font-family: nunito;
+    padding: 0px 20px;
+  }
+  #Cart #rightCart .cartProductDiv .CPPrice {
+    display: inline-block;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 100px;
+    font-family: nunito;
+    font-size: 20px;
+  }
+  #Cart #rightCart .cartProductDiv #seprator {
+    width: 100%;
+    height: 1px;
+    background: #8a8a8a;
+    margin-top: 5px;
+  }
+  #Cart #rightCart #sendToBox {
+    margin-top: 50px;
+    width: 100%;
+    padding: 10px 20px;
+    font-family: nunito;
+    border-radius: 7px;
+    border-width: 1px;
+    border-color: #969696;
+    border-style: solid;
+    box-sizing: border-box;
+  }
+  #Cart #rightCart #sendToBox i {
+    display: inline-block;
+    color: #ffd000;
+  }
+  #Cart #rightCart #sendToBox p {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  #checkout {
+    font-family: nunito;
+    font-size: 14px;
+    position: fixed;
+  }
+  #checkout p {
+    display: inline-block;
+    color: #8d8d8d;
+  }
+  #checkout #CPShowPrice {
+    margin-left: 10px;
+    color: black;
+  }
+  #checkout button {
+    display: inline-block;
+    border-style: none;
+    background: #00a2ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 20px 15px;
+    font-size: 15px;
+  }
+  #checkout button:hover {
+    background: #0098f0;
+    transition: 0.2s;
+    cursor: pointer;
+  }
 }
 
 /*# sourceMappingURL=cart.css.map */
