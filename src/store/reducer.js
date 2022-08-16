@@ -4,7 +4,9 @@ const initialState={
     cartProduuct:[],
     openMenu:false,
     productPage:true,
-    cartPNumber:3
+    cartPNumber:3,    
+    ShowPlan:0,
+    messages:2
 }
 
 const reducer=(state=initialState,action)=>{

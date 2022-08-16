@@ -47,8 +47,7 @@ const Header = () => {
             </div>
         </div>
         <div id='rightHeader'>
-            <a id='login' className='headerLink'>Log In</a>
-            <a id='signup' className='headerLink'>Sign Up</a>
+            <a id='signup' className='headerLink' href='/dashboard'><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
             <a href='/cart'><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
             <i class="fa fa-search" aria-hidden="true"></i>
 
