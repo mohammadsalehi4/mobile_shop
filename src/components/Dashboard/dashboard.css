@@ -426,7 +426,6 @@ body {
 
   #OuterBox {
     width: 100%;
-    height: 680px;
     background: white;
     margin-left: 0px;
     margin-top: 0px;
@@ -446,12 +445,13 @@ body {
     background-size: cover;
     width: 130px;
     height: 130px;
-    display: inline-block;
+    display: none;
     position: absolute;
     margin-left: 40px;
     margin-top: 35px;
   }
   #LeftSide #topLogo {
+    display: none;
     font-size: 70px;
     font-family: nimbus;
     margin-left: 200px;
@@ -475,12 +475,11 @@ body {
   }
   #LeftSide #LeftMenu a {
     display: inline-block;
-    padding: 15px 25px;
     margin-top: 0px;
     border-radius: 0px;
     color: #3d3d3d;
-    font-size: 60px;
-    padding: 30px 6%;
+    font-size: 25px;
+    padding: 20px 6%;
   }
   #LeftSide #LeftMenu a .FAMenu {
     color: white;
@@ -558,10 +557,11 @@ body {
     width: 100%;
     top: 0px;
     height: 1100px;
-    margin-top: 260px;
+    margin-top: 20px;
     left: 0px;
     border-radius: 0px;
     display: block;
+    overflow-x: hidden;
   }
   #MiddleSide #MTLBox {
     position: absolute;
@@ -570,32 +570,32 @@ body {
   }
   #MiddleSide #MTLBox #MTLBTitle {
     font-family: neometricBold;
-    font-size: 90px;
+    font-size: 37px;
     box-sizing: border-box;
-    margin-top: 100px;
-    margin-left: 40px;
+    margin-top: 0px;
+    margin-left: 20px;
     font-weight: bolder;
     display: block;
   }
   #MiddleSide #MTLBox #MTLBDisc {
-    margin-left: 40px;
+    margin-left: 20px;
     margin-top: 20px;
     display: block;
-    font-size: 40px;
+    font-size: 20px;
     width: 80%;
   }
   #MiddleSide #MTLBox #MTLBButton {
     background: #9e42c9;
     display: inline-block;
     padding: 13px 20px;
-    width: 330px;
-    margin-left: 40px;
-    margin-top: 620px;
-    border-radius: 55px;
-    padding: 30px;
+    width: 90px;
+    margin-left: 20px;
+    margin-top: 240px;
+    border-radius: 15px;
+    padding: 10px 10px;
     z-index: 6;
     color: white;
-    font-size: 35px;
+    font-size: 12px;
   }
   #MiddleSide #MTLBox #MTLBButton i {
     display: in;
@@ -608,10 +608,9 @@ body {
   }
   #MiddleSide #MTRBox {
     position: absolute;
-    width: 600px;
-    height: 720px;
-    margin-left: 160px;
-    margin-top: 300px;
+    width: 100%;
+    margin-left: 20%;
+    margin-top: 140px;
     background: url("3d.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -620,26 +619,26 @@ body {
     position: absolute;
     width: 100%;
     height: 340px;
-    margin-left: 0px;
-    margin-top: 1130px;
+    margin-left: 20px;
+    margin-top: 420px;
     background: white;
   }
   #MiddleSide #MMBBox #week {
     font-weight: 700;
-    margin-left: 5%;
-    font-size: 40px;
+    margin-left: 0%;
+    font-size: 13px;
   }
   #MiddleSide #MMBBox #menu {
     background: #ececec;
-    border-radius: 40px;
+    border-radius: 10px;
     position: absolute;
     overflow: hidden;
     z-index: 22;
   }
   #MiddleSide #MMBBox #menu .weekDay {
-    font-size: 40px;
-    padding: 50px 70px;
-    width: 400px;
+    font-size: 13px;
+    padding: 10px 12px;
+    width: 120px;
   }
   #MiddleSide #MMBBox #menu .weekDay i {
     float: right;
@@ -661,36 +660,36 @@ body {
   }
   #MiddleSide #MMBBox #challenge {
     width: 90%;
-    height: 450px;
+    height: 150px;
     background: #ececec;
     margin-top: 40px;
-    margin-left: 5%;
-    border-radius: 40px;
+    margin-left: 0px;
+    border-radius: 10px;
   }
   #MiddleSide #MMBBox #challenge #leftChallenge {
-    width: 20px;
-    height: 350px;
-    margin-top: 50px;
-    margin-left: 50px;
+    width: 10px;
+    height: 120px;
+    margin-top: 15px;
+    margin-left: 15px;
     background: purple;
     position: absolute;
     border-radius: 10px;
   }
   #MiddleSide #MMBBox #challenge #challengeBackground {
-    height: 300px;
-    width: 300px;
+    height: 90px;
+    width: 90px;
     background: url("business.png");
     background-size: contain;
     position: absolute;
-    margin-left: 110px;
-    margin-top: 75px;
+    margin-left: 30px;
+    margin-top: 30px;
   }
   #MiddleSide #MMBBox #challenge #challengeTime {
     position: absolute;
     color: blue;
-    margin-left: 460px;
-    margin-top: 40px;
-    font-size: 30px;
+    margin-left: 130px;
+    margin-top: 20px;
+    font-size: 13px;
   }
   #MiddleSide #MMBBox #challenge #challengeTime p {
     display: inline-block;
@@ -700,24 +699,23 @@ body {
     position: absolute;
     display: inline-block;
     font-weight: 900;
-    margin-left: 460px;
-    margin-top: 100px;
+    margin-left: 130px;
+    margin-top: 40px;
     width: 390px;
-    font-size: 40px;
+    font-size: 13px;
   }
   #MiddleSide #MMBBox #challenge #challengeDesc {
     position: absolute;
-    width: 390px;
-    margin-left: 460px;
-    margin-top: 240px;
-    font-size: 14px;
-    font-size: 35px;
+    width: 50%;
+    margin-left: 130px;
+    margin-top: 60px;
+    font-size: 13px;
   }
   #MiddleSide #MMBBox #challenge #CArrow {
     position: absolute;
-    margin-top: 350px;
-    margin-left: 750px;
-    font-size: 50px;
+    margin-top: 110px;
+    margin-left: 310px;
+    font-size: 18px;
   }
   #MiddleSide #MMBBox #challenge:hover {
     background: #e0dfdf;
@@ -729,42 +727,42 @@ body {
     width: 294px;
     position: absolute;
     left: 0px;
-    height: 1450px;
+    height: 50px;
     width: 90%;
-    margin-top: 2340px;
+    margin-top: 740px;
     margin-left: 5%;
   }
   #RightSide #RSBox {
     margin-top: 135px;
     margin-left: 0px;
     font-family: nimbus;
-    font-size: 50px;
+    font-size: 20px;
   }
   #RightSide #RSBox #RSBInput {
     border-style: none;
     padding-left: 10px;
     background: none;
     outline: none;
-    font-size: 50px;
+    font-size: 20px;
   }
   #RightSide #RMBox {
     display: block;
-    margin-top: 85px;
+    margin-top: 25px;
     margin-left: 0px;
     font-family: nimbus;
   }
   #RightSide #RMBox a {
     font-weight: 100;
     color: blue;
-    font-size: 45px;
+    font-size: 15px;
   }
   #RightSide #RMBox p {
     font-family: neometricBold;
-    font-size: 65px;
-    margin-top: 15px;
+    font-size: 25px;
+    margin-top: 0px;
   }
   #RightSide #RMBox #TBYCC {
-    margin-top: 80px;
+    margin-top: 30px;
   }
   #RightSide #RBBox {
     display: block;
@@ -774,40 +772,41 @@ body {
     width: 100%;
   }
   #RightSide #RBBox .MeetingTime {
-    margin-top: 140px;
+    margin-top: 50px;
   }
   #RightSide #RBBox .MeetingTime i {
     background: #e3c6ee;
     padding: 10px;
-    border-radius: 30px;
-    padding: 20px;
+    border-radius: 10px;
+    padding: 12px;
     position: absolute;
-    font-size: 100px;
+    font-size: 20px;
   }
   #RightSide #RBBox .MeetingTime p {
     display: inline-block;
     margin-left: 15px;
-    margin-left: 180px;
+    margin-left: 60px;
     position: absolute;
-    font-size: 50px;
+    font-size: 13px;
     margin-top: 4px;
   }
   #RightSide #RBBox .MeetingTime .MT {
     font-weight: bold;
-    margin-top: 50px;
+    margin-top: 10px;
   }
   #RightSide #RBBox #RTLBButton {
-    margin-top: 200px;
+    margin-top: 50px;
     color: white;
     background: #9e42c9;
     display: inline-block;
     padding: 13px 20px;
-    width: 230px;
-    border-radius: 55px;
-    padding: 30px;
+    width: 90px;
+    border-radius: 10px;
+    padding: 10px;
     z-index: 6;
     color: white;
-    font-size: 35px;
+    font-size: 15px;
+    margin-bottom: 70px;
   }
   #RightSide #RBBox #RTLBButton i {
     float: right;

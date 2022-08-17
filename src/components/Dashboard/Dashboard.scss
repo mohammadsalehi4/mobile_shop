@@ -433,7 +433,6 @@ body{
     
     #OuterBox{
         width: 100%;
-        height: 680px;
         background: white;
         margin-left: 0px;
         margin-top: 0px;
@@ -452,12 +451,13 @@ body{
             background-size: cover;
             width: 130px;
             height: 130px;
-            display: inline-block;
+            display: none;
             position: absolute;
             margin-left: 40px;
             margin-top: 35px;
         }
         #topLogo{
+            display: none;
             font-size: 70px;
             font-family: nimbus;
             margin-left: 200px;
@@ -482,12 +482,11 @@ body{
             background: rgb(248, 248, 248);
             a{
                 display: inline-block;
-                padding: 15px 25px;
                 margin-top: 0px;
                 border-radius: 0px;
                 color: rgb(61, 61, 61);
-                font-size: 60px;
-                padding: 30px 6%;
+                font-size: 25px;
+                padding: 20px 6%;
                 .FAMenu{
                     color: white;
                     float: right;
@@ -568,42 +567,43 @@ body{
         width:100%;
         top: 0px;
         height: 1100px;
-        margin-top: 260px;
+        margin-top: 20px;
         left:0px;
         border-radius: 0px;
         display: block;
+        overflow-x: hidden;
         #MTLBox{
             position: absolute;
             width: 100%;
-            height: 270px;
+        height: 270px;
             #MTLBTitle{
                 font-family: neometricBold;
-                font-size: 90px;
+                font-size:37px;
                 box-sizing: border-box;
-                margin-top: 100px;
-                margin-left: 40px;
+                margin-top: 0px;
+                margin-left: 20px;
                 font-weight: bolder;
                 display: block;
             }
             #MTLBDisc{
-                margin-left: 40px;
+                margin-left: 20px;
                 margin-top: 20px;
                 display: block;
-                font-size: 40px;
+                font-size: 20px;
                 width: 80%;
             }
             #MTLBButton{
                 background: rgb(158, 66, 201);
                 display: inline-block;
                 padding: 13px 20px;
-                width: 330px;
-                margin-left: 40px;
-                margin-top: 620px;
-                border-radius: 55px;
-                padding: 30px;
+                width: 90px;
+                margin-left: 20px;
+                margin-top: 240px;
+                border-radius: 15px;
+                padding: 10px 10px;
                 z-index: 6;
                 color: white;
-                font-size: 35px;
+                font-size: 12px;
                 i{
                     display: in;
                     float: right;
@@ -617,10 +617,9 @@ body{
         }
         #MTRBox{
             position: absolute;
-            width: 600px;
-            height: 720px;
-            margin-left: 160px;
-            margin-top: 300px;
+            width: 100%;
+            margin-left: 20%;
+            margin-top: 140px;
             background: url('3d.png');
             background-size:contain;
             background-repeat: no-repeat;
@@ -629,24 +628,24 @@ body{
             position: absolute;
             width: 100%;
             height: 340px;
-            margin-left: 0px;
-            margin-top: 1130px;
+            margin-left: 20px;
+            margin-top: 420px;
             background: white;
             #week{
                 font-weight: 700;
-                margin-left: 5%;
-                font-size: 40px;
+                margin-left: 0%;
+                font-size: 13px;
             }
             #menu{
                 background: rgb(236, 236, 236);
-                border-radius: 40px;
+                border-radius: 10px;
                 position: absolute;
                 overflow: hidden;
                 z-index: 22;
                 .weekDay{
-                    font-size: 40px;
-                    padding: 50px 70px;
-                    width: 400px;
+                    font-size: 13px;
+                    padding: 10px 12px;
+                    width: 120px;
                     i{
                         float: right;
                         display: none;
@@ -670,35 +669,35 @@ body{
             }
             #challenge{
                 width: 90%;
-                height: 450px;
+                height: 150px;
                 background: rgb(236, 236, 236);
                 margin-top: 40px;
-                margin-left: 5%;
-                border-radius: 40px;
+                margin-left: 0px;
+                border-radius: 10px;
                 #leftChallenge{
-                    width: 20px;
-                    height: 350px;
-                    margin-top: 50px;
-                    margin-left: 50px;
+                    width: 10px;
+                    height: 120px;
+                    margin-top: 15px;
+                    margin-left: 15px;
                     background: purple;
                     position: absolute;
                     border-radius: 10px;
                 }
                 #challengeBackground{
-                    height: 300px;
-                    width: 300px;
+                    height: 90px;
+                    width: 90px;
                     background: url('business.png');
                     background-size: contain;
                     position: absolute;
-                    margin-left: 110px;
-                    margin-top: 75px;
+                    margin-left: 30px;
+                    margin-top: 30px;
                 }
                 #challengeTime{
                     position: absolute;
                     color: blue;
-                    margin-left: 460px;
-                    margin-top: 40px;
-                    font-size: 30px;
+                    margin-left: 130px;
+                    margin-top: 20px;
+                    font-size: 13px;
                     p{
                         display: inline-block;
                         margin-left: 10px;
@@ -708,24 +707,23 @@ body{
                     position: absolute;
                     display: inline-block;
                     font-weight: 900;
-                    margin-left: 460px;
-                    margin-top: 100px;
+                    margin-left: 130px;
+                    margin-top: 40px;
                     width: 390px;
-                    font-size: 40px;
+                    font-size: 13px;
                 }
                 #challengeDesc{
                     position: absolute;
-                    width: 390px;
-                    margin-left: 460px;
-                    margin-top: 240px;
-                    font-size: 14px;
-                    font-size: 35px;
+                    width: 50%;
+                    margin-left: 130px;
+                    margin-top: 60px;
+                    font-size: 13px;
                 }
                 #CArrow{
                     position: absolute;
-                    margin-top: 350px;
-                    margin-left: 750px;
-                    font-size: 50px;
+                    margin-top: 110px;
+                    margin-left: 310px;
+                    font-size: 18px;
                 }
             }
             #challenge:hover{
@@ -740,40 +738,40 @@ body{
         width: $besideDivWidth;
         position: absolute;
         left: 0px;
-        height: 1450px;
+        height: 50px;
         width: 90%;
-        margin-top: 2340px;
+        margin-top: 740px;
         margin-left: 5%;
         #RSBox{
             margin-top: 135px;
             margin-left: 0px;
             font-family: nimbus;
-            font-size: 50px;
+            font-size: 20px;
             #RSBInput{
                 border-style: none;
                 padding-left: 10px;
                 background: none;
                 outline: none;
-                font-size: 50px;
+                font-size: 20px;
             }
         }
         #RMBox{
             display: block;
-            margin-top: 85px;
+            margin-top: 25px;
             margin-left: 0px;
             font-family: nimbus;
             a{
                 font-weight: 100;
                 color: blue;
-                font-size: 45px;
+                font-size: 15px;
             }
             p{
                 font-family: neometricBold;
-                font-size: 65px;
-                margin-top: 15px;
+                font-size: 25px;
+                margin-top: 0px;
             }
             #TBYCC{
-                margin-top: 80px;
+                margin-top: 30px;
             }
         }
         #RBBox{
@@ -783,31 +781,31 @@ body{
             position: absolute;
             width: 100%;
             .MeetingTime{
-                margin-top: 140px;
+                margin-top: 50px;
                 i{
                     background: rgb(227, 198, 238);
                     padding: 10px;
-                    border-radius: 30px;
-                    padding: 20px;
+                    border-radius: 10px;
+                    padding: 12px;
                     position: absolute;
-                    font-size: 100px;
+                    font-size: 20px;
 
                 }
                 p{
                     display: inline-block;
                     margin-left: 15px;
-                    margin-left: 180px;
+                    margin-left: 60px;
                     position: absolute;
-                    font-size: 50px;
+                    font-size: 13px;
                     margin-top: 4px;
                 }
                 .MT{
                     font-weight: bold;
-                    margin-top: 50px;
+                    margin-top: 10px;
                 }
             }
             #RTLBButton{
-                margin-top: 200px;
+                margin-top:50px;
                 color: white;
                 i{
                     float: right;
@@ -815,12 +813,13 @@ body{
                 background: rgb(158, 66, 201);
                 display: inline-block;
                 padding: 13px 20px;
-                width: 230px;
-                border-radius: 55px;
-                padding: 30px;
+                width: 90px;
+                border-radius: 10px;
+                padding: 10px;
                 z-index: 6;
                 color: white;
-                font-size: 35px;
+                font-size: 15px;
+                margin-bottom: 70px;
             }
             #RTLBButton:hover{
                 cursor: pointer;
