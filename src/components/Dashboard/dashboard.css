@@ -61,16 +61,15 @@ table {
   src: url("NeometricAltExtraBold(Bold).otf");
 }
 body {
-  background: #d0d0f0;
   font-family: nunito;
 }
 
 #OuterBox {
   width: 1470px;
-  height: 680px;
+  height: 620px;
   background: #ececec;
   margin-left: 35px;
-  margin-top: 25px;
+  margin-top: 0px;
   border-radius: 30px;
   position: absolute;
 }
@@ -136,6 +135,15 @@ body {
 #LeftMenu a:hover .FAMenu {
   display: inline-block;
 }
+#LeftMenu #on {
+  background: #9e42c9;
+  color: white;
+  transition: 0.2s;
+  cursor: pointer;
+}
+#LeftMenu #on .FAMenu {
+  display: inline-block;
+}
 
 #leftButtomMenu {
   position: absolute;
@@ -187,7 +195,7 @@ body {
   position: absolute;
   background: white;
   width: 882px;
-  height: 640px;
+  height: 580px;
   top: 20px;
   left: 294px;
   border-radius: 30px;
@@ -244,9 +252,10 @@ body {
   width: 800px;
   height: 340px;
   margin-left: 41px;
-  margin-top: 280px;
+  margin-top: 220px;
 }
 #MiddleSide #MMBBox #week {
+  margin-top: 40px;
   font-weight: 700;
 }
 #MiddleSide #MMBBox #menu {
@@ -279,12 +288,15 @@ body {
   cursor: pointer;
   display: inline-block;
 }
+#MiddleSide #MMBBox #CHBox {
+  margin-top: 30px;
+}
 #MiddleSide #MMBBox #challenge {
-  width: 500px;
+  width: 60%;
   height: 150px;
   background: #ececec;
   margin-top: 10px;
-  margin-left: 255px;
+  margin-left: 20%;
   border-radius: 20px;
 }
 #MiddleSide #MMBBox #challenge #leftChallenge {
@@ -320,7 +332,7 @@ body {
   display: inline-block;
   font-weight: 900;
   margin-left: 190px;
-  margin-top: 50px;
+  margin-top: 55px;
   width: 180px;
 }
 #MiddleSide #MMBBox #challenge #challengeDesc {
@@ -328,6 +340,13 @@ body {
   width: 250px;
   margin-left: 190px;
   margin-top: 90px;
+  font-size: 14px;
+}
+#MiddleSide #MMBBox #challenge #models {
+  position: absolute;
+  width: 250px;
+  margin-left: 190px;
+  margin-top: 120px;
   font-size: 14px;
 }
 #MiddleSide #MMBBox #challenge #CArrow {
@@ -346,7 +365,7 @@ body {
   position: absolute;
   left: 1176px;
   height: 680px;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 #RightSide #RSBox {
   display: block;
@@ -476,10 +495,14 @@ body {
   #LeftSide #LeftMenu a {
     display: inline-block;
     margin-top: 0px;
-    border-radius: 0px;
+    border-radius: 50px;
     color: #3d3d3d;
     font-size: 25px;
-    padding: 20px 6%;
+    padding: 7px 2%;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    width: 25px;
+    height: 25px;
   }
   #LeftSide #LeftMenu a .FAMenu {
     color: white;
@@ -495,6 +518,14 @@ body {
     cursor: pointer;
   }
   #LeftSide #LeftMenu a:hover .FAMenu {
+    display: none;
+  }
+  #LeftSide #LeftMenu #on {
+    background: #9e42c9;
+    color: white;
+    margin-left: 0px;
+  }
+  #LeftSide #LeftMenu #on .FAMenu {
     display: none;
   }
 
@@ -662,7 +693,7 @@ body {
     width: 90%;
     height: 150px;
     background: #ececec;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-left: 0px;
     border-radius: 10px;
   }
@@ -700,7 +731,7 @@ body {
     display: inline-block;
     font-weight: 900;
     margin-left: 130px;
-    margin-top: 40px;
+    margin-top: 50px;
     width: 390px;
     font-size: 13px;
   }
@@ -708,7 +739,14 @@ body {
     position: absolute;
     width: 50%;
     margin-left: 130px;
-    margin-top: 60px;
+    margin-top: 80px;
+    font-size: 13px;
+  }
+  #MiddleSide #MMBBox #challenge #models {
+    position: absolute;
+    width: 50%;
+    margin-left: 130px;
+    margin-top: 110px;
     font-size: 13px;
   }
   #MiddleSide #MMBBox #challenge #CArrow {
@@ -729,7 +767,7 @@ body {
     left: 0px;
     height: 50px;
     width: 90%;
-    margin-top: 740px;
+    margin-top: 680px;
     margin-left: 5%;
   }
   #RightSide #RSBox {

@@ -215,15 +215,13 @@ const Product = (props) => {
                                 <div className='PStorages' onClick={()=>{SClick(item,index)}}>{item}</div>
                             )
                         }
-                        
                     })}
                     </div>
                 </div>
-                
                 <p id='PPrice'>${getDevice.price}</p>
+                <button id='AddButton'>Add to Cart</button>
             </div>
         </div>
-        <button id='AddButton'>Add to Cart</button>
     </div>
   )
 }

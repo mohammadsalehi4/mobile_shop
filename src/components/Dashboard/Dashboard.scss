@@ -64,16 +64,15 @@ $besideDivWidth:294px;
 
 
 body{
-    background: rgb(208, 208, 240);
     font-family: nunito;
 }
 
 #OuterBox{
     width: 1470px;
-    height: 680px;
+    height: 620px;
     background: rgb(236, 236, 236);
     margin-left: 35px;
-    margin-top: 25px;
+    margin-top: 0px;
     border-radius: 30px;
     position: absolute;
 }
@@ -138,6 +137,16 @@ body{
             display: inline-block;
         }
     }
+    
+    #on{
+        background: rgb(158, 66, 201);
+        color: white;
+        transition: 0.2s;
+        cursor: pointer;
+        .FAMenu{
+            display: inline-block;
+        }
+    }
 }
 
 #leftButtomMenu{
@@ -190,7 +199,7 @@ body{
     position: absolute;
     background: white;
     width: 882px;
-    height: 640px;
+    height: 580px;
     top: 20px;
     left:294px;
     border-radius: 30px;
@@ -246,8 +255,9 @@ body{
         width: 800px;
         height: 340px;
         margin-left: 41px;
-        margin-top: 280px;
+        margin-top: 220px;
         #week{
+            margin-top: 40px;
             font-weight: 700;
         }
         #menu{
@@ -281,12 +291,15 @@ body{
                 display: inline-block;
             
         }
+        #CHBox{
+            margin-top: 30px;
+        }
         #challenge{
-            width: 500px;
+            width: 60%;
             height: 150px;
             background: rgb(236, 236, 236);
             margin-top: 10px;
-            margin-left: 255px;
+            margin-left: 20%;
             border-radius: 20px;
             #leftChallenge{
                 width: 8px;
@@ -321,7 +334,7 @@ body{
                 display: inline-block;
                 font-weight: 900;
                 margin-left: 190px;
-                margin-top: 50px;
+                margin-top: 55px;
                 width: 180px;
             }
             #challengeDesc{
@@ -329,6 +342,13 @@ body{
                 width: 250px;
                 margin-left: 190px;
                 margin-top: 90px;
+                font-size: 14px;
+            }
+            #models{
+                position: absolute;
+                width: 250px;
+                margin-left: 190px;
+                margin-top:120px;
                 font-size: 14px;
             }
             #CArrow{
@@ -350,7 +370,7 @@ body{
     position: absolute;
     left: 1176px;
     height: $height;
-    margin-top: 40px;
+    margin-top: 0px;
 
     #RSBox{
         display: block;
@@ -483,10 +503,14 @@ body{
             a{
                 display: inline-block;
                 margin-top: 0px;
-                border-radius: 0px;
+                border-radius: 50px;
                 color: rgb(61, 61, 61);
                 font-size: 25px;
-                padding: 20px 6%;
+                padding: 7px 2%;
+                margin-bottom: 20px;
+                margin-left: 40px;
+                width: 25px;
+                height: 25px;
                 .FAMenu{
                     color: white;
                     float: right;
@@ -494,6 +518,7 @@ body{
                 p{
                     display: none;
                 }
+
             }
             a:hover{
                 background: rgb(158, 66, 201);
@@ -503,6 +528,14 @@ body{
                 .FAMenu{
                     display: none;
                 }
+            }
+            #on{
+                background: rgb(158, 66, 201);
+                .FAMenu{
+                    display: none;
+                }
+                color: white;
+                margin-left: 0px;
             }
         }
     }
@@ -671,7 +704,7 @@ body{
                 width: 90%;
                 height: 150px;
                 background: rgb(236, 236, 236);
-                margin-top: 40px;
+                margin-top: 10px;
                 margin-left: 0px;
                 border-radius: 10px;
                 #leftChallenge{
@@ -708,7 +741,7 @@ body{
                     display: inline-block;
                     font-weight: 900;
                     margin-left: 130px;
-                    margin-top: 40px;
+                    margin-top: 50px;
                     width: 390px;
                     font-size: 13px;
                 }
@@ -716,7 +749,14 @@ body{
                     position: absolute;
                     width: 50%;
                     margin-left: 130px;
-                    margin-top: 60px;
+                    margin-top: 80px;
+                    font-size: 13px;
+                }
+                #models{
+                    position: absolute;
+                    width: 50%;
+                    margin-left: 130px;
+                    margin-top: 110px;
                     font-size: 13px;
                 }
                 #CArrow{
@@ -740,7 +780,7 @@ body{
         left: 0px;
         height: 50px;
         width: 90%;
-        margin-top: 740px;
+        margin-top: 680px;
         margin-left: 5%;
         #RSBox{
             margin-top: 135px;

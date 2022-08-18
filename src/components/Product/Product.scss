@@ -93,7 +93,7 @@
                     font-size: 30px;
                     font-weight: bolder;
                 }
-                button{
+                #AddButton{
                     margin-top: 40px;
                     background: rgb(0, 162, 255);
                     color: white;
@@ -235,7 +235,6 @@
         }
         #AddButton{
             top: 87%;
-            margin-left: 6%;
             width: 88%;
             padding: 17px 0px;
             border-style: none;

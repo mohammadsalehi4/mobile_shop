@@ -94,7 +94,7 @@
     font-size: 30px;
     font-weight: bolder;
   }
-  #productDiv #innerPDiv #PDescription button {
+  #productDiv #innerPDiv #PDescription #AddButton {
     margin-top: 40px;
     background: #00a2ff;
     color: white;
@@ -229,7 +229,6 @@
   }
   #productDiv #AddButton {
     top: 87%;
-    margin-left: 6%;
     width: 88%;
     padding: 17px 0px;
     border-style: none;

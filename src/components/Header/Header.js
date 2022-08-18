@@ -35,13 +35,14 @@ const Header = () => {
                 States.productPage? 
                 <div>                  
                   <a href='/cart'><i class="fa fa-shopping-cart" aria-hidden="true"><p>{States.cartPNumber}</p></i></a>
+                  <a id='signup' className='headerLink' href='/dashboard'><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
                   <i class="fa fa-bars" aria-hidden="true" onClick={openmenu}></i>
                   
                 </div>
-
                 :
-                  <div>                  
-                    <i class="fa fa-shopping-cart PI" aria-hidden="true"><p>{States.cartPNumber}</p></i>
+                  <div className='PI'>                  
+                    <a id='signup' className='headerLink ' href='/cart'><i class="fa fa-shopping-cart " aria-hidden="true"><p>{States.cartPNumber}</p></i></a>
+                    <a id='signup' className='headerLink ' href='/dashboard'><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
                   </div>
               }
             </div>
