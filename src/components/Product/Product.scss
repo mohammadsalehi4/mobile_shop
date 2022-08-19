@@ -32,6 +32,7 @@
                     background: rgb(245, 245, 245);
                 }
             }
+            
             #bigPImage{
                 display: inline-block;
                 width: 170px;
@@ -39,7 +40,7 @@
                 margin-left: 100px;
     
             }
-            #PDescription{
+            #PDescription2{
                 display: inline-block;
                 margin-left: 200px;
                 width: 800px;
@@ -50,7 +51,7 @@
                     font-weight: 100;
                 }
                 p{
-                    font-family: Nimbus;
+                    font-family: Nunito;
                     font-size: 18px;
                     margin-top: 40px;
                 }
@@ -162,11 +163,11 @@
                 margin-left: 10%;
                 margin-top: 50px;
             }
-            #PDescription{
+            #PDescription2{
                 display: inline-block;
                 margin-top: 580px;
                 margin-left: 6%;
-                width: 88%;
+                    width: 88%;
                 h1{
                     font-size: 30px;
                     font-family: Nimbus;
@@ -174,13 +175,13 @@
                     width: 70%;
                 }
                 p{
-                    font-family: Nimbus;
+                    font-family: Nunito;
+
                     font-size: 15px;
                     margin-top: 100px;
                     position: absolute;
                     width: 88%;
                     height: 250px;
-                    
                 }
                 #storage{
                     margin-top: 30px;

@@ -39,31 +39,31 @@
     height: 340px;
     margin-left: 100px;
   }
-  #productDiv #innerPDiv #PDescription {
+  #productDiv #innerPDiv #PDescription2 {
     display: inline-block;
     margin-left: 200px;
     width: 800px;
     margin-top: 50px;
   }
-  #productDiv #innerPDiv #PDescription h1 {
+  #productDiv #innerPDiv #PDescription2 h1 {
     font-size: 70px;
     font-family: Nimbus;
     font-weight: 100;
   }
-  #productDiv #innerPDiv #PDescription p {
-    font-family: Nimbus;
+  #productDiv #innerPDiv #PDescription2 p {
+    font-family: Nunito;
     font-size: 18px;
     margin-top: 40px;
   }
-  #productDiv #innerPDiv #PDescription #storage {
+  #productDiv #innerPDiv #PDescription2 #storage {
     margin-top: 50px;
   }
-  #productDiv #innerPDiv #PDescription #storage h2 {
+  #productDiv #innerPDiv #PDescription2 #storage h2 {
     font-family: Nimbus;
     font-size: 22px;
     font-weight: 800;
   }
-  #productDiv #innerPDiv #PDescription #storage .PStorages {
+  #productDiv #innerPDiv #PDescription2 #storage .PStorages {
     font-family: Nimbus;
     display: inline-block;
     padding: 12px 10px;
@@ -75,26 +75,26 @@
     margin-top: 20px;
     border-radius: 10px;
   }
-  #productDiv #innerPDiv #PDescription #storage .PStorages:hover {
+  #productDiv #innerPDiv #PDescription2 #storage .PStorages:hover {
     color: #00a2ff;
     border-color: #00a2ff;
     cursor: pointer;
     transition: 0.2s;
   }
-  #productDiv #innerPDiv #PDescription #storage .PStorages1 {
+  #productDiv #innerPDiv #PDescription2 #storage .PStorages1 {
     color: #00a2ff;
     border-color: #00a2ff;
   }
-  #productDiv #innerPDiv #PDescription #storage #selectStorageBox {
+  #productDiv #innerPDiv #PDescription2 #storage #selectStorageBox {
     margin-left: -20px;
   }
-  #productDiv #innerPDiv #PDescription #PPrice {
+  #productDiv #innerPDiv #PDescription2 #PPrice {
     display: inline-block;
     font-family: Nimbus;
     font-size: 30px;
     font-weight: bolder;
   }
-  #productDiv #innerPDiv #PDescription #AddButton {
+  #productDiv #innerPDiv #PDescription2 #AddButton {
     margin-top: 40px;
     background: #00a2ff;
     color: white;
@@ -105,7 +105,7 @@
     display: inline-block;
     margin-left: 30px;
   }
-  #productDiv #innerPDiv #PDescription button:hover {
+  #productDiv #innerPDiv #PDescription2 button:hover {
     background: #008cdd;
     cursor: pointer;
     transition: 0.2s;
@@ -158,34 +158,34 @@
     margin-left: 10%;
     margin-top: 50px;
   }
-  #productDiv #innerPDiv #PDescription {
+  #productDiv #innerPDiv #PDescription2 {
     display: inline-block;
     margin-top: 580px;
     margin-left: 6%;
     width: 88%;
   }
-  #productDiv #innerPDiv #PDescription h1 {
+  #productDiv #innerPDiv #PDescription2 h1 {
     font-size: 30px;
     font-family: Nimbus;
     font-weight: bolder;
     width: 70%;
   }
-  #productDiv #innerPDiv #PDescription p {
-    font-family: Nimbus;
+  #productDiv #innerPDiv #PDescription2 p {
+    font-family: Nunito;
     font-size: 15px;
     margin-top: 100px;
     position: absolute;
     width: 88%;
     height: 250px;
   }
-  #productDiv #innerPDiv #PDescription #storage {
+  #productDiv #innerPDiv #PDescription2 #storage {
     margin-top: 30px;
     width: 100%;
   }
-  #productDiv #innerPDiv #PDescription #storage h2 {
+  #productDiv #innerPDiv #PDescription2 #storage h2 {
     display: none;
   }
-  #productDiv #innerPDiv #PDescription #storage .PStorages {
+  #productDiv #innerPDiv #PDescription2 #storage .PStorages {
     font-family: Nimbus;
     display: inline-block;
     padding: 10px 8px;
@@ -198,21 +198,21 @@
     border-radius: 10px;
     transition: 0.2s;
   }
-  #productDiv #innerPDiv #PDescription #storage .PStorages:hover {
+  #productDiv #innerPDiv #PDescription2 #storage .PStorages:hover {
     background: #00a2ff;
     border-color: #00a2ff;
     cursor: pointer;
     transition: 0.2s;
   }
-  #productDiv #innerPDiv #PDescription #storage .PStorages1 {
+  #productDiv #innerPDiv #PDescription2 #storage .PStorages1 {
     background: #00a2ff;
     border-color: #00a2ff;
     color: white;
   }
-  #productDiv #innerPDiv #PDescription #storage #selectStorageBox {
+  #productDiv #innerPDiv #PDescription2 #storage #selectStorageBox {
     margin-left: -20px;
   }
-  #productDiv #innerPDiv #PDescription #PPrice {
+  #productDiv #innerPDiv #PDescription2 #PPrice {
     font-family: Nimbus;
     font-size: 25px;
     font-weight: 500;

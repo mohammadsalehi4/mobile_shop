@@ -196,12 +196,11 @@ const Product = (props) => {
                   })
                 }
               </div>
-
             </div>
             <img id='bigPImage' src={'../'+getImage[selectedImage]}></img>
-            <div id='PDescription'>
+            <div id='PDescription2'>
                 <h1>{getDevice.model}</h1>
-                <p id='PrDesc'>this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description.</p>
+                <p id='aaa'>this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description. this is testing description.</p>
                 <div id='storage'>
                     <h2>Storage</h2>
                     <div id='selectStorageBox'>

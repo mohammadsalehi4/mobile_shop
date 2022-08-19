@@ -52,27 +52,27 @@
     height: 90px;
     display: inline-block;
   }
-  #Cart #rightCart .cartProductDiv .CPDescription {
+  #Cart #rightCart .cartProductDiv .CPDescription1 {
     display: inline-block;
     margin-left: 20px;
     position: absolute;
     margin-top: 20px;
     width: 300px;
   }
-  #Cart #rightCart .cartProductDiv .CPDescription h1 {
+  #Cart #rightCart .cartProductDiv .CPDescription1 h1 {
     font-family: nunito;
     font-size: 17px;
   }
-  #Cart #rightCart .cartProductDiv .CPDescription p {
+  #Cart #rightCart .cartProductDiv .CPDescription1 p {
     display: inline-block;
     font-family: nunito;
     margin-top: 25px;
     font-size: 14px;
   }
-  #Cart #rightCart .cartProductDiv .CPDescription .CPCC {
+  #Cart #rightCart .cartProductDiv .CPDescription1 .CPCC {
     margin-left: 10px;
   }
-  #Cart #rightCart .cartProductDiv .CPDescription .CPCS {
+  #Cart #rightCart .cartProductDiv .CPDescription1 .CPCS {
     color: #8d8d8d;
   }
   #Cart #rightCart .cartProductDiv .CPNumber {
@@ -199,33 +199,33 @@
     height: 130px;
     display: inline-block;
   }
-  #Cart #rightCart .cartProductDiv .CPDescription {
+  #Cart #rightCart .cartProductDiv .CPDescription1 {
     display: inline-block;
     margin-left: 20px;
     position: absolute;
     margin-top: 20px;
     width: 70%;
   }
-  #Cart #rightCart .cartProductDiv .CPDescription h1 {
+  #Cart #rightCart .cartProductDiv .CPDescription1 h1 {
     font-family: nunito;
     font-size: 17px;
   }
-  #Cart #rightCart .cartProductDiv .CPDescription h1 i {
+  #Cart #rightCart .cartProductDiv .CPDescription1 h1 i {
     color: #00a2ff;
   }
-  #Cart #rightCart .cartProductDiv .CPDescription p {
+  #Cart #rightCart .cartProductDiv .CPDescription1 p {
     display: inline-block;
     font-family: nunito;
     margin-top: 25px;
     font-size: 14px;
   }
-  #Cart #rightCart .cartProductDiv .CPDescription p i {
+  #Cart #rightCart .cartProductDiv .CPDescription1 p i {
     color: #ff7700;
   }
-  #Cart #rightCart .cartProductDiv .CPDescription .CPCC {
+  #Cart #rightCart .cartProductDiv .CPDescription1 .CPCC {
     margin-left: 10px;
   }
-  #Cart #rightCart .cartProductDiv .CPDescription .CPCS {
+  #Cart #rightCart .cartProductDiv .CPDescription1 .CPCS {
     color: #8d8d8d;
   }
   #Cart #rightCart .cartProductDiv .CPNumber {

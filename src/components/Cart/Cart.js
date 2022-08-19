@@ -1,4 +1,6 @@
 import React,{useState,useEffect} from 'react'
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import './cart.css'
 const Cart = () => {
     const devices =[
@@ -44,6 +46,13 @@ const Cart = () => {
       SetAllPrice(a)
     },[])
 
+    const States = useSelector(state => state);
+    const dispatch = useDispatch();
+  
+    useEffect(()=>{
+      dispatch({type:"CHANGEPRODUCTPAGE",value:false})
+    },[])
+
   return (
     <div id='Cart'>
         <div id='leftCart'>
@@ -59,7 +68,7 @@ const Cart = () => {
               return(
                 <div className='cartProductDiv'>
                     <img src={'../'+item.imageAddress}></img>
-                    <div className='CPDescription'>
+                    <div className='CPDescription1'>
                       <h1><i class="fa fa-pencil JM" aria-hidden="true"></i>{' '}{item.model}</h1>
                       <p className='CPCS'><i class="fa fa-floppy-o JM" aria-hidden="true"></i>{' '}storage</p>
                       <p className='CPCC'>{item.Capacities}</p>

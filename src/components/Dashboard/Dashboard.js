@@ -26,8 +26,12 @@ const Dashboard = () => {
     }])
 
     const counter = useSelector(state => state);
+    const States = useSelector(state => state);
     const dispatch = useDispatch();
-
+  
+    useEffect(()=>{
+      dispatch({type:"CHANGEPRODUCTPAGE",value:false})
+    },[])
     
     return (
       <div id="OuterBox">
