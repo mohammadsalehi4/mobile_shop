@@ -1,0 +1,18 @@
+#circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 5px solid #e1e1e1;
+  border-top-color: #00a2ff;
+  border-right-color: #00a2ff;
+  animation: spin 1s linear infinite;
+  margin: 300px auto;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=loading.css.map */

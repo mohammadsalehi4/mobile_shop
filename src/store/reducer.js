@@ -6,7 +6,8 @@ const initialState={
     productPage:true,
     cartPNumber:3,    
     ShowPlan:0,
-    messages:2
+    messages:2,
+    loading:true
 }
 
 const reducer=(state=initialState,action)=>{
@@ -44,6 +45,12 @@ const reducer=(state=initialState,action)=>{
         return {
             ...state,
             cartPNumber:action.value
+        }
+    }
+    if(action.type==="CHANGELOADING"){
+        return {
+            ...state,
+            loading:action.value
         }
     }
     return state

@@ -172,7 +172,7 @@ const Main = () => {
   ]
 
   const [minPrice,SetMinPrice]=useState(0)
-  const [maxPrice,SetMaxPrice]=useState(1000)
+  const [maxPrice,SetMaxPrice]=useState(999)
   const[ShowDevice,SetShowDevice]=useState(devices)
   const[brandFilter,SetbrandFilter]=useState([])
   const[rateFilter,SetrateFilter]=useState([])
