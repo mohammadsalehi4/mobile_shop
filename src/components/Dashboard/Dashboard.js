@@ -25,12 +25,33 @@ const Dashboard = () => {
       models:'Iphone 13 pro Max'
     }])
 
+    const [MyOrder,SetOrder]=useState([{
+      year:2022,
+      month:'April',
+      day:8,
+      startHour:5,
+      endHour:8,
+      title:'23 April,2022',
+      description:'Order Code: 2233, Price: $430, off: 0%',
+      models:'Galaxy A20'
+    },{
+      year:2022,
+      month:'April',
+      day:8,
+      startHour:5,
+      endHour:8,
+      title:'23 April,2022',
+      description:'Order Code: 2233, Price: $830, off: 0%',
+      models:'Iphone 13 pro Max'
+    }])
+
     const counter = useSelector(state => state);
     const States = useSelector(state => state);
     const dispatch = useDispatch();
   
     useEffect(()=>{
       dispatch({type:"CHANGEPRODUCTPAGE",value:false})
+      dispatch({type:"CHANGEPAGE",value:'dashboard'})
     },[])
     
     return (
@@ -106,7 +127,7 @@ const Dashboard = () => {
           </div>
           <div id='RMBox'>
             <a>
-              Premeum Class ...
+              Cart...
             </a>
             <p id='TBYCC'>
               Complete your unfinished order
@@ -115,20 +136,20 @@ const Dashboard = () => {
           <div id='RBBox'>
             <div className='MeetingTime'>
               <i class="fa fa-calendar" aria-hidden="true"></i>
-              <p>{String(MeetingTime.day)}{' '}{MeetingTime[counter.ShowPlan].month},{MeetingTime[counter.ShowPlan].year}</p><br/>
-              <p className='MT'>{MeetingTime[counter.ShowPlan].startHour}-{MeetingTime[counter.ShowPlan].endHour} AM</p>
+              <p>{String(States.orderDay)}{' '}{States.orderMonth},{States.orderYear}</p><br/>
+              <p className='MT'>{States.orderStartHour}-{States.orderEndHour} AM</p>
             </div>
   
             <div className='MeetingTime'>
-              <i class="fa fa-clock-o" aria-hidden="true"></i>
-              <p>Duration</p><br/>
-              <p className='MT'>{MeetingTime[counter.ShowPlan].endHour-MeetingTime[counter.ShowPlan].startHour} Hours</p>
+              <i class="fa fa-money" aria-hidden="true"></i>
+              <p>Price</p><br/>
+              <p className='MT'>$ {States.orderPrice}</p>
             </div>
   
             <div className='MeetingTime'>
-              <i class="fa fa-bars" aria-hidden="true"></i>
-              <p>Level</p><br/>
-              <p className='MT'>{Level}</p>
+              <i class="fa fa-location-arrow" aria-hidden="true"></i>
+              <p>City</p><br/>
+              <p className='MT'>{States.orderCity}</p>
             </div>
             <div id='RTLBButton'>Complete <i class="fa fa-arrow-right FAMenu" aria-hidden="true"></i></div>
           </div>

@@ -20,16 +20,33 @@ const Header = () => {
                 :
                   null
                 }
+                  <h2 ><a href='/'  className='title'>Mobile Shop</a></h2>
+                
               {
-                States.productPage? 
-                  <h2 ><a href='/'>Mobile Shop</a></h2>
+                States.thisPage==='main'?
+                <div>                
+                  <h3 id='HLHF' className='thisPage'><a href='/'>Home</a></h3>
+                  <h3><a href='/cart'>Cart</a></h3>
+                  <h3><a href='/dashboard'>Dashboard</a></h3></div>
                 :
-                  <h2 className='PRD'>Product</h2>
+                  States.thisPage==='cart'?
+                  <div>                
+                  <h3 id='HLHF'><a href='/'>Home</a></h3>
+                  <h3 className='thisPage'><a href='/cart'>Cart</a></h3>
+                  <h3><a href='/dashboard'>Dashboard</a></h3></div>
+                :
+                  States.thisPage==='dashboard'?
+                  <div>                
+                  <h3 id='HLHF'><a href='/'>Home</a></h3>
+                  <h3><a href='/cart'>Cart</a></h3>
+                  <h3 className='thisPage'><a href='/dashboard'>Dashboard</a></h3></div>
+                :
+                  <div>                
+                  <h3 id='HLHF'><a href='/'>Home</a></h3>
+                  <h3><a href='/cart'>Cart</a></h3>
+                  <h3><a href='/dashboard'>Dashboard</a></h3></div>
               }
-            <h3 id='HLHF' className='thisPage'><a href='/'>Home</a> <div className='kuft'></div></h3>
-            <h3>Collections</h3>
-            <h3>Blog</h3>
-            <h3>Categorys</h3>
+
             <div id='mobileRightHeader'>
               {
                 States.productPage? 

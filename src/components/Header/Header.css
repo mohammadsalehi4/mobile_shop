@@ -6,6 +6,11 @@
   font-family: ThinAraboto;
   src: url("../../fonts//ArabotoThin.ttf");
 }
+.title {
+  text-decoration: none;
+  color: black;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -43,16 +48,16 @@ a {
   #Header #leftHeader h3:hover {
     color: #424242;
   }
-  #Header #leftHeader .thisPage {
-    color: black;
+  #Header #leftHeader div {
+    display: inline-block;
+    box-sizing: border-box;
   }
-  #Header #leftHeader .thisPage .kuft {
-    width: 60%;
-    height: 3px;
-    margin-left: 20%;
-    margin-top: 7px;
-    background: #4b4bff;
-    border-radius: 20px;
+  #Header #leftHeader div .thisPage {
+    color: red;
+    border-bottom-style: solid;
+    border-bottom-color: #3e3aff;
+    border-bottom-width: 3px;
+    box-sizing: border-box;
   }
   #Header #leftHeader #mobileRightHeader {
     display: none;

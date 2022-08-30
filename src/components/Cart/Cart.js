@@ -51,6 +51,8 @@ const Cart = () => {
   
     useEffect(()=>{
       dispatch({type:"CHANGEPRODUCTPAGE",value:false})
+      dispatch({type:"CHANGEPAGE",value:'cart'})
+      
     },[])
 
   return (

@@ -8,6 +8,11 @@
     src: url('../../fonts//ArabotoThin.ttf');
 }
 
+.title{
+    text-decoration: none;
+    color: black;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -43,17 +48,18 @@ a{
             h3:hover{
                 color: rgb(66, 66, 66);
             }
-            .thisPage{
-                color: black;
-                .kuft{
-                    width: 60%;
-                    height: 3px;
-                    margin-left: 20%;
-                    margin-top: 7px;
-                    background: rgb(75, 75, 255);
-                    border-radius: 20px;
+            div{
+                display: inline-block;
+                box-sizing: border-box;
+                .thisPage{
+                    color: red;
+                    border-bottom-style: solid;
+                    border-bottom-color: rgb(62, 58, 255);
+                    border-bottom-width: 3px;
+                    box-sizing: border-box;
                 }
             }
+
             #mobileRightHeader{
                 display: none;
             }

@@ -7,7 +7,15 @@ const initialState={
     cartPNumber:3,    
     ShowPlan:0,
     messages:2,
-    loading:true
+    loading:false,
+    thisPage:'main',
+    orderYear:2022,
+    orderMonth:'Apr',
+    orderDay:29,
+    orderStartHour:3,
+    orderEndHour:6,
+    orderCity:'Tehran',
+    orderPrice:2640,
 }
 
 const reducer=(state=initialState,action)=>{
@@ -51,6 +59,12 @@ const reducer=(state=initialState,action)=>{
         return {
             ...state,
             loading:action.value
+        }
+    }
+    if(action.type==="CHANGEPAGE"){
+        return {
+            ...state,
+            thisPage:action.value
         }
     }
     return state
