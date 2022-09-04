@@ -312,6 +312,34 @@
     top: 50px;
     min-height: 1000px;
   }
+  #mainDiv #Mobile #sortBox {
+    width: 90%;
+    height: 50px;
+  }
+  #mainDiv #Mobile #sortBox div {
+    display: inline-block;
+  }
+  #mainDiv #Mobile #sortBox i {
+    margin-top: 10px;
+  }
+  #mainDiv #Mobile #sortBox p {
+    display: inline-block;
+    margin-left: 30px;
+    font-weight: bold;
+  }
+  #mainDiv #Mobile #sortBox .option {
+    font-weight: 100;
+    color: #525252;
+    cursor: pointer;
+  }
+  #mainDiv #Mobile #sortBox #priceNumber {
+    font-weight: 100;
+    color: #525252;
+    float: right;
+  }
+  #mainDiv #Mobile #sortBox .selected {
+    color: #007fc9;
+  }
   #mainDiv #Mobile .mobileBox {
     width: 30%;
     height: 400px;
@@ -672,6 +700,24 @@
     background: white;
     box-shadow: 0 0 3px #cccccc;
   }
+  #mainDiv #Mobile #sortBox {
+    margin-left: 5%;
+    width: 90%;
+    padding-bottom: 15px;
+    border-bottom-style: solid;
+    border-color: black;
+    border-width: 1px;
+  }
+  #mainDiv #Mobile #sortBox i {
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 25px;
+  }
+  #mainDiv #Mobile #sortBox #showSortTop {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 20px;
+  }
   #mainDiv #Mobile .mobileBox {
     width: 90%;
     height: 190px;
@@ -985,6 +1031,55 @@
 
   .JD {
     display: none;
+  }
+
+  #poshanande {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    left: 0px;
+    height: 100%;
+    bottom: 0px;
+    background: #b9b9b9;
+    opacity: 0.5;
+  }
+
+  #sortMenu {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    height: 250px;
+    background: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-size: 20px;
+  }
+  #sortMenu i {
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  #sortMenu p {
+    display: inline-block;
+    margin-left: 20px;
+    font-weight: bold;
+  }
+  #sortMenu p i {
+    float: right;
+    margin: 0px 5%;
+  }
+  #sortMenu .optionM {
+    display: block;
+    margin-top: 25px;
+    padding-bottom: 15px;
+    width: 90%;
+    border-bottom-color: #cbcbcb;
+    border-bottom-width: 1px;
+    font-weight: 100;
+    border-style: solid;
   }
 }
 

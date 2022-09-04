@@ -319,13 +319,41 @@
                 }
             }
         }
-        
+
         #Mobile{
             position: relative;
             width: 1005px;
             left: 500px;
             top: 50px;
             min-height: 1000px;
+            #sortBox{
+                width: 90%;
+                height: 50px;
+                div{
+                    display: inline-block;
+                }
+                i{
+                    margin-top: 10px;
+                }  
+                p{
+                    display: inline-block;
+                    margin-left: 30px;
+                    font-weight: bold;
+                }    
+                .option{
+                    font-weight: 100;
+                    color: rgb(82, 82, 82);
+                    cursor: pointer;
+                } 
+                #priceNumber{
+                    font-weight: 100;
+                    color: rgb(82, 82, 82);
+                    float: right;
+                }   
+                .selected{
+                    color: rgb(0, 127, 201);
+                }      
+            }
             .mobileBox{
                 width: 30%;
                 height: 400px;
@@ -699,7 +727,26 @@
             top: 10px;
             background: white;
             box-shadow: 0 0 3px rgb(204, 204, 204);
+            #sortBox{
+                margin-left: 5%;
+                width: 90%;
+                padding-bottom: 15px;
+                border-bottom-style: solid;
+                border-color: black;
+                border-width: 1px;
+                i{
+                    margin-top: 20px;
+                        display: inline-block;
+                        font-size: 25px;
 
+                }
+                #showSortTop{
+                    display: inline-block;
+                    font-size: 20px;
+                    margin-left: 20px;
+                }
+
+            }
             .mobileBox{
                 width: 90%;
                 height: 190px;
@@ -1023,5 +1070,52 @@
     }  
     .JD{
         display: none;
+    }
+    #poshanande{
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        left: 0px;
+        height: 100%;
+        bottom: 0px;
+        background: rgb(185, 185, 185);
+        opacity: 0.5;
+    }
+    #sortMenu{
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        left: 0px;
+        bottom: 0px;
+        height: 250px;
+        background: white;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        font-size: 20px;
+        i{
+            display: inline-block;
+            margin-left: 5%;
+            margin-top: 20px;
+            font-size: 30px;
+        }
+        p{
+            display: inline-block;
+            margin-left: 20px;
+            font-weight: bold;
+            i{
+                float: right;
+                margin: 0px 5%;
+            }
+        }
+        .optionM{
+            display: block;
+            margin-top: 25px;
+            padding-bottom: 15px;
+            width: 90%;
+            border-bottom-color: rgb(203, 203, 203);
+            border-bottom-width: 1px;
+            font-weight: 100;
+            border-style: solid;
+        }
     }
 }

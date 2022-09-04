@@ -175,10 +175,13 @@ const Main = () => {
   const [minPrice,SetMinPrice]=useState(0)
   const [maxPrice,SetMaxPrice]=useState(999)
   const[ShowDevice,SetShowDevice]=useState(devices)
+  const[MainShowDevice,SetMainShowDevice]=useState(ShowDevice)
   const[brandFilter,SetbrandFilter]=useState([])
   const[rateFilter,SetrateFilter]=useState([])
   const [topBoxPage,SettopBoxPage]=useState(0)
   const [isload,SetisLoad]=useState(false)
+  const [sortBy,SetSortBy]=useState(1)
+  const [sortMenu,SetSortMenu]=useState(false)
 
   const nextTopPage=(side)=>{
     const all=HeaderDetails.length
@@ -321,8 +324,64 @@ const Main = () => {
 
   useEffect(()=>{
     dispatch({type:"CHANGEPAGE",value:'main'})
-
+    sortFunction(1)
   },[])
+
+  const sortFunction=(sortBy)=>{
+    let sorted=ShowDevice
+    if(sortBy===1){
+      for(let i=0;i<sorted.length;i++){
+        let a=sorted[i]
+        let b=i
+        for(let j=i+1;j<sorted.length;j++){
+          if(sorted[j].price>a.price){
+            b=j
+            a=sorted[j]
+          }
+        }
+        sorted[b]=sorted[i]
+        sorted[i]=a
+      }
+      SetSortBy(1)
+      SetShowDevice(sorted)
+    }
+    else if(sortBy===2){
+      for(let i=0;i<sorted.length;i++){
+        let a=sorted[i]
+        let b=i
+        for(let j=i+1;j<sorted.length;j++){
+          if(sorted[j].price<a.price){
+            b=j
+            a=sorted[j]
+          }
+        }
+        sorted[b]=sorted[i]
+        sorted[i]=a
+      }
+      SetSortBy(2)
+      SetShowDevice(sorted)
+    }
+    else{
+      for(let i=0;i<sorted.length;i++){
+        let a=sorted[i]
+        let b=i
+        for(let j=i+1;j<sorted.length;j++){
+          if(sorted[j].rate>a.rate){
+            b=j
+            a=sorted[j]
+          }
+        }
+        sorted[b]=sorted[i]
+        sorted[i]=a
+      }
+      SetSortBy(3)
+      SetShowDevice(sorted)
+    }
+  }
+
+  useEffect(()=>{
+    SetMainShowDevice(ShowDevice)
+  },[ShowDevice])
 
     return (
       <div id='mainDiv' >
@@ -457,10 +516,48 @@ const Main = () => {
             </label>
           </div>
         </div>
-  
+
         <div id='Mobile'>
+          <div id='sortBox'>
+            <i class="fa fa-list" aria-hidden="true" onClick={()=>{SetSortMenu(true)}}></i>
+              {
+                sortBy===1 ? 
+                  <p className='JM' id='showSortTop'>high price</p>
+                :
+                  sortBy===2 ?
+                    <p className='JM' id='showSortTop'>low price</p>
+                :
+                  <p className='JM' id='showSortTop'>rate</p>
+              }
+            <p className='JD'>sort By:</p>
+            {
+              sortBy===1 ?
+              <div className='JD'>
+                <p className='option selected' onClick={()=>{sortFunction(1)}}>price up</p>
+                <p className='option' onClick={()=>{sortFunction(2)}}>price down</p>
+                <p className='option' onClick={()=>{sortFunction(3)}}>rate</p>
+              </div>
+              :
+                sortBy===2 ?
+                <div className='JD'>
+                  <p className='option' onClick={()=>{sortFunction(1)}}>price up</p>
+                  <p className='option selected' onClick={()=>{sortFunction(2)}}>price down</p>
+                  <p className='option' onClick={()=>{sortFunction(3)}}>rate</p>
+                </div>
+                :
+                  <div className='JD'>
+                    <p className='option' onClick={()=>{sortFunction(1)}}>price up</p>
+                    <p className='option' onClick={()=>{sortFunction(2)}}>price down</p>
+                    <p className='option selected' onClick={()=>{sortFunction(3)}}>rate</p>
+                  </div>
+              
+            }
+
+            <p id='priceNumber'  className='JD'>{MainShowDevice.length} product</p>
+
+          </div>
           { 
-            ShowDevice.map((item,index)=>{
+            MainShowDevice.map((item,index)=>{
               return(
                 <a href={'/product/'+item.id}>
                   <div className='mobileBox' key={index}>
@@ -574,6 +671,49 @@ const Main = () => {
           </div>
           <div id='hidder' className='JM' onClick={closeMenu}></div>
         </div>
+        {
+          sortMenu === true ?
+            <div>
+              <div id='poshanande' onClick={()=>{SetSortMenu(false)}}>
+
+              </div>
+              <div className='JM' id='sortMenu'>
+                <i class="fa fa-arrows-v" aria-hidden="true"></i>
+                <p>Sort By:</p>
+
+                <p className='optionM' onClick={()=>{sortFunction(1)}}>
+                  price up
+                  {
+                    sortBy===1 ? 
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                    :
+                      null
+                  }
+
+                </p>
+                <p className='optionM' onClick={()=>{sortFunction(2)}}>
+                  price down
+                  {
+                    sortBy===2 ? 
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                    :
+                      null
+                  }
+                </p>
+                <p className='optionM' onClick={()=>{sortFunction(3)}}>
+                  rate
+                  {
+                    sortBy===3 ? 
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                    :
+                      null
+                  }
+                </p>
+              </div>
+            </div>
+          :
+          null
+        }
         <Footer/>
       </div>
     )
