@@ -520,6 +520,7 @@ const Main = () => {
         <div id='Mobile'>
           <div id='sortBox'>
             <i class="fa fa-list" aria-hidden="true" onClick={()=>{SetSortMenu(true)}}></i>
+
               {
                 sortBy===1 ? 
                   <p className='JM' id='showSortTop'>high price</p>
@@ -529,6 +530,8 @@ const Main = () => {
                 :
                   <p className='JM' id='showSortTop'>rate</p>
               }
+
+
             <p className='JD'>sort By:</p>
             {
               sortBy===1 ?

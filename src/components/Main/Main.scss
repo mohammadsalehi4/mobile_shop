@@ -352,7 +352,10 @@
                 }   
                 .selected{
                     color: rgb(0, 127, 201);
-                }      
+                }    
+                .JM{
+                    display: none;
+                }  
             }
             .mobileBox{
                 width: 30%;
@@ -736,8 +739,8 @@
                 border-width: 1px;
                 i{
                     margin-top: 20px;
-                        display: inline-block;
-                        font-size: 25px;
+                    display: inline-block;
+                    font-size: 25px;
 
                 }
                 #showSortTop{
@@ -1068,9 +1071,7 @@
             }
         }
     }  
-    .JD{
-        display: none;
-    }
+
     #poshanande{
         position: fixed;
         z-index: 100;
@@ -1117,5 +1118,8 @@
             font-weight: 100;
             border-style: solid;
         }
+    }
+    .JD{
+        display: none;
     }
 }
