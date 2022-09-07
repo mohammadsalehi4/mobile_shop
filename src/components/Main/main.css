@@ -1054,6 +1054,9 @@
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     font-size: 20px;
+    bottom: -250px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
   }
   #sortMenu i {
     display: inline-block;
@@ -1079,6 +1082,264 @@
     border-bottom-width: 1px;
     font-weight: 100;
     border-style: solid;
+  }
+
+  .justMobileMenu {
+    z-index: 120;
+  }
+  .justMobileMenu #mobileMMenu {
+    width: 60%;
+    height: 100%;
+    background: #d6d6d6;
+    position: fixed;
+    top: 0px;
+    overflow-y: scroll;
+    left: 100%;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+  }
+  .justMobileMenu #mobileMMenu .closeMenu {
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 15px;
+  }
+  .justMobileMenu #mobileMMenu .closeMenu i {
+    color: #3b3b3b;
+    font-size: 20px;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv {
+    display: block;
+    width: 220px;
+    height: 220px;
+    background: #f1f1f1;
+    margin-left: 5%;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: Nunito;
+    position: absolute;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv h1 {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 1px;
+    font-size: 18px;
+    font-family: Nimbus;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv .range-input {
+    position: relative;
+    margin-top: 5px;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv .range-input div {
+    height: 2px;
+    width: 80%;
+    background: #7a7a7a;
+    position: absolute;
+    top: 18px;
+    margin-left: 10%;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv .range-input input {
+    position: absolute;
+    width: 80%;
+    height: 5px;
+    top: 15px;
+    background: none;
+    margin-left: 10%;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv .range-input input[type=range]::-webkit-slider-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #17A2B8;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(94, 94, 94, 0.35);
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv .range-input input[type=range]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #17A2B8;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(94, 94, 94, 0.35);
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv .setPriceDiv {
+    display: inline-block;
+    margin-left: 9%;
+    margin-top: 45px;
+    width: 22%;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv .setPriceDiv p {
+    font-size: 14px;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv .setPriceDiv div {
+    padding: 6px 0px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #a3a3a3;
+    color: #5c5c5c;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 13px;
+    text-align: center;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv #seprator {
+    display: inline-block;
+    width: 20%;
+    height: 2px;
+    background: #afafaf;
+    margin-left: 10%;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv #MaxDiv {
+    margin-left: 10%;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv button {
+    width: 84%;
+    margin-left: 9%;
+    border-style: none;
+    margin-top: 20px;
+    background: #00a2ff;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv button:hover {
+    background: #008ada;
+    transition: 0.2s;
+  }
+  .justMobileMenu #mobileMMenu #leftCheckboxDiv {
+    width: 220px;
+    display: block;
+    height: 250px;
+    background: #f1f1f1;
+    margin-left: 5%;
+    border-radius: 10px;
+    font-family: Nunito;
+    position: absolute;
+    margin-top: 260px;
+  }
+  .justMobileMenu #mobileMMenu #leftCheckboxDiv h1 {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 1px;
+    font-size: 18px;
+    font-family: Nimbus;
+  }
+  .justMobileMenu #mobileMMenu #leftCheckboxDiv div input {
+    width: 16px;
+    height: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    top: 2px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  .justMobileMenu #mobileMMenu #leftCheckboxDiv div label {
+    margin-left: 0px;
+    display: inline-block;
+    width: 80%;
+    font-size: 14px;
+  }
+  .justMobileMenu #mobileMMenu #leftCheckboxDiv div label p {
+    display: inline-block;
+    float: right;
+    margin-right: 30px;
+    background: #00a2ff;
+    padding: 3px 6px;
+    margin-top: -8px;
+    border-radius: 20px;
+    color: white;
+  }
+  .justMobileMenu #mobileMMenu #leftRatingDiv {
+    width: 220px;
+    display: block;
+    height: 220px;
+    background: #f1f1f1;
+    margin-left: 5%;
+    border-radius: 10px;
+    font-family: Nunito;
+    position: absolute;
+    margin-top: 530px;
+  }
+  .justMobileMenu #mobileMMenu #leftRatingDiv h1 {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 1px;
+    font-size: 18px;
+    font-family: Nimbus;
+  }
+  .justMobileMenu #mobileMMenu #leftRatingDiv .rateStars {
+    display: block;
+  }
+  .justMobileMenu #mobileMMenu #leftRatingDiv .rateStars input {
+    width: 16px;
+    height: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    top: 2px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  .justMobileMenu #mobileMMenu #leftRatingDiv .rateStars label {
+    margin-left: 0px;
+    display: inline-block;
+    width: 80%;
+    font-size: 14px;
+  }
+  .justMobileMenu #mobileMMenu #leftRatingDiv .rateStars label span {
+    margin-left: 4px;
+    font-size: 20px;
+    color: #94d1f5;
+  }
+  .justMobileMenu #mobileMMenu #leftRatingDiv .rateStars label .checked {
+    color: #00a2ff;
+  }
+  .justMobileMenu #mobileMMenu {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+  .justMobileMenu #mobileMMenu::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+  }
+
+  #hidder {
+    width: 100%;
+    height: 100%;
+    background: #d6d6d6;
+    position: fixed;
+    top: 0px;
+    transition: 0.4s;
+    opacity: 0.5;
   }
 
   .JD {
