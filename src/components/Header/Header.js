@@ -10,8 +10,8 @@ const Header = () => {
   const openmenu=()=>{
     dispatch({type:"CHANGEOPENMENU",value:true})
   }
+  
   return (
-
     <div id='Header'>
         <div id='leftHeader'>
               {
