@@ -399,7 +399,6 @@ const Main = () => {
       <div id='mainDiv' >
         <div id='topMainBox' onTouchStart={(event)=>{touchstart(event)}} onTouchEnd={(event)=>{touchend(event)}}>
           <i class="fa fa-chevron-left Arrow leftArrow" aria-hidden="true" onClick={()=>{nextTopPage(false)}}></i>
-            <img id='topMainImage' src={HeaderDetails[topBoxPage].imageAddress} ></img>
             <div id='topMainDescription' >
               <h1>
                 {HeaderDetails[topBoxPage].title}
@@ -407,8 +406,7 @@ const Main = () => {
               <p>
                 {HeaderDetails[topBoxPage].content}
               </p>
-              <a>Show more</a>
-              <div id='pager'>
+              {/* <div id='pager'>
                 {
                   HeaderDetails.map((item,index)=>{
                     if(index===topBoxPage){return(
@@ -421,7 +419,23 @@ const Main = () => {
                     }
                   })
                 }
-              </div>
+              </div> */}
+          </div>
+          <img id='topMainImage' src={HeaderDetails[topBoxPage].imageAddress} ></img>
+          <a>Show more</a>
+          <div id='pager'>
+            {
+              HeaderDetails.map((item,index)=>{
+                if(index===topBoxPage){return(
+                  <div id='page1' className='pages selectedPage'></div>
+                )}
+                else{
+                  return(
+                    <div id='page1' className='pages'></div>
+                  )
+                }
+              })
+            }
           </div>
           <i class="fa fa-chevron-right Arrow rightArrow" aria-hidden="true" onClick={()=>{nextTopPage(true)}}></i>
         </div>
@@ -577,10 +591,13 @@ const Main = () => {
                 <a href={'/product/'+item.id}>
                   <div className='mobileBox' key={index}>
                     <img className='mobileImage' src={item.imageAddress}></img>
+                    <div id='mobileRightBox'>
                     <p className='mobileTitle'>{item.model}</p>
                     <p className='mobilePrice'>$ {item.price}</p>
                     <span class="fa fa-star checked"><p>{item.rate}</p></span>
                     <div class="archive"><i class="fa fa-archive" aria-hidden="true"></i><p>available in store</p></div>
+                    </div>
+
                   </div>
                 </a>
               )
@@ -642,7 +659,7 @@ const Main = () => {
   
             <div id='bottomLeftMainDiv' className='JP'>
               <h1>Price
-              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
 
               </h1>
               <div class="range-input">

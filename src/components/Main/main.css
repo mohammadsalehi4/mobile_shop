@@ -43,21 +43,6 @@
     font-size: 18px;
     height: 60px;
   }
-  #mainDiv #topMainBox #topMainDescription a {
-    font-family: Nunito;
-    border-width: 2px;
-    border-style: solid;
-    display: inline-block;
-    margin-top: 50px;
-    padding: 20px 32px;
-    border-radius: 15px;
-    color: #00a2ff;
-    font-size: 20px;
-  }
-  #mainDiv #topMainBox #topMainDescription a:hover {
-    color: #008ada;
-    cursor: pointer;
-  }
   #mainDiv #topMainBox .Arrow {
     position: absolute;
     margin-top: 200px;
@@ -77,9 +62,9 @@
     right: 9%;
   }
   #mainDiv #topMainBox #pager {
-    position: absolute;
-    margin-left: -10px;
-    margin-top: 20px;
+    margin-left: 100px;
+    display: inline-block;
+    margin-top: 400px;
   }
   #mainDiv #topMainBox #pager .pages {
     background: #999999;
@@ -93,6 +78,22 @@
   #mainDiv #topMainBox #pager .selectedPage {
     background: #00a2ff;
     box-shadow: 0 0 6px #00a2ff;
+  }
+  #mainDiv #topMainBox a {
+    font-family: Nunito;
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;
+    margin-top: 50px;
+    padding: 20px 32px;
+    border-radius: 15px;
+    color: #00a2ff;
+    font-size: 20px;
+    margin-left: 750px;
+  }
+  #mainDiv #topMainBox a:hover {
+    color: #008ada;
+    cursor: pointer;
   }
   #mainDiv #bottomLeftMainDiv {
     width: 300px;
@@ -417,7 +418,6 @@
   }
   #mainDiv #topMainBox {
     width: 100%;
-    height: 650px;
     margin-top: 10px;
     background: white;
   }
@@ -425,10 +425,8 @@
     width: 90%;
     margin-left: 5%;
     top: 240px;
-    position: absolute;
   }
   #mainDiv #topMainBox #topMainDescription {
-    position: absolute;
     width: 90%;
     margin-left: 5%;
   }
@@ -445,31 +443,14 @@
     height: 60px;
     display: inline-block;
   }
-  #mainDiv #topMainBox #topMainDescription a {
-    font-family: Nunito;
-    display: inline-block;
-    padding: 10px 16px;
-    border-radius: 10px;
-    background-color: #00a2ff;
-    font-size: 20px;
-    color: white;
-    box-shadow: 0 0 8px rgba(0, 162, 255, 0.4);
-    max-width: 40%;
-    position: absolute;
-    left: 0%;
-    margin-top: 480px;
-  }
-  #mainDiv #topMainBox #topMainDescription a:hover {
-    background-color: #008ada;
-    cursor: pointer;
-  }
   #mainDiv #topMainBox .Arrow {
     display: none;
   }
   #mainDiv #topMainBox #pager {
-    position: absolute;
-    margin-left: 250px;
-    margin-top: 400px;
+    display: inline-block;
+    float: right;
+    margin-right: 5%;
+    margin-top: 20px;
   }
   #mainDiv #topMainBox #pager .pages {
     background: #999999;
@@ -483,6 +464,23 @@
   #mainDiv #topMainBox #pager .selectedPage {
     background: #00a2ff;
     box-shadow: 0 0 6px #00a2ff;
+  }
+  #mainDiv #topMainBox a {
+    font-family: Nunito;
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 10px;
+    background-color: #00a2ff;
+    font-size: 20px;
+    color: white;
+    box-shadow: 0 0 8px rgba(0, 162, 255, 0.4);
+    max-width: 30%;
+    margin-left: 5%;
+    margin-bottom: 30px;
+  }
+  #mainDiv #topMainBox a:hover {
+    background-color: #008ada;
+    cursor: pointer;
   }
   #mainDiv #bottomLeftMainDiv {
     display: none;
@@ -725,7 +723,6 @@
   }
   #mainDiv #Mobile .mobileBox {
     width: 90%;
-    height: 190px;
     margin-left: 5%;
     display: inline-block;
     border-bottom-width: 3px;
@@ -733,51 +730,52 @@
     border-style: solid;
   }
   #mainDiv #Mobile .mobileBox .mobileImage {
-    height: 170px;
     margin-left: 2%;
+    width: 25%;
     margin-top: 10px;
+    display: inline-block;
   }
-  #mainDiv #Mobile .mobileBox .mobileTitle {
+  #mainDiv #Mobile .mobileBox #mobileRightBox {
+    display: inline-block;
+    position: absolute;
+    width: 60%;
+    margin-left: 5%;
+    margin-top: 20px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox .mobileTitle {
     font-family: Nunito;
     text-align: center;
-    position: absolute;
-    margin-top: -150px;
-    margin-left: 130px;
     color: black;
-    font-size: 20px;
+    font-size: 30px;
     text-align: left;
     font-weight: bolder;
-    max-width: 50%;
+    max-width: 100%;
+    display: inline-block;
+    margin-top: 30px;
   }
-  #mainDiv #Mobile .mobileBox .mobilePrice {
-    position: absolute;
-    margin-top: -110px;
-    margin-left: 130px;
+  #mainDiv #Mobile .mobileBox #mobileRightBox .mobilePrice {
     font-family: nunito;
     font-weight: bold;
     color: black;
-    font-size: 15px;
+    font-size: 22px;
+    margin-top: 40px;
   }
-  #mainDiv #Mobile .mobileBox span {
+  #mainDiv #Mobile .mobileBox #mobileRightBox span {
     color: #ffd900;
-    position: absolute;
-    margin-top: 110px;
-    margin-left: 35px;
+    margin-top: 40px;
   }
-  #mainDiv #Mobile .mobileBox span p {
+  #mainDiv #Mobile .mobileBox #mobileRightBox span p {
     display: inline-block;
     color: black;
     font-family: Nunito;
   }
-  #mainDiv #Mobile .mobileBox .archive {
-    position: absolute;
-    margin-left: 130px;
-    margin-top: -40px;
+  #mainDiv #Mobile .mobileBox #mobileRightBox .archive {
+    margin-top: 40px;
   }
-  #mainDiv #Mobile .mobileBox .archive i {
+  #mainDiv #Mobile .mobileBox #mobileRightBox .archive i {
     color: #17A2B8;
   }
-  #mainDiv #Mobile .mobileBox .archive p {
+  #mainDiv #Mobile .mobileBox #mobileRightBox .archive p {
     display: inline-block;
     color: black;
     font-family: Nunito;
@@ -1363,6 +1361,74 @@
 
   .JD {
     display: none;
+  }
+}
+@media only screen and (max-device-width: 600px) {
+  #mainDiv #Mobile .mobileBox #mobileRightBox .mobileTitle {
+    margin-top: 10px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox .mobilePrice {
+    margin-top: 30px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox span {
+    margin-top: 30px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox .archive {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-device-width: 490px) {
+  #mainDiv #Mobile .mobileBox #mobileRightBox .mobileTitle {
+    font-size: 23px;
+    margin-top: 10px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox .mobilePrice {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox span {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox .archive {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-device-width: 400px) {
+  #mainDiv #Mobile .mobileBox #mobileRightBox .mobileTitle {
+    font-size: 17px;
+    margin-top: 5px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox .mobilePrice {
+    margin-top: 18px;
+    font-size: 14px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox span {
+    margin-top: 18px;
+    font-size: 12px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox .archive {
+    margin-top: 18px;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-device-width: 300px) {
+  #mainDiv #Mobile .mobileBox #mobileRightBox .mobileTitle {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox .mobilePrice {
+    margin-top: 15px;
+    font-size: 12px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox span {
+    margin-top: 15px;
+    font-size: 11px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox .archive {
+    margin-top: 15px;
+    font-size: 11px;
   }
 }
 

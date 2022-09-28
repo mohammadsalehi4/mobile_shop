@@ -45,21 +45,7 @@
                     font-size: 18px;
                     height: 60px;
                 }
-                a{
-                    font-family: Nunito;
-                    border-width: 2px;
-                    border-style: solid;
-                    display: inline-block;
-                    margin-top: 50px;
-                    padding: 20px 32px;
-                    border-radius: 15px;
-                    color: rgb(0, 162, 255);
-                    font-size: 20px;
-                }
-                a:hover{
-                    color: rgb(0, 138, 218);
-                    cursor: pointer;
-                }
+
             }
             .Arrow{
                 position: absolute;
@@ -81,9 +67,9 @@
     
             }
             #pager{
-                position: absolute;
-                margin-left: -10px;
-                margin-top: 20px;
+                margin-left: 100px;
+                display: inline-block;
+                margin-top: 400px;
                 .pages{
                     background: rgb(153, 153, 153);
                     width: 8px;
@@ -97,6 +83,22 @@
                     background: rgb(0, 162, 255);
                     box-shadow: 0 0 6px rgb(0, 162, 255);
                 }
+            }
+            a{
+                font-family: Nunito;
+                border-width: 2px;
+                border-style: solid;
+                display: inline-block;
+                margin-top: 50px;
+                padding: 20px 32px;
+                border-radius: 15px;
+                color: rgb(0, 162, 255);
+                font-size: 20px;
+                margin-left: 750px;
+            }
+            a:hover{
+                color: rgb(0, 138, 218);
+                cursor: pointer;
             }
         }
         #bottomLeftMainDiv{
@@ -434,18 +436,14 @@
         background: rgb(238, 238, 238);
         #topMainBox{
             width: 100%;
-            height: 650px;
             margin-top: 10px;
-
             background: white;
             #topMainImage{
                 width: 90%;
                 margin-left: 5%;
                 top: 240px;
-                position: absolute;
             }
             #topMainDescription{
-                position: absolute;
                 width: 90%;
                 margin-left: 5%;
     
@@ -462,31 +460,14 @@
                     height: 60px;
                     display: inline-block;
                 }
-                a{
-                    font-family: Nunito;
-                    display: inline-block;
-                    padding: 10px 16px;
-                    border-radius:10px;
-                    background-color: rgb(0, 162, 255);
-                    font-size: 20px;
-                    color: white;
-                    box-shadow: 0 0 8px rgb(0, 162, 255,0.4);
-                    max-width: 40%;
-                    position: absolute;
-                    left: 0%;
-                    margin-top: 480px;
-                    
-                }
-                a:hover{
-                    background-color: rgb(0, 138, 218);
-                    cursor: pointer;
-                }
+
             }
             .Arrow{display: none;}
             #pager{
-                position: absolute;
-                margin-left: 250px;
-                margin-top: 400px;
+                display: inline-block;
+                float: right;
+                margin-right: 5%;
+                margin-top: 20px;
                 .pages{
                     background: rgb(153, 153, 153);
                     width: 8px;
@@ -500,6 +481,23 @@
                     background: rgb(0, 162, 255);
                     box-shadow: 0 0 6px rgb(0, 162, 255);
                 }
+            }
+            a{
+                font-family: Nunito;
+                display: inline-block;
+                padding: 10px 16px;
+                border-radius:10px;
+                background-color: rgb(0, 162, 255);
+                font-size: 20px;
+                color: white;
+                box-shadow: 0 0 8px rgb(0, 162, 255,0.4);
+                max-width: 30%;
+                margin-left: 5%;   
+                margin-bottom: 30px;             
+            }
+            a:hover{
+                background-color: rgb(0, 138, 218);
+                cursor: pointer;
             }
         }
         #bottomLeftMainDiv{
@@ -755,63 +753,64 @@
             
             .mobileBox{
                 width: 90%;
-                height: 190px;
                 margin-left: 5%;
                 display: inline-block;
                 border-bottom-width: 3px;
                 border-color: rgb(238, 238, 238);
                 border-style: solid;
                 .mobileImage{
-                    height: 170px;
                     margin-left: 2%;
+                    width: 25%;
                     margin-top: 10px;
+                    display: inline-block;
                 }
-                .mobileTitle{
-                    font-family: Nunito;
-                    text-align: center;
+                #mobileRightBox{
+                    display: inline-block;
                     position: absolute;
-                    margin-top: -150px;
-                    margin-left: 130px;
-                    color: black;
-                    font-size: 20px;
-                    text-align: left;
-                    font-weight: bolder;
-                    max-width: 50%;
-                }
-                .mobilePrice{
-                    position: absolute;
-                    margin-top: -110px;
-                    margin-left: 130px;
-                    font-family: nunito;
-                    font-weight: bold;
-                    color: black;
-                    font-size: 15px;
-                }
-                span{
-                    color: rgb(255, 217, 0);
-                    position: absolute;
-                    margin-top: 110px;
-                    margin-left: 35px;
-                    p{
-                        display: inline-block;
-                        color: black;
+                    width: 60%;
+                    margin-left: 5%;
+                    margin-top: 20px;
+                    .mobileTitle{
                         font-family: Nunito;
-                    }
-                }
-                .archive{
-                    position: absolute;
-                    margin-left: 130px;
-                    margin-top: -40px;
-                    i{
-                        color: #17A2B8;
-                    }
-                    p{ 
-                        display: inline-block;
+                        text-align: center;
                         color: black;
-                        font-family: Nunito;
-                        margin-left: 10px;
+                        font-size: 30px;
+                        text-align: left;
+                        font-weight: bolder;
+                        max-width: 100%;
+                        display: inline-block;
+                        margin-top: 30px;
+                    }
+                    .mobilePrice{
+                        font-family: nunito;
+                        font-weight: bold;
+                        color: black;
+                        font-size: 22px;
+                        margin-top: 40px;
+                    }
+                    span{
+                        color: rgb(255, 217, 0);
+                        margin-top: 40px;
+                        p{
+                            display: inline-block;
+                            color: black;
+                            font-family: Nunito;
+                        }
+                    }
+                    .archive{
+                        margin-top: 40px;
+                        i{
+                            color: #17A2B8;
+                        }
+                        p{ 
+                            display: inline-block;
+                            color: black;
+                            font-family: Nunito;
+                            margin-left: 10px;
+                        }
                     }
                 }
+
             }
         }
         #MMenu{
@@ -1408,5 +1407,109 @@
     }
     .JD{
         display: none;
+    }
+}
+
+@media only screen and (max-device-width:600px) {
+    #mainDiv{
+        #Mobile{
+            .mobileBox{
+                #mobileRightBox{
+                    .mobileTitle{
+                        margin-top: 10px;
+                    }
+                    .mobilePrice{
+                        margin-top: 30px;
+                    }
+                    span{
+                        margin-top: 30px;
+
+                    }
+                    .archive{
+                        margin-top: 30px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-device-width:490px) {
+    #mainDiv{
+        #Mobile{
+            .mobileBox{
+                #mobileRightBox{
+                    .mobileTitle{
+                        font-size: 23px;
+                        margin-top: 10px;
+                    }
+                    .mobilePrice{
+                        margin-top: 20px;
+                        font-size: 16px;
+                    }
+                    span{
+                        margin-top: 20px;
+                        font-size: 14px;
+                    }
+                    .archive{
+                        margin-top: 20px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-device-width:400px) {
+    #mainDiv{
+        #Mobile{
+            .mobileBox{
+                #mobileRightBox{
+                    .mobileTitle{
+                        font-size: 17px;
+                        margin-top: 5px;
+                    }
+                    .mobilePrice{
+                        margin-top: 18px;
+                        font-size: 14px;
+                    }
+                    span{
+                        margin-top: 18px;
+                        font-size: 12px;
+                    }
+                    .archive{
+                        margin-top: 18px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-device-width:300px) {
+    #mainDiv{
+        #Mobile{
+            .mobileBox{
+                #mobileRightBox{
+                    .mobileTitle{
+                        font-size: 15px;
+                        margin-top: 5px;
+                    }
+                    .mobilePrice{
+                        margin-top: 15px;
+                        font-size: 12px;
+                    }
+                    span{
+                        margin-top: 15px;
+                        font-size: 11px;
+                    }
+                    .archive{
+                        margin-top: 15px;
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
     }
 }

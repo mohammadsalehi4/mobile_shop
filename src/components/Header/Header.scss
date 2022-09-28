@@ -108,9 +108,8 @@ a{
             color: black;
         }
         #leftHeader{
-            width: 60%;
+            width: 90%;
             display: none;
-            height: 100px;
             display: inline-block;
             margin-left: 5%;
             h2{
@@ -149,16 +148,16 @@ a{
             }
             #mobileRightHeader{
                 display: inline-block;
-                position: absolute;
+                position: relative;
                 font-size: 26px;
-                top: 10px;
-                left: 50%;
+                margin-top: -30px;
+                float: right;
                 i{
-                    margin-left: 20px;
-                    box-shadow: 0 0 15px rgb(241, 241, 241);
+                    box-shadow: 0 0 10px rgb(200, 200, 200);
                     padding: 5px 10px;
                     border-radius: 10px;
                     cursor: pointer;
+                    margin-right: 10px;
                     p{
                         font-size: 13px;
                         display: inline-block;
