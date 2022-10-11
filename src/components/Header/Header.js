@@ -14,14 +14,7 @@ const Header = () => {
   return (
     <div id='Header'>
         <div id='leftHeader'>
-              {
-                !States.productPage? 
-                  <a href='/'><i class="fa fa-chevron-left JM" aria-hidden="true"></i></a>
-                :
-                  null
-                }
-                  <h2 ><a href='/'  className='title'>Mobile Shop</a></h2>
-                
+              <h2 ><a href='/'  className='title'>Mobile Shop</a></h2>
               {
                 States.thisPage==='main'?
                 <div>                
@@ -46,7 +39,6 @@ const Header = () => {
                   <h3><a href='/cart'>Cart</a></h3>
                   <h3><a href='/dashboard'>Dashboard</a></h3></div>
               }
-
             <div id='mobileRightHeader'>
               {
                 States.productPage? 

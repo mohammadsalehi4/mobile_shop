@@ -1397,12 +1397,13 @@
 }
 @media only screen and (max-device-width: 400px) {
   #mainDiv #Mobile .mobileBox #mobileRightBox .mobileTitle {
-    font-size: 17px;
+    font-size: 15px;
     margin-top: 5px;
   }
   #mainDiv #Mobile .mobileBox #mobileRightBox .mobilePrice {
     margin-top: 18px;
     font-size: 14px;
+    position: relative;
   }
   #mainDiv #Mobile .mobileBox #mobileRightBox span {
     margin-top: 18px;
@@ -1410,7 +1411,7 @@
   }
   #mainDiv #Mobile .mobileBox #mobileRightBox .archive {
     margin-top: 18px;
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 @media only screen and (max-device-width: 300px) {

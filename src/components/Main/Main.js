@@ -406,20 +406,6 @@ const Main = () => {
               <p>
                 {HeaderDetails[topBoxPage].content}
               </p>
-              {/* <div id='pager'>
-                {
-                  HeaderDetails.map((item,index)=>{
-                    if(index===topBoxPage){return(
-                      <div id='page1' className='pages selectedPage'></div>
-                    )}
-                    else{
-                      return(
-                        <div id='page1' className='pages'></div>
-                      )
-                    }
-                  })
-                }
-              </div> */}
           </div>
           <img id='topMainImage' src={HeaderDetails[topBoxPage].imageAddress} ></img>
           <a>Show more</a>
