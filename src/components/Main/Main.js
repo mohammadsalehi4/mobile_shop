@@ -548,21 +548,21 @@ const Main = () => {
             {
               sortBy===1 ?
               <div className='JD'>
-                <p className='option selected' onClick={()=>{sortFunction(1)}}>price up</p>
-                <p className='option' onClick={()=>{sortFunction(2)}}>price down</p>
+                <p className='option selected' onClick={()=>{sortFunction(1)}}>High Price</p>
+                <p className='option' onClick={()=>{sortFunction(2)}}>Low Price</p>
                 <p className='option' onClick={()=>{sortFunction(3)}}>rate</p>
               </div>
               :
                 sortBy===2 ?
                 <div className='JD'>
-                  <p className='option' onClick={()=>{sortFunction(1)}}>price up</p>
-                  <p className='option selected' onClick={()=>{sortFunction(2)}}>price down</p>
+                  <p className='option' onClick={()=>{sortFunction(1)}}>High Price</p>
+                  <p className='option selected' onClick={()=>{sortFunction(2)}}>Low Price</p>
                   <p className='option' onClick={()=>{sortFunction(3)}}>rate</p>
                 </div>
                 :
                   <div className='JD'>
-                    <p className='option' onClick={()=>{sortFunction(1)}}>price up</p>
-                    <p className='option' onClick={()=>{sortFunction(2)}}>price down</p>
+                    <p className='option' onClick={()=>{sortFunction(1)}}>High Price</p>
+                    <p className='option' onClick={()=>{sortFunction(2)}}>Low Price</p>
                     <p className='option selected' onClick={()=>{sortFunction(3)}}>rate</p>
                   </div>
               
@@ -608,7 +608,7 @@ const Main = () => {
           <p>Sort By:</p>
 
           <p className='optionM' onClick={()=>{sortFunction(1)}}>
-            price up
+            High Price
             {
               sortBy===1 ? 
                 <i class="fa fa-check" aria-hidden="true"></i>
@@ -618,7 +618,7 @@ const Main = () => {
 
           </p>
           <p className='optionM' onClick={()=>{sortFunction(2)}}>
-            price down
+            Low Price
             {
               sortBy===2 ? 
                 <i class="fa fa-check" aria-hidden="true"></i>

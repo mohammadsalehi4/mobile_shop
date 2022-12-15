@@ -10,34 +10,85 @@ const Header = () => {
   const openmenu=()=>{
     dispatch({type:"CHANGEOPENMENU",value:true})
   }
+
+  const derazkonande1=()=>{
+    document.getElementById('khat').style.marginLeft='135px'
+    document.getElementById('khat').style.width='45px'
+  }
+
+  const derazkonande2=()=>{
+    document.getElementById('khat').style.marginLeft='215px'
+    document.getElementById('khat').style.width='95px'
+  }
   
+  const kutahkonande=()=>{
+    document.getElementById('khat').style.marginLeft='45px'
+    document.getElementById('khat').style.width='55px'
+  }
+
+  const derazkonandedo1=()=>{
+    document.getElementById('khat1').style.width='55px'
+    document.getElementById('khat1').style.marginLeft='45px'
+  }
+
+  const derazkonandedo2=()=>{
+    document.getElementById('khat1').style.marginLeft='215px'
+    document.getElementById('khat1').style.width='95px'
+  }
+
+  const kutahkonandedo=()=>{
+    document.getElementById('khat1').style.marginLeft='135px'
+    document.getElementById('khat1').style.width='45px'
+  }
+
+  
+  const derazkonandese1=()=>{
+    document.getElementById('khat2').style.width='45px'
+    document.getElementById('khat2').style.marginLeft='135px'
+  }
+
+  const derazkonandese2=()=>{
+    document.getElementById('khat2').style.marginLeft='45px'
+    document.getElementById('khat2').style.width='55px'
+  }
+
+  const kutahkonandese=()=>{
+    document.getElementById('khat2').style.marginLeft='215px'
+    document.getElementById('khat2').style.width='95px'
+  }
+
   return (
     <div id='Header'>
         <div id='leftHeader'>
               <h2 ><a href='/'  className='title'>Mobile Shop</a></h2>
               {
                 States.thisPage==='main'?
-                <div>                
-                  <h3 id='HLHF' className='thisPage'><a href='/'>Home</a></h3>
-                  <h3><a href='/cart'>Cart</a></h3>
-                  <h3><a href='/dashboard'>Dashboard</a></h3></div>
+                  <div>                
+                      <h3 id='HLHF' className='thisPage'><a href='/'>Home</a></h3>
+                      <h3 onMouseEnter={()=>{derazkonande1()}} onMouseLeave={()=>{kutahkonande()}}><a href='/cart'>Cart</a></h3>
+                      <h3 onMouseEnter={()=>{derazkonande2()}} onMouseLeave={()=>{kutahkonande()}}><a href='/dashboard'>Dashboard</a></h3>
+                    <div id='khat'></div>
+                  </div>
                 :
                   States.thisPage==='cart'?
                   <div>                
-                  <h3 id='HLHF'><a href='/'>Home</a></h3>
-                  <h3 className='thisPage'><a href='/cart'>Cart</a></h3>
-                  <h3><a href='/dashboard'>Dashboard</a></h3></div>
+                    <h3 id='HLHF' onMouseEnter={()=>{derazkonandedo1()}} onMouseLeave={()=>{kutahkonandedo()}}><a href='/'>Home</a></h3>
+                    <h3 className='thisPage'><a href='/cart'>Cart</a></h3>
+                    <h3><a href='/dashboard' onMouseEnter={()=>{derazkonandedo2()}} onMouseLeave={()=>{kutahkonandedo()}}>Dashboard</a></h3>
+                  <div id='khat1'></div></div>
                 :
                   States.thisPage==='dashboard'?
                   <div>                
-                  <h3 id='HLHF'><a href='/'>Home</a></h3>
-                  <h3><a href='/cart'>Cart</a></h3>
-                  <h3 className='thisPage'><a href='/dashboard'>Dashboard</a></h3></div>
+                    <h3 id='HLHF' onMouseEnter={()=>{derazkonandese2()}} onMouseLeave={()=>{kutahkonandese()}} ><a href='/'>Home</a></h3>
+                    <h3 onMouseEnter={()=>{derazkonandese1()}} onMouseLeave={()=>{kutahkonandese()}}><a href='/cart'>Cart</a></h3>
+                    <h3 className='thisPage' ><a href='/dashboard'>Dashboard</a></h3>
+                  <div id='khat2'></div></div>
                 :
                   <div>                
-                  <h3 id='HLHF'><a href='/'>Home</a></h3>
-                  <h3><a href='/cart'>Cart</a></h3>
-                  <h3><a href='/dashboard'>Dashboard</a></h3></div>
+                    <h3 id='HLHF'><a href='/'>Home</a></h3>
+                    <h3><a href='/cart'>Cart</a></h3>
+                    <h3><a href='/dashboard'>Dashboard</a></h3>
+                  </div>
               }
             <div id='mobileRightHeader'>
               {

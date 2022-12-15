@@ -10,6 +10,8 @@ const Product = (props) => {
 
   useEffect(()=>{
     dispatch({type:"CHANGEPRODUCTPAGE",value:false})
+    dispatch({type:"CHANGEPAGE",value:'product'})
+
   },[])
     let devices=[{
         model:'Iphone XS max 2022',
