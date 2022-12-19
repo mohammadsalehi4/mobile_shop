@@ -125,6 +125,77 @@ a{
             #signup{
                 margin-right: 0px;
             }
+            #searchDiv{
+                display: inline-block;
+                background: white;
+                width: 270px;
+                position: absolute;
+                margin-top: 72px;
+                margin-right: 20px;
+                z-index: 2;
+                direction: ltr;
+                border-radius: 10px;
+                box-shadow: 0 0 4px rgba(58, 58, 58, 0.35);
+
+                a{  
+                    display: block;
+                    text-decoration: none;
+                    margin-top: 6px;
+                    margin-bottom: 6px;
+                    margin-left: 3%;
+                    width: 93.5%;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-color: rgb(196, 196, 196);
+                    border-radius: 10px;
+                    font-family: Arial;
+                    box-sizing: border-box;
+                    #SDImage{
+                        width: 40px;
+                        height: 75px;
+                        display: inline-block;
+                        margin-left: 10px;
+                        margin-top: 6px;
+                        margin-bottom: 3px;
+                    }
+                    #rightboxSD{
+                        display: inline-block;
+                        box-sizing: border-box;
+                        height: 70px;
+                        position: absolute;
+                        margin-top: 9px;
+                        p{
+                            display: inline-block;
+                            margin-left: 10px;
+                            font-size: 14px;
+                            margin-top: 8px;
+                        }
+                        span{
+                            display: block;
+                            margin-left: 10px;
+                            color: rgb(224, 224, 0);
+                            p{
+                                color: black;
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+            #searchBox{
+                margin-right: 20px;
+                height: 40px;
+                position: absolute;
+                margin-top: 32px;
+                width: 270px;
+                direction: ltr;
+                font-size: 15px;
+                padding: 5px 15px;
+                box-sizing: border-box;
+                background: rgb(242, 242, 242);
+                border-style: none;
+                border-radius: 10px;
+            }
         }
     }
 }

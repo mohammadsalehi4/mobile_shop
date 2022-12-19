@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import './Header.css'
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
@@ -6,6 +6,21 @@ import { useDispatch } from "react-redux";
 const Header = () => {
   const dispatch = useDispatch();
   const States = useSelector(state => state);
+  const [devices,SetDevices]=useState([])
+  const [searched,SetSearched]=useState([])
+
+  useEffect(()=>{
+    const products=States.products
+    SetDevices(products)
+  },[])
+
+  useEffect(()=>{
+    if(searched!=[]&&searched.length>0){
+      document.getElementById('searchDiv').style.display='inline-block'
+    }else{
+      document.getElementById('searchDiv').style.display='none'
+    }
+  },[searched])
 
   const openmenu=()=>{
     dispatch({type:"CHANGEOPENMENU",value:true})
@@ -55,6 +70,26 @@ const Header = () => {
   const kutahkonandese=()=>{
     document.getElementById('khat2').style.marginLeft='215px'
     document.getElementById('khat2').style.width='95px'
+  }
+
+  const changeSearchBox=()=>{
+    const mtn=document.getElementById('searchBox').value
+    const srch=[]
+    if(mtn.length>0){
+      for(let i=0;i<devices.length;i++){
+        if(devices[i].model.toLowerCase().search(mtn.toLowerCase())>(-1)){
+          srch.push(devices[i])
+        }
+      }
+      if(srch.length>0){
+        SetSearched(srch)
+      }else{
+        SetSearched([])
+      }
+    }
+    else{
+      SetSearched([])
+    }
   }
 
   return (
@@ -110,7 +145,26 @@ const Header = () => {
         <div id='rightHeader'>
             <a id='signup' className='headerLink' href='/dashboard'><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
             <a href='/cart'><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
-            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" id='searchBox' placeholder='search...' onChange={()=>{changeSearchBox()}}/>
+            <div id='searchDiv'>
+              {
+                searched.map((item,index)=>{
+                  return(
+                    <a href={'/product/'+item.id}>
+                      <img id='SDImage' src={item.imageAddress}></img>
+                      <div id='rightboxSD'>
+                        <p id='SDTitle'>{item.model}</p><br/>
+                        <p id='SDPrice'>${item.price}</p>
+
+                        <span class="fa fa-star checked"><p>{item.rate}</p></span>
+                      </div>
+
+
+                    </a>
+                  )
+                })
+              }
+            </div>
 
         </div>
     </div>
