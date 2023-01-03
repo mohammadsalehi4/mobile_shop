@@ -535,12 +535,12 @@ const Main = () => {
 
               {
                 sortBy===1 ? 
-                  <p className='JM' id='showSortTop'>high price</p>
+                  <p className='JM' id='showSortTop' onClick={()=>{SetSortMenu(true)}}>high price</p>
                 :
                   sortBy===2 ?
-                    <p className='JM' id='showSortTop'>low price</p>
+                    <p className='JM' id='showSortTop' onClick={()=>{SetSortMenu(true)}}>low price</p>
                 :
-                  <p className='JM' id='showSortTop'>rate</p>
+                  <p className='JM' id='showSortTop' onClick={()=>{SetSortMenu(true)}}>rate</p>
               }
 
 
