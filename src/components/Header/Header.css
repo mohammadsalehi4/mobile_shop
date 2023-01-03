@@ -18,15 +18,15 @@ a {
 
 @media only screen and (min-device-width: 769px) {
   #Header {
-    width: 100%;
+    width: 90%;
     height: 100px;
-    min-width: 1536px;
+    margin-left: 5%;
+    min-width: 950px;
   }
   #Header #leftHeader {
     width: 60%;
     height: 100px;
     display: inline-block;
-    margin-left: 5%;
   }
   #Header #leftHeader h2 {
     font-family: Araboto;
@@ -93,6 +93,7 @@ a {
     display: inline-block;
     height: 100px;
     direction: rtl;
+    float: right;
   }
   #Header #rightHeader i {
     font-size: 40px;
@@ -113,6 +114,10 @@ a {
     border-color: #5c5c5c;
   }
   #Header #rightHeader #signup {
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+  #Header #rightHeader #signup i {
     margin-right: 0px;
   }
   #Header #rightHeader #searchDiv {
