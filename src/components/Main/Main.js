@@ -653,8 +653,12 @@ const Main = () => {
               </h1>
               <div class="range-input">
                 <div></div>
-                <input type="range" id='range-min1' className="range-max" min="0" onChange={()=>{setminPrice(document.getElementById('range-min1').value,1);if(document.getElementById('range-min1').value>=document.getElementById('range-max1').value){document.getElementById('range-min1').value=document.getElementById('range-max1').value}}} max="1000"/>
-                <input type="range" id='range-max1' className="range-max" min="0" onChange={()=>{setmaxPrice(document.getElementById('range-max1').value,2);if(document.getElementById('range-max1').value<=document.getElementById('range-min1').value){document.getElementById('range-max1').value=document.getElementById('range-min1').value}}} max="1000"/>
+                <input type="range" id='range-min1' className="range-max" min="0" onChange={()=>{
+                    setminPrice(document.getElementById('range-min1').value,1); 
+                  }} 
+                  value={minPrice}
+                  max="1000" />
+                <input type="range" id='range-max1' className="range-max" min="0" onChange={()=>{setmaxPrice(document.getElementById('range-max1').value,2);}} max="1000" value={maxPrice}/>
               </div>
               <div id='MinDiv' className='setPriceDiv'>
                 <p>min</p>
