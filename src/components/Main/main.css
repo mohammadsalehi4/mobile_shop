@@ -6,7 +6,825 @@
   font-family: Nunito;
   src: url("./Nunito.ttf");
 }
-@media only screen and (min-device-width: 769px) {
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+  #mainDiv {
+    width: 100%;
+    min-height: 1500px;
+  }
+  #mainDiv #topMainBox {
+    width: 90%;
+    height: 300px;
+    background: #f1f1f1;
+    margin-left: 5%;
+    border-radius: 30px;
+    min-width: 950px;
+  }
+  #mainDiv #topMainBox #maintopmainbox {
+    width: 80%;
+    margin-left: 10%;
+    min-width: 600px;
+  }
+  #mainDiv #topMainBox #maintopmainbox #topMainImage {
+    width: 280px;
+    height: 280px;
+    position: relative;
+    display: inline-block;
+    margin-left: 7%;
+  }
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    display: inline-block;
+    margin-right: 7%;
+    float: right;
+    margin-top: 20px;
+  }
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription h1 {
+    font-family: Nimbus;
+    font-size: 35px;
+    margin-top: 30px;
+  }
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription p {
+    font-family: Nunito;
+    margin-top: 30px;
+    font-size: 15px;
+    height: 60px;
+  }
+  #mainDiv #topMainBox #maintopmainbox #pager {
+    margin-left: 50px;
+    display: inline-block;
+  }
+  #mainDiv #topMainBox #maintopmainbox #pager .pages {
+    background: #999999;
+    width: 8px;
+    height: 8px;
+    margin-left: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  #mainDiv #topMainBox #maintopmainbox #pager .selectedPage {
+    background: #00a2ff;
+    box-shadow: 0 0 6px #00a2ff;
+  }
+  #mainDiv #topMainBox #maintopmainbox a {
+    font-family: Nunito;
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;
+    margin-top: 0px;
+    padding: 15px 24px;
+    border-radius: 15px;
+    color: #00a2ff;
+    font-size: 18px;
+  }
+  #mainDiv #topMainBox #maintopmainbox a:hover {
+    color: #008ada;
+    cursor: pointer;
+  }
+  #mainDiv #topMainBox .Arrow {
+    position: absolute;
+    margin-top: 120px;
+    padding: 18px 23px;
+    font-size: 25px;
+    margin-left: 4%;
+    color: white;
+    background: #cecece;
+    border-radius: 50%;
+  }
+  #mainDiv #topMainBox .Arrow:hover {
+    background: #bbbbbb;
+    transition: 0.1s;
+  }
+  #mainDiv #topMainBox .rightArrow {
+    direction: rtl;
+    right: 9%;
+    top: 100px;
+  }
+  #mainDiv #bottomLeftMainDiv {
+    width: 250px;
+    height: 300px;
+    background: #f1f1f1;
+    margin-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    font-family: Nunito;
+    position: absolute;
+  }
+  #mainDiv #bottomLeftMainDiv h1 {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 1px;
+    font-size: 24px;
+    font-family: Nimbus;
+  }
+  #mainDiv #bottomLeftMainDiv .range-input {
+    position: relative;
+    margin-top: 25px;
+  }
+  #mainDiv #bottomLeftMainDiv .range-input div {
+    height: 2px;
+    width: 80%;
+    background: #7a7a7a;
+    position: absolute;
+    top: 18px;
+    margin-left: 10%;
+  }
+  #mainDiv #bottomLeftMainDiv .range-input input {
+    position: absolute;
+    width: 80%;
+    height: 5px;
+    top: 15px;
+    background: none;
+    margin-left: 10%;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  #mainDiv #bottomLeftMainDiv .range-input input[type=range]::-webkit-slider-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #17A2B8;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(94, 94, 94, 0.35);
+  }
+  #mainDiv #bottomLeftMainDiv .range-input input[type=range]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #17A2B8;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(94, 94, 94, 0.35);
+  }
+  #mainDiv #bottomLeftMainDiv .setPriceDiv {
+    display: inline-block;
+    margin-left: 9%;
+    margin-top: 55px;
+    width: 22%;
+  }
+  #mainDiv #bottomLeftMainDiv .setPriceDiv p {
+    font-size: 16px;
+  }
+  #mainDiv #bottomLeftMainDiv .setPriceDiv div {
+    padding: 10px 0px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #a3a3a3;
+    color: #5c5c5c;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+  #mainDiv #bottomLeftMainDiv #seprator {
+    display: inline-block;
+    width: 20%;
+    height: 2px;
+    background: #afafaf;
+    margin-left: 10%;
+  }
+  #mainDiv #bottomLeftMainDiv #MaxDiv {
+    margin-left: 10%;
+  }
+  #mainDiv #bottomLeftMainDiv button {
+    width: 84%;
+    margin-left: 9%;
+    border-style: none;
+    margin-top: 20px;
+    background: #00a2ff;
+    padding: 12px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  #mainDiv #bottomLeftMainDiv button:hover {
+    background: #008ada;
+    transition: 0.2s;
+  }
+  #mainDiv #leftCheckboxDiv {
+    width: 250px;
+    height: 300px;
+    background: #f1f1f1;
+    margin-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    font-family: Nunito;
+    position: absolute;
+    margin-top: 450px;
+  }
+  #mainDiv #leftCheckboxDiv h1 {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 1px;
+    font-size: 24px;
+    font-family: Nimbus;
+  }
+  #mainDiv #leftCheckboxDiv div input {
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    top: 2px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  #mainDiv #leftCheckboxDiv div label {
+    margin-left: 0px;
+    display: inline-block;
+    width: 80%;
+  }
+  #mainDiv #leftCheckboxDiv div label p {
+    display: inline-block;
+    float: right;
+    margin-right: 30px;
+    background: #00a2ff;
+    padding: 5px 10px;
+    margin-top: -8px;
+    border-radius: 20px;
+    color: white;
+  }
+  #mainDiv #leftRatingDiv {
+    width: 250px;
+    height: 250px;
+    background: #f1f1f1;
+    margin-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    font-family: Nunito;
+    position: absolute;
+    margin-top: 850px;
+  }
+  #mainDiv #leftRatingDiv h1 {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 1px;
+    font-size: 24px;
+    font-family: Nimbus;
+  }
+  #mainDiv #leftRatingDiv .rateStars {
+    display: block;
+  }
+  #mainDiv #leftRatingDiv .rateStars input {
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    top: 2px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  #mainDiv #leftRatingDiv .rateStars label {
+    margin-left: 0px;
+    display: inline-block;
+    width: 80%;
+  }
+  #mainDiv #leftRatingDiv .rateStars label span {
+    margin-left: 4px;
+    font-size: 20px;
+    color: #94d1f5;
+  }
+  #mainDiv #leftRatingDiv .rateStars label .checked {
+    color: #00a2ff;
+  }
+  #mainDiv #Mobile {
+    position: relative;
+    width: 700px;
+    left: 350px;
+    top: 50px;
+  }
+  #mainDiv #Mobile #sortBox {
+    width: 90%;
+    height: 50px;
+  }
+  #mainDiv #Mobile #sortBox div {
+    display: inline-block;
+  }
+  #mainDiv #Mobile #sortBox i {
+    margin-top: 10px;
+  }
+  #mainDiv #Mobile #sortBox p {
+    display: inline-block;
+    margin-left: 30px;
+    font-weight: bold;
+  }
+  #mainDiv #Mobile #sortBox .option {
+    font-weight: 100;
+    color: #525252;
+    cursor: pointer;
+  }
+  #mainDiv #Mobile #sortBox #priceNumber {
+    font-weight: 100;
+    color: #525252;
+    float: right;
+    margin-top: 10px;
+    position: relative;
+  }
+  #mainDiv #Mobile #sortBox .selected {
+    color: #007fc9;
+  }
+  #mainDiv #Mobile #sortBox .JM {
+    display: none;
+  }
+  #mainDiv #Mobile .mobileBox {
+    width: 30%;
+    height: 300px;
+    margin-left: 1PX;
+    display: inline-block;
+    margin-top: 1px;
+    box-shadow: 0 0 1px 1px rgba(116, 116, 116, 0.2);
+  }
+  #mainDiv #Mobile .mobileBox .mobileImage {
+    width: 50%;
+    height: 200px;
+    margin-left: 25%;
+    margin-top: 25px;
+  }
+  #mainDiv #Mobile .mobileBox .mobileTitle {
+    font-family: Nunito;
+    margin-top: 10px;
+    color: black;
+    font-size: 15px;
+    margin-left: 20px;
+  }
+  #mainDiv #Mobile .mobileBox .mobilePrice {
+    position: absolute;
+    margin-left: 20px;
+    font-family: nunito;
+    font-weight: 500;
+    color: black;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  #mainDiv #Mobile .mobileBox span {
+    color: #ffd900;
+    position: absolute;
+    margin-top: -240px;
+    margin-left: 20px;
+  }
+  #mainDiv #Mobile .mobileBox span p {
+    display: inline-block;
+    color: black;
+    font-family: Nunito;
+  }
+  #mainDiv #Mobile .mobileBox .archive {
+    position: absolute;
+    margin-left: 20px;
+  }
+  #mainDiv #Mobile .mobileBox .archive i {
+    font-size: 12px;
+    color: #00009e;
+  }
+  #mainDiv #Mobile .mobileBox .archive p {
+    display: inline-block;
+    color: blue;
+    font-family: Nunito;
+    margin-left: 5px;
+    font-size: 13px;
+  }
+  #mainDiv #Mobile .mobileBox:hover {
+    box-shadow: 0 0 5px 5px rgba(116, 116, 116, 0.2);
+    transition: 0.2s;
+  }
+
+  .JP {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1450px) and (min-width: 1200px) {
+  #mainDiv {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  #mainDiv #topMainBox {
+    width: 90%;
+    height: 400px;
+    background: #f1f1f1;
+    margin-left: 5%;
+    border-radius: 30px;
+  }
+  #mainDiv #topMainBox #maintopmainbox {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+  }
+  #mainDiv #topMainBox #maintopmainbox #topMainImage {
+    width: 350px;
+    height: 350px;
+    margin-left: 7%;
+  }
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription {
+    width: 350px;
+    height: 350px;
+    margin-top: 30px;
+    float: right;
+    margin-right: 7%;
+  }
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription h1 {
+    font-family: Nimbus;
+    font-size: 45px;
+    margin-top: 30px;
+  }
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription p {
+    font-family: Nunito;
+    margin-top: 50px;
+    font-size: 17px;
+    height: 60px;
+  }
+  #mainDiv #topMainBox #maintopmainbox #pager {
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 25px;
+  }
+  #mainDiv #topMainBox #maintopmainbox #pager .pages {
+    background: #999999;
+    width: 8px;
+    height: 8px;
+    margin-left: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  #mainDiv #topMainBox #maintopmainbox #pager .selectedPage {
+    background: #00a2ff;
+    box-shadow: 0 0 6px #00a2ff;
+  }
+  #mainDiv #topMainBox #maintopmainbox a {
+    font-family: Nunito;
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;
+    margin-top: 0px;
+    padding: 17px 28px;
+    border-radius: 15px;
+    color: #00a2ff;
+    font-size: 20px;
+  }
+  #mainDiv #topMainBox #maintopmainbox a:hover {
+    color: #008ada;
+    cursor: pointer;
+  }
+  #mainDiv #topMainBox .Arrow {
+    position: absolute;
+    margin-top: 160px;
+    padding: 24px 30px;
+    font-size: 30px;
+    margin-left: 4%;
+    color: white;
+    background: #cecece;
+    border-radius: 50%;
+  }
+  #mainDiv #topMainBox .Arrow:hover {
+    background: #bbbbbb;
+    transition: 0.1s;
+  }
+  #mainDiv #topMainBox .rightArrow {
+    direction: rtl;
+    right: 9%;
+    top: 100px;
+  }
+  #mainDiv #bottomLeftMainDiv {
+    width: 250px;
+    height: 300px;
+    background: #f1f1f1;
+    margin-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    font-family: Nunito;
+    position: absolute;
+  }
+  #mainDiv #bottomLeftMainDiv h1 {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 1px;
+    font-size: 24px;
+    font-family: Nimbus;
+  }
+  #mainDiv #bottomLeftMainDiv .range-input {
+    position: relative;
+    margin-top: 25px;
+  }
+  #mainDiv #bottomLeftMainDiv .range-input div {
+    height: 2px;
+    width: 80%;
+    background: #7a7a7a;
+    position: absolute;
+    top: 18px;
+    margin-left: 10%;
+  }
+  #mainDiv #bottomLeftMainDiv .range-input input {
+    position: absolute;
+    width: 80%;
+    height: 5px;
+    top: 15px;
+    background: none;
+    margin-left: 10%;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  #mainDiv #bottomLeftMainDiv .range-input input[type=range]::-webkit-slider-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #17A2B8;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(94, 94, 94, 0.35);
+  }
+  #mainDiv #bottomLeftMainDiv .range-input input[type=range]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #17A2B8;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(94, 94, 94, 0.35);
+  }
+  #mainDiv #bottomLeftMainDiv .setPriceDiv {
+    display: inline-block;
+    margin-left: 9%;
+    margin-top: 55px;
+    width: 22%;
+  }
+  #mainDiv #bottomLeftMainDiv .setPriceDiv p {
+    font-size: 16px;
+  }
+  #mainDiv #bottomLeftMainDiv .setPriceDiv div {
+    padding: 10px 0px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #a3a3a3;
+    color: #5c5c5c;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+  #mainDiv #bottomLeftMainDiv #seprator {
+    display: inline-block;
+    width: 20%;
+    height: 2px;
+    background: #afafaf;
+    margin-left: 10%;
+  }
+  #mainDiv #bottomLeftMainDiv #MaxDiv {
+    margin-left: 10%;
+  }
+  #mainDiv #bottomLeftMainDiv button {
+    width: 84%;
+    margin-left: 9%;
+    border-style: none;
+    margin-top: 20px;
+    background: #00a2ff;
+    padding: 12px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  #mainDiv #bottomLeftMainDiv button:hover {
+    background: #008ada;
+    transition: 0.2s;
+  }
+  #mainDiv #leftCheckboxDiv {
+    width: 250px;
+    height: 280px;
+    background: #f1f1f1;
+    margin-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    font-family: Nunito;
+    position: absolute;
+    margin-top: 450px;
+  }
+  #mainDiv #leftCheckboxDiv h1 {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 1px;
+    font-size: 24px;
+    font-family: Nimbus;
+  }
+  #mainDiv #leftCheckboxDiv div input {
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    top: 2px;
+    margin-left: 10px;
+    margin-top: 15px;
+    display: inline-block;
+  }
+  #mainDiv #leftCheckboxDiv div label {
+    margin-left: 15px;
+    display: inline-block;
+    width: 80%;
+  }
+  #mainDiv #leftCheckboxDiv div label p {
+    display: inline-block;
+    float: right;
+    margin-right: 30px;
+    background: #00a2ff;
+    padding: 5px 10px;
+    margin-top: -8px;
+    border-radius: 20px;
+    color: white;
+  }
+  #mainDiv #leftRatingDiv {
+    width: 250px;
+    height: 250px;
+    background: #f1f1f1;
+    margin-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    font-family: Nunito;
+    position: absolute;
+    margin-top: 850px;
+  }
+  #mainDiv #leftRatingDiv h1 {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 1px;
+    font-size: 24px;
+    font-family: Nimbus;
+  }
+  #mainDiv #leftRatingDiv .rateStars {
+    display: block;
+  }
+  #mainDiv #leftRatingDiv .rateStars input {
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    top: 2px;
+    margin-left: 10px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  #mainDiv #leftRatingDiv .rateStars label {
+    margin-left: 15px;
+    display: inline-block;
+    width: 80%;
+  }
+  #mainDiv #leftRatingDiv .rateStars label span {
+    margin-left: 4px;
+    font-size: 20px;
+    color: #94d1f5;
+  }
+  #mainDiv #leftRatingDiv .rateStars label .checked {
+    color: #00a2ff;
+  }
+  #mainDiv #Mobile {
+    position: relative;
+    left: 350px;
+    top: 50px;
+    min-height: 1000px;
+    width: 90%;
+  }
+  #mainDiv #Mobile #sortBox {
+    width: 75%;
+    height: 50px;
+  }
+  #mainDiv #Mobile #sortBox div {
+    display: inline-block;
+  }
+  #mainDiv #Mobile #sortBox i {
+    margin-top: 10px;
+  }
+  #mainDiv #Mobile #sortBox p {
+    display: inline-block;
+    margin-left: 30px;
+    font-weight: bold;
+  }
+  #mainDiv #Mobile #sortBox .option {
+    font-weight: 100;
+    color: #525252;
+    cursor: pointer;
+  }
+  #mainDiv #Mobile #sortBox #priceNumber {
+    font-weight: 100;
+    color: #525252;
+    float: right;
+    margin-top: 10px;
+    position: relative;
+  }
+  #mainDiv #Mobile #sortBox .selected {
+    color: #007fc9;
+  }
+  #mainDiv #Mobile #sortBox .JM {
+    display: none;
+  }
+  #mainDiv #Mobile .mobileBox {
+    width: 25%;
+    height: 350px;
+    margin-left: 1PX;
+    display: inline-block;
+    margin-top: 1px;
+    box-shadow: 0 0 1px 1px rgba(116, 116, 116, 0.2);
+  }
+  #mainDiv #Mobile .mobileBox .mobileImage {
+    width: 150px;
+    height: 250px;
+    margin-left: 25%;
+    margin-top: 25px;
+  }
+  #mainDiv #Mobile .mobileBox .mobileTitle {
+    font-family: Nunito;
+    margin-top: 10px;
+    color: black;
+    font-size: 15px;
+    margin-left: 20px;
+  }
+  #mainDiv #Mobile .mobileBox .mobilePrice {
+    position: absolute;
+    margin-left: 20%;
+    font-family: nunito;
+    font-weight: 500;
+    color: black;
+    font-size: 15px;
+  }
+  #mainDiv #Mobile .mobileBox span {
+    color: #ffd900;
+    position: absolute;
+    margin-top: -280px;
+    margin-left: 20px;
+  }
+  #mainDiv #Mobile .mobileBox span p {
+    display: inline-block;
+    color: black;
+    font-family: Nunito;
+  }
+  #mainDiv #Mobile .mobileBox .archive {
+    position: absolute;
+    margin-left: 20px;
+  }
+  #mainDiv #Mobile .mobileBox .archive i {
+    font-size: 12px;
+    color: #00009e;
+  }
+  #mainDiv #Mobile .mobileBox .archive p {
+    display: inline-block;
+    color: blue;
+    font-family: Nunito;
+    margin-left: 5px;
+    font-size: 13px;
+  }
+  #mainDiv #Mobile .mobileBox:hover {
+    box-shadow: 0 0 5px 5px rgba(116, 116, 116, 0.2);
+    transition: 0.2s;
+  }
+
+  .JP {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1450px) {
   #mainDiv {
     width: 100%;
     min-height: 1500px;
@@ -18,29 +836,67 @@
     margin-left: 5%;
     border-radius: 30px;
   }
-  #mainDiv #topMainBox #topMainImage {
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    margin: 50px 270px;
+  #mainDiv #topMainBox #maintopmainbox {
+    width: 80%;
+    margin-left: 10%;
   }
-  #mainDiv #topMainBox #topMainDescription {
-    position: absolute;
+  #mainDiv #topMainBox #maintopmainbox #topMainImage {
     width: 400px;
     height: 400px;
+    display: inline-block;
+    margin-left: 10%;
     margin-top: 50px;
-    margin-left: 750px;
   }
-  #mainDiv #topMainBox #topMainDescription h1 {
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription {
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    margin-top: 70px;
+    float: right;
+    margin-right: 10%;
+  }
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription h1 {
     font-family: Nimbus;
     font-size: 50px;
     margin-top: 30px;
   }
-  #mainDiv #topMainBox #topMainDescription p {
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription p {
     font-family: Nunito;
     margin-top: 50px;
     font-size: 18px;
     height: 60px;
+  }
+  #mainDiv #topMainBox #maintopmainbox #pager {
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+  #mainDiv #topMainBox #maintopmainbox #pager .pages {
+    background: #999999;
+    width: 8px;
+    height: 8px;
+    margin-left: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  #mainDiv #topMainBox #maintopmainbox #pager .selectedPage {
+    background: #00a2ff;
+    box-shadow: 0 0 6px #00a2ff;
+  }
+  #mainDiv #topMainBox #maintopmainbox a {
+    font-family: Nunito;
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;
+    padding: 20px 32px;
+    border-radius: 15px;
+    color: #00a2ff;
+    font-size: 20px;
+  }
+  #mainDiv #topMainBox #maintopmainbox a:hover {
+    color: #008ada;
+    cursor: pointer;
   }
   #mainDiv #topMainBox .Arrow {
     position: absolute;
@@ -59,40 +915,8 @@
   #mainDiv #topMainBox .rightArrow {
     direction: rtl;
     right: 9%;
-  }
-  #mainDiv #topMainBox #pager {
-    margin-left: 100px;
-    display: inline-block;
-    margin-top: 400px;
-  }
-  #mainDiv #topMainBox #pager .pages {
-    background: #999999;
-    width: 8px;
-    height: 8px;
-    margin-left: 10px;
-    display: inline-block;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  #mainDiv #topMainBox #pager .selectedPage {
-    background: #00a2ff;
-    box-shadow: 0 0 6px #00a2ff;
-  }
-  #mainDiv #topMainBox a {
-    font-family: Nunito;
-    border-width: 2px;
-    border-style: solid;
-    display: inline-block;
-    margin-top: 50px;
-    padding: 20px 32px;
-    border-radius: 15px;
-    color: #00a2ff;
-    font-size: 20px;
-    margin-left: 750px;
-  }
-  #mainDiv #topMainBox a:hover {
-    color: #008ada;
-    cursor: pointer;
+    top: 0px;
+    margin-top: 300px;
   }
   #mainDiv #bottomLeftMainDiv {
     width: 300px;
@@ -307,10 +1131,9 @@
   }
   #mainDiv #Mobile {
     position: relative;
-    width: 1005px;
+    width: 70%;
     left: 500px;
     top: 50px;
-    min-height: 1000px;
   }
   #mainDiv #Mobile #sortBox {
     width: 90%;
@@ -420,38 +1243,36 @@
     margin-top: 10px;
     background: white;
   }
-  #mainDiv #topMainBox #topMainImage {
+  #mainDiv #topMainBox #maintopmainbox #topMainImage {
     width: 90%;
     margin-left: 5%;
     top: 240px;
   }
-  #mainDiv #topMainBox #topMainDescription {
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription {
     width: 90%;
     margin-left: 5%;
   }
-  #mainDiv #topMainBox #topMainDescription h1 {
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription h1 {
     font-family: Nimbus;
     font-size: 40px;
     margin-top: 30px;
     font-weight: bolder;
   }
-  #mainDiv #topMainBox #topMainDescription p {
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription p {
     font-family: Nunito;
     margin-top: 30px;
     font-size: 16px;
     height: 60px;
     display: inline-block;
+    width: 90%;
   }
-  #mainDiv #topMainBox .Arrow {
-    display: none;
-  }
-  #mainDiv #topMainBox #pager {
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription #pager {
     display: inline-block;
     float: right;
     margin-right: 5%;
     margin-top: 20px;
   }
-  #mainDiv #topMainBox #pager .pages {
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription #pager .pages {
     background: #999999;
     width: 8px;
     height: 8px;
@@ -460,11 +1281,11 @@
     border-radius: 50%;
     cursor: pointer;
   }
-  #mainDiv #topMainBox #pager .selectedPage {
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription #pager .selectedPage {
     background: #00a2ff;
     box-shadow: 0 0 6px #00a2ff;
   }
-  #mainDiv #topMainBox a {
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription a {
     font-family: Nunito;
     display: inline-block;
     padding: 10px 16px;
@@ -474,12 +1295,15 @@
     color: white;
     box-shadow: 0 0 8px rgba(0, 162, 255, 0.4);
     max-width: 30%;
-    margin-left: 5%;
+    margin-left: 0%;
     margin-bottom: 30px;
   }
-  #mainDiv #topMainBox a:hover {
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription a:hover {
     background-color: #008ada;
     cursor: pointer;
+  }
+  #mainDiv #topMainBox .Arrow {
+    display: none;
   }
   #mainDiv #bottomLeftMainDiv {
     display: none;

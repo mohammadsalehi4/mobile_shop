@@ -399,30 +399,33 @@ const Main = () => {
       <div id='mainDiv' >
         <div id='topMainBox' onTouchStart={(event)=>{touchstart(event)}} onTouchEnd={(event)=>{touchend(event)}}>
           <i class="fa fa-chevron-left Arrow leftArrow" aria-hidden="true" onClick={()=>{nextTopPage(false)}}></i>
-            <div id='topMainDescription' >
-              <h1>
-                {HeaderDetails[topBoxPage].title}
-              </h1>
-              <p>
-                {HeaderDetails[topBoxPage].content}
-              </p>
-          </div>
-          <img id='topMainImage' src={HeaderDetails[topBoxPage].imageAddress} ></img>
-          <a>Show more</a>
-          <div id='pager'>
-            {
-              HeaderDetails.map((item,index)=>{
-                if(index===topBoxPage){return(
-                  <div id='page1' className='pages selectedPage'></div>
-                )}
-                else{
-                  return(
-                    <div id='page1' className='pages'></div>
-                  )
-                }
-              })
-            }
-          </div>
+            <div id='maintopmainbox'>
+                <img id='topMainImage' src={HeaderDetails[topBoxPage].imageAddress} ></img>
+                <div id='topMainDescription' >
+                  <h1>
+                    {HeaderDetails[topBoxPage].title}
+                  </h1>
+                  <p>
+                    {HeaderDetails[topBoxPage].content}
+                  </p>
+                  <a>Show more</a>
+                  <div id='pager'>
+                  {
+                    HeaderDetails.map((item,index)=>{
+                      if(index===topBoxPage){return(
+                        <div id='page1' className='pages selectedPage'></div>
+                      )}
+                      else{
+                        return(
+                          <div id='page1' className='pages'></div>
+                        )
+                      }
+                    })
+                  }
+                  </div>
+              </div>
+
+            </div>
           <i class="fa fa-chevron-right Arrow rightArrow" aria-hidden="true" onClick={()=>{nextTopPage(true)}}></i>
         </div>
   

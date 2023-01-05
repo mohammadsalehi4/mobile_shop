@@ -8,7 +8,7 @@
     src: url('../Main/Nunito.ttf');
 }
 
-@media only screen and(min-device-width:769px) {
+@media only screen and(min-width:1450px) {
     #Footer{
         width: 90%;
         height: 200px;
@@ -18,6 +18,148 @@
         .par{
             display: inline-block;
             width: 22%;
+            margin-left: 40px;
+            h1{
+                font-family: Araboto;
+                font-size: 22px;
+            }
+            p{
+                font-family: Nunito;
+                margin-top: 27px;
+            }
+            a{
+                font-family: Nunito;
+                margin-top: 10px;
+                display: block;
+            }
+            div{
+                width: 100%;
+                margin-top: 34px;
+                input{
+                    border-radius: 10px;
+                    border-style: solid;
+                    height: 35px;
+                    width: 80%;
+                }
+                button{
+                    height: 42px;
+                    margin-left: -30px;
+                    width: 60px;
+                    border-radius: 10px;
+                    border-style: none;
+                    background: rgb(0, 162, 255);
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+    
+        }
+        #underFooter{
+            width: 100%;
+            height: 65px;
+            margin-top: 30px;
+            background: rgb(0, 162, 255);
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            p{
+                color: white;
+                font-family: Nunito;
+                margin-top: 25px;
+                position: absolute;
+                margin-left: 20px;
+                width: 85%;
+                a{
+                    float: right;
+                    color: white;
+                    font-size:35px;
+                    margin-top: -10px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(min-width:1200px) and(max-width:1450px){
+    #Footer{
+        width: 90%;
+        height: 210px;
+        margin-left: 5%;
+        margin-top: 250px;
+        .par{
+            display: inline-block;
+            width: 21%;
+            margin-left: 40px;
+            h1{
+                font-family: Araboto;
+                font-size: 22px;
+            }
+            p{
+                font-family: Nunito;
+                margin-top: 27px;
+            }
+            a{
+                font-family: Nunito;
+                margin-top: 10px;
+                display: block;
+            }
+            div{
+                width: 100%;
+                margin-top: 34px;
+                input{
+                    border-radius: 10px;
+                    border-style: solid;
+                    height: 35px;
+                    width: 80%;
+                }
+                button{
+                    height: 42px;
+                    margin-left: -30px;
+                    width: 60px;
+                    border-radius: 10px;
+                    border-style: none;
+                    background: rgb(0, 162, 255);
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+    
+        }
+        #underFooter{
+            width: 100%;
+            height: 55px;
+            background: rgb(0, 162, 255);
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            margin-top: 10px;
+            p{
+                color: white;
+                font-family: Nunito;
+                margin-top: 0px;
+                position: absolute;
+                margin-left: 20px;
+                width: 85%;
+                margin-top: 20px;
+                a{
+                    float: right;
+                    color: white;
+                    font-size:35px;
+                    margin-top: -10px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:1200px) and (min-width:768px){
+    #Footer{
+        width: 90%;
+        height: 200px;
+        margin-left: 5%;
+        margin-top: 250px;
+        min-width: 950px;
+        .par{
+            display: inline-block;
+            width: 20%;
             margin-left: 40px;
             h1{
                 font-family: Araboto;
