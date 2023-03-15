@@ -330,38 +330,33 @@
 
 @media only screen and (max-width:769px) {
     #Cart{
-        width: 90%;
-        margin-left: 5%;
-        min-width: 1383px;
+        width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
         #leftCart{
-            width: 1%;
-            display: inline-block;
+            display: none;
             .LCODiv{
-                width: 30px;
-                height: 30px;
+                width: 60px;
+                height: 60px;
                 background: rgb(233, 233, 233);
                 border-radius: 100%;
                 margin-top: 20px;
-
                 i{
                     width: 100%;
                     text-align: center;
-                    margin-top: 10px;
-                    font-size: 12px;
+                    margin-top: 18px;
+                    font-size: 23px;
                     color: rgb(107, 107, 107);
-
                 }
             }
             .LCOSeprator{
-
                 width: 2px;
-                margin-left: 15px;
+                margin-left: 30px;
                 height: 80px;
                 background: rgb(233, 233, 233);
                 margin-top: 20px;
             }
             .LCOSelected{
-
                 background: rgb(0, 162, 255);
                 .LCOSelected1{
                     color: white;
@@ -371,12 +366,18 @@
         }
         #rightCart{
             display: inline-block;
-        position: absolute;
+            position: absolute;   
+            width: 90%;
+            margin-left: 5%;
+            box-sizing: border-box;
             .cartProductDiv{
-                margin-left: 3%;
-                margin-top: 20px;
+                height: 100px;
+                margin-top: 50px;
+                box-sizing: border-box;
+                width: 100%;
                 img{
-                    width: 7%;
+                    width: 65px;
+                    height: 130px;
                     display: inline-block;
                 }
                 .CPDescription1{
@@ -384,19 +385,22 @@
                     margin-left: 20px;
                     position: absolute;
                     margin-top: 20px;
-                    width: 300px;
-        background: red;
-
+                    width: 70%;
                     h1{
                         font-family: nunito;
-                        font-size: 13px;
-    
+                        font-size: 17px;
+                        i{
+                            color: rgb(0, 162, 255);
+                        }
                     }
                     p{
                         display: inline-block;
                         font-family: nunito;
                         margin-top: 25px;
-                        font-size: 12px;
+                        font-size: 14px;
+                        i{
+                            color: rgb(255, 119, 0);
+                        }
                     }
                     .CPCC{
                         margin-left: 10px;
@@ -408,24 +412,25 @@
                 .CPNumber{
                     display: inline-block;
                     position: absolute;
-                    margin-left: 23%;
-                    margin-top: 30px;
-                    width: 200px;
+                    margin-top: 90px;
+                    margin-left: 20px;
+                    border-radius: 7px;
+                    border-width: 1px;
+                    border-color: rgb(150, 150, 150);
+                    border-style: solid;
+                    padding: 7px 10px;
+                    width: 75px;
                     div{
-                        border-width: 2px;
-                        border-color: black;
-                        border-radius: 15px;
-                        border-style: solid;
                         display: inline-block;
                         cursor: pointer;
                         i{
-                            padding: 5px 6px;
                             display: inline-block;
                         }
                     }
                     .minus{
                         color: rgb(141, 141, 141);
                         border-color: rgb(141, 141, 141);
+                        display: inline-block;
                     }
                     p{
                         display: inline-block;
@@ -436,44 +441,68 @@
                 .CPPrice{
                     display: inline-block;
                     position: absolute;
-                    margin-left: 30%;
-                    margin-top: 70px;
+                    margin-left: 150px;
+                    margin-top: 100px;
                     font-family: nunito;
                     font-size: 20px;
                 }
+                #seprator{
+                    width: 100%;
+                    height: 1px;
+                    background: rgb(138, 138, 138);
+                    margin-top: 5px;
+                }
             }
-            #checkout{
-                margin-left: 10%;
-                margin-top: 180px;
+            #sendToBox{
+                margin-top: 50px;
+                width: 100%;
+                padding: 10px 20px;
                 font-family: nunito;
-                font-size: 20px;
+                border-radius: 7px;
+                border-width: 1px;
+                border-color: rgb(150, 150, 150);
+                border-style: solid;
+                box-sizing: border-box;
+                i{
+                    display: inline-block;
+                    color: rgb(255, 208, 0);
+                }
                 p{
                     display: inline-block;
-                    color: rgb(141, 141, 141);
-                }
-                #CPShowPrice{
                     margin-left: 10px;
-                    color: black;
-                }
-                button{
-                    display: block;
-                    border-style: none;
-                    background: rgb(0, 162, 255);
-                    color: white;
-                    padding: 10px 20px;
-                    border-radius: 10px;
-                    margin: 20px 30px;
-                    font-size: 22px;
-                }
-                button:hover{
-                    background: rgb(0, 152, 240);
-                    transition: 0.2s;
-                    cursor: pointer;
                 }
             }
+
         }
     }
-    .JM{
-        display: none;
+    #checkout{
+        font-family: nunito;
+        font-size: 14px;
+        position:fixed;
+        margin-top: 50px;
+        p{
+            display: inline-block;
+            color: rgb(141, 141, 141);
+        }
+        #CPShowPrice{
+            margin-left: 10px;
+            color: black;
+        }
+        button{
+            display: inline-block;
+            border-style: none;
+            background: rgb(0, 162, 255);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin: 20px 15px;
+            font-size: 15px;
+        }
+        button:hover{
+            background: rgb(0, 152, 240);
+            transition: 0.2s;
+            cursor: pointer;
+        }
     }
+
 }

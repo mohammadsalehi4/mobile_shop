@@ -100,7 +100,7 @@ const Header = () => {
                 States.thisPage==='main'?
                   <div>                
                       <h3 id='HLHF' className='thisPage'><a href='/'>Home</a></h3>
-                      <h3 onMouseEnter={()=>{derazkonande1()}} onMouseLeave={()=>{kutahkonande()}}><a>Cart</a></h3>
+                      <h3 onMouseEnter={()=>{derazkonande1()}} onMouseLeave={()=>{kutahkonande()}}><a href='/cart'>Cart</a></h3>
                       <h3 onMouseEnter={()=>{derazkonande2()}} onMouseLeave={()=>{kutahkonande()}}><a href='/dashboard'>Dashboard</a></h3>
                     <div id='khat' className='nemidonam'></div>
                   </div>
@@ -108,20 +108,20 @@ const Header = () => {
                   States.thisPage==='cart'?
                   <div>                
                     <h3 id='HLHF' onMouseEnter={()=>{derazkonandedo1()}} onMouseLeave={()=>{kutahkonandedo()}}><a href='/'>Home</a></h3>
-                    <h3 className='thisPage'><a>Cart</a></h3>
+                    <h3 className='thisPage'><a href='/cart'>Cart</a></h3>
                     <h3><a href='/dashboard' onMouseEnter={()=>{derazkonandedo2()}} onMouseLeave={()=>{kutahkonandedo()}}>Dashboard</a></h3>
                   <div id='khat1' className='nemidonam'></div></div>
                 :
                   States.thisPage==='dashboard'?
                   <div>                
                     <h3 id='HLHF' onMouseEnter={()=>{derazkonandese2()}} onMouseLeave={()=>{kutahkonandese()}} ><a href='/'>Home</a></h3>
-                    <h3 onMouseEnter={()=>{derazkonandese1()}} onMouseLeave={()=>{kutahkonandese()}}><a>Cart</a></h3>
+                    <h3 onMouseEnter={()=>{derazkonandese1()}} onMouseLeave={()=>{kutahkonandese()}}><a href='/cart'>Cart</a></h3>
                     <h3 className='thisPage' ><a href='/dashboard'>Dashboard</a></h3>
                   <div id='khat2' className='nemidonam'></div></div>
                 :
                   <div>                
                     <h3 id='HLHF'><a href='/'>Home</a></h3>
-                    <h3><a>Cart</a></h3>
+                    <h3><a href='/cart'>Cart</a></h3>
                     <h3><a href='/dashboard'>Dashboard</a></h3>
                   </div>
               }
@@ -129,14 +129,14 @@ const Header = () => {
               {
                 States.productPage? 
                 <div>                  
-                  <a><i class="fa fa-shopping-cart" aria-hidden="true"><p>{States.cartPNumber}</p></i></a>
+                  <a href='/cart'><i class="fa fa-shopping-cart" aria-hidden="true"><p>{States.cartPNumber}</p></i></a>
                   <a id='signup' className='headerLink' href='/dashboard'><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
                   <i class="fa fa-bars" aria-hidden="true" onClick={openmenu}></i>
                   
                 </div>
                 :
                   <div className='PI'>                  
-                    <a id='signup' className='headerLink '><i class="fa fa-shopping-cart " aria-hidden="true"><p>{States.cartPNumber}</p></i></a>
+                    <a id='signup' className='headerLink ' href='/cart'><i class="fa fa-shopping-cart " aria-hidden="true"><p>{States.cartPNumber}</p></i></a>
                     <a id='signup' className='headerLink ' href='/dashboard'><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
                   </div>
               }
@@ -144,7 +144,7 @@ const Header = () => {
         </div>
         <div id='rightHeader'>
             <a id='signup' className='headerLink' href='/dashboard'><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
-            <a><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+            <a href='/cart'><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
             <input type="text" id='searchBox' placeholder='search...' onChange={()=>{changeSearchBox()}}/>
             <div id='searchDiv'>
               {
