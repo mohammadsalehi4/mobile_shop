@@ -606,7 +606,7 @@ const Main = () => {
           :
           null
         }
-        <div className='JM' id='sortMenu'>
+        <div className='JND' id='sortMenu'>
           <i class="fa fa-arrows-v" aria-hidden="true"></i>
           <p>Sort By:</p>
 

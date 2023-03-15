@@ -191,6 +191,127 @@ a {
     border-radius: 10px;
   }
 }
+@media only screen and (max-width: 768px) {
+  #Header {
+    width: 100%;
+    min-width: 0px;
+    height: 40px;
+    padding-bottom: 20px;
+    border-bottom-color: #f4f4f4;
+    border-bottom-style: solid;
+    margin-left: 0px;
+    border-bottom-width: 2px;
+  }
+  #Header a {
+    text-decoration: none;
+    color: black;
+  }
+  #Header #leftHeader {
+    width: 90%;
+    display: inline-block;
+    margin-left: 5%;
+  }
+  #Header #leftHeader h2 {
+    font-family: Araboto;
+    font-size: 20px;
+    margin-top: 19px;
+    position: relative;
+    display: inline-block;
+  }
+  #Header #leftHeader .PRD {
+    margin-left: 50%;
+  }
+  #Header #leftHeader h3 {
+    position: relative;
+    font-family: Araboto;
+    display: none;
+    margin-left: 50px;
+    color: #727272;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    cursor: pointer;
+  }
+  #Header #leftHeader h3:hover {
+    color: #424242;
+  }
+  #Header #leftHeader .thisPage {
+    color: black;
+    display: none;
+  }
+  #Header #leftHeader .thisPage .kuft {
+    width: 60%;
+    height: 3px;
+    margin-left: 20%;
+    margin-top: 7px;
+    background: #4b4bff;
+    border-radius: 20px;
+  }
+  #Header #leftHeader #mobileRightHeader {
+    display: inline-block;
+    position: relative;
+    font-size: 26px;
+    float: right;
+    margin-top: 10px;
+  }
+  #Header #leftHeader #mobileRightHeader i {
+    box-shadow: 0 0 8px #c8c8c8;
+    padding: 3px 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 4px;
+  }
+  #Header #leftHeader #mobileRightHeader i p {
+    font-size: 13px;
+    display: inline-block;
+    background: #4b4bff;
+    display: inline-block;
+    position: absolute;
+    margin-left: -3px;
+    margin-top: -5px;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 50%;
+    font-family: ThinAraboto;
+    min-width: 7px;
+    min-height: 7px;
+    text-align: center;
+  }
+  #Header #leftHeader #mobileRightHeader .PI {
+    margin-left: 50px;
+  }
+  #Header #leftHeader #khat {
+    display: none;
+  }
+  #Header #leftHeader #khat1 {
+    display: none;
+  }
+  #Header #leftHeader #khat2 {
+    display: none;
+  }
+  #Header #rightHeader {
+    display: none;
+    height: 100px;
+    direction: rtl;
+  }
+  #Header #rightHeader i {
+    font-size: 40px;
+    margin-right: 40px;
+  }
+  #Header #rightHeader i:hover {
+    color: #5c5c5c;
+    cursor: pointer;
+  }
+  #Header #rightHeader .headerLink {
+    font-family: Araboto;
+    margin-right: 50px;
+  }
+  #Header #rightHeader .headerLink:hover {
+    color: #5c5c5c;
+    cursor: pointer;
+    border-color: #5c5c5c;
+  }
+}
 @media only screen and (max-device-width: 768px) {
   #Header {
     width: 100%;

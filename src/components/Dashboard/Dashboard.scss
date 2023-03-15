@@ -399,7 +399,430 @@ body{
     }
 }
 
+@media only screen and (max-width: 768px) {
+    body{
+        background: white;
+        font-family: nunito;
+    }
+    
+    #OuterBox{
+        width: 100%;
+        background: white;
+        margin-left: 0px;
+        margin-top: 0px;
+        border-radius: 0px;
+        position: absolute;
+    }
 
+    #LeftSide{
+        position: absolute;
+        width: $besideDivWidth;
+        height: $height;
+        z-index: 40;
+        font-size: 40px;
+        #logo{
+            background: url('black.png');
+            background-size: cover;
+            width: 130px;
+            height: 130px;
+            display: none;
+            position: absolute;
+            margin-left: 40px;
+            margin-top: 35px;
+        }
+        #topLogo{
+            display: none;
+            font-size: 70px;
+            font-family: nimbus;
+            margin-left: 200px;
+            margin-top: 57px;
+        }
+        .innerLogoName{
+            display: inline;
+        }
+        
+        .rightLogoName{
+            color: rgb(71, 71, 240);
+        }
+
+        #LeftMenu{
+            position: fixed;
+            width: 100%;
+            margin-left: 0%;
+            margin-top: 0px;
+            z-index: 40;
+            bottom: -10px;
+            text-align: center;
+            background: rgb(248, 248, 248);
+            a{
+                display: inline-block;
+                margin-top: 0px;
+                border-radius: 50px;
+                color: rgb(61, 61, 61);
+                font-size: 25px;
+                padding: 7px 2%;
+                margin-bottom: 20px;
+                margin-left: 40px;
+                width: 25px;
+                height: 25px;
+                .FAMenu{
+                    color: white;
+                    float: right;
+                }
+                p{
+                    display: none;
+                }
+
+            }
+            a:hover{
+                background: rgb(158, 66, 201);
+                color: white;
+                transition: 0.2s;
+                cursor: pointer;
+                .FAMenu{
+                    display: none;
+                }
+            }
+            #on{
+                background: rgb(158, 66, 201);
+                .FAMenu{
+                    display: none;
+                }
+                color: white;
+                margin-left: 0px;
+            }
+        }
+    }
+    
+    
+    #leftButtomMenu{
+        height: 200px;
+        width: 10%;
+        margin-left: 0%;
+        left: 90%;
+        top: 0px;
+        position: fixed;
+        display: none;
+        #LBMTitle{
+            color: rgb(104, 104, 104);
+            margin-top: 20px;
+            font-size: 12px;
+            margin-left: 25px;
+            display: none;
+        }
+        a{
+            display: block;
+            padding: 15px 25px;
+            margin-top: 10px;
+            border-radius: 20px;
+            color: rgb(0, 0, 0);
+            font-weight: 900;
+            left: 90%;
+            font-size: 60px;
+            text-align: center;
+            p{
+                display: none;
+            }
+            .LBMNumber{
+                background: orange;
+                display: inline;
+                float: right;
+                color: white;
+                padding: 9px 12px;
+                border-radius: 100%;
+                margin-top: -9px;
+                display: none;
+                text-align: center;
+                padding-top: auto;
+                p{
+                    margin: auto auto;
+                    margin-top: 9px;
+                }
+            }
+        }
+        a:hover{
+            background: rgb(158, 66, 201);
+            color: white;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+    }
+    
+    #MiddleSide{
+        position: absolute;
+        background: white;
+        width:100%;
+        top: 0px;
+        height: 1100px;
+        margin-top: 20px;
+        left:0px;
+        border-radius: 0px;
+        display: block;
+        overflow-x: hidden;
+        #MTLBox{
+            position: absolute;
+            width: 100%;
+        height: 270px;
+            #MTLBTitle{
+                font-family: neometricBold;
+                font-size:37px;
+                box-sizing: border-box;
+                margin-top: 0px;
+                margin-left: 20px;
+                font-weight: bolder;
+                display: block;
+            }
+            #MTLBDisc{
+                margin-left: 20px;
+                margin-top: 20px;
+                display: block;
+                font-size: 20px;
+                width: 80%;
+            }
+            #MTLBButton{
+                background: rgb(158, 66, 201);
+                display: inline-block;
+                padding: 13px 20px;
+                width: 90px;
+                margin-left: 20px;
+                margin-top: 240px;
+                border-radius: 15px;
+                padding: 10px 10px;
+                z-index: 6;
+                color: white;
+                font-size: 12px;
+                i{
+                    display: in;
+                    float: right;
+                }
+            }
+            #MTLBButton:hover{
+                cursor: pointer;
+                background: rgb(140, 53, 180);
+                transition: 0.2s;
+            }
+        }
+        #MTRBox{
+            position: absolute;
+            width: 100%;
+            margin-left: 20%;
+            margin-top: 140px;
+            background: url('3d.png');
+            background-size:contain;
+            background-repeat: no-repeat;
+        }
+        #MMBBox{
+            position: absolute;
+            width: 100%;
+            height: 340px;
+            margin-left: 20px;
+            margin-top: 420px;
+            background: white;
+            #week{
+                font-weight: 700;
+                margin-left: 0%;
+                font-size: 13px;
+            }
+            #menu{
+                background: rgb(236, 236, 236);
+                border-radius: 10px;
+                position: absolute;
+                overflow: hidden;
+                z-index: 22;
+                .weekDay{
+                    font-size: 13px;
+                    padding: 10px 12px;
+                    width: 120px;
+                    i{
+                        float: right;
+                        display: none;
+                        color: white;
+                    }
+                }
+                .weekDay:hover{
+                    background: rgb(140, 53, 180);
+                    color: white;
+                    transition: 0.3s;
+                    cursor: pointer;
+                    i{
+                        display: inline-block;
+                    }
+                }
+            }
+            #week:hover #menu{
+                cursor: pointer;
+                    display: inline-block;
+                
+            }
+            #challenge{
+                width: 90%;
+                height: 150px;
+                background: rgb(236, 236, 236);
+                margin-top: 10px;
+                margin-left: 0px;
+                border-radius: 10px;
+                #leftChallenge{
+                    width: 10px;
+                    height: 120px;
+                    margin-top: 15px;
+                    margin-left: 15px;
+                    background: purple;
+                    position: absolute;
+                    border-radius: 10px;
+                }
+                #challengeBackground{
+                    height: 90px;
+                    width: 90px;
+                    background: url('business.png');
+                    background-size: contain;
+                    position: absolute;
+                    margin-left: 30px;
+                    margin-top: 30px;
+                }
+                #challengeTime{
+                    position: absolute;
+                    color: blue;
+                    margin-left: 130px;
+                    margin-top: 20px;
+                    font-size: 13px;
+                    p{
+                        display: inline-block;
+                        margin-left: 10px;
+                    }
+                }
+                #challengeTitle{
+                    position: absolute;
+                    display: inline-block;
+                    font-weight: 900;
+                    margin-left: 130px;
+                    margin-top: 50px;
+                    width: 390px;
+                    font-size: 13px;
+                }
+                #challengeDesc{
+                    position: absolute;
+                    width: 50%;
+                    margin-left: 130px;
+                    margin-top: 80px;
+                    font-size: 13px;
+                }
+                #models{
+                    position: absolute;
+                    width: 50%;
+                    margin-left: 130px;
+                    margin-top: 110px;
+                    font-size: 13px;
+                }
+                #CArrow{
+                    position: absolute;
+                    margin-top: 110px;
+                    margin-left: 310px;
+                    font-size: 18px;
+                }
+            }
+            #challenge:hover{
+                background: rgb(224, 223, 223);
+                transition: 0.2s;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    #RightSide{
+        width: $besideDivWidth;
+        position: absolute;
+        left: 0px;
+        height: 50px;
+        width: 90%;
+        margin-top: 680px;
+        margin-left: 5%;
+        #RSBox{
+            margin-top: 135px;
+            margin-left: 0px;
+            font-family: nimbus;
+            font-size: 20px;
+            #RSBInput{
+                border-style: none;
+                padding-left: 10px;
+                background: none;
+                outline: none;
+                font-size: 20px;
+            }
+        }
+        #RMBox{
+            display: block;
+            margin-top: 25px;
+            margin-left: 0px;
+            font-family: nimbus;
+            a{
+                font-weight: 100;
+                color: blue;
+                font-size: 15px;
+            }
+            p{
+                font-family: neometricBold;
+                font-size: 25px;
+                margin-top: 0px;
+            }
+            #TBYCC{
+                margin-top: 30px;
+            }
+        }
+        #RBBox{
+            display: block;
+            margin-top: 0px;
+            margin-left: 0px;
+            position: absolute;
+            width: 100%;
+            .MeetingTime{
+                margin-top: 50px;
+                i{
+                    background: rgb(227, 198, 238);
+                    padding: 10px;
+                    border-radius: 10px;
+                    padding: 12px;
+                    position: absolute;
+                    font-size: 20px;
+
+                }
+                p{
+                    display: inline-block;
+                    margin-left: 15px;
+                    margin-left: 60px;
+                    position: absolute;
+                    font-size: 13px;
+                    margin-top: 4px;
+                }
+                .MT{
+                    font-weight: bold;
+                    margin-top: 10px;
+                }
+            }
+            #RTLBButton{
+                margin-top:50px;
+                color: white;
+                i{
+                    float: right;
+                }
+                background: rgb(158, 66, 201);
+                display: inline-block;
+                padding: 13px 20px;
+                width: 90px;
+                border-radius: 10px;
+                padding: 10px;
+                z-index: 6;
+                color: white;
+                font-size: 15px;
+                margin-bottom: 70px;
+            }
+            #RTLBButton:hover{
+                cursor: pointer;
+                background: rgb(140, 53, 180);
+                transition: 0.2s;
+            }
+        }
+    }
+}
 
 @media only screen and (max-device-width: 768px) {
     body{

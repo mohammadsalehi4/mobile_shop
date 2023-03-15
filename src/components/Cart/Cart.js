@@ -35,6 +35,7 @@ const Cart = () => {
             number:1
           }
     ]
+    
 
     const [AllPrice,SetAllPrice]=useState(0)
 

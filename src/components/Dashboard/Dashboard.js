@@ -54,6 +54,7 @@ const Dashboard = () => {
       dispatch({type:"CHANGEPAGE",value:'dashboard'})
     },[])
     
+    
     return (
       <div id="OuterBox">
         <div id='LeftSide'>
@@ -145,6 +146,7 @@ const Dashboard = () => {
               <p>Price</p><br/>
               <p className='MT'>$ {States.orderPrice}</p>
             </div>
+  
   
             <div className='MeetingTime'>
               <i class="fa fa-location-arrow" aria-hidden="true"></i>

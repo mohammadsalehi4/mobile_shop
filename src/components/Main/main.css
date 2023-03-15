@@ -6,7 +6,1034 @@
   font-family: Nunito;
   src: url("./Nunito.ttf");
 }
+@media only screen and (max-width: 768px) {
+  #mainDiv {
+    width: 100%;
+    min-width: 0px;
+    background: #eeeeee;
+  }
+  #mainDiv #topMainBox {
+    width: 100%;
+    margin-top: 10px;
+    background: white;
+  }
+  #mainDiv #topMainBox #maintopmainbox #topMainImage {
+    width: 90%;
+    margin-left: 5%;
+    top: 240px;
+  }
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription {
+    width: 90%;
+    margin-left: 5%;
+  }
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription h1 {
+    font-family: Nimbus;
+    font-size: 40px;
+    margin-top: 30px;
+    font-weight: bolder;
+  }
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription p {
+    font-family: Nunito;
+    margin-top: 30px;
+    font-size: 16px;
+    height: 60px;
+    display: inline-block;
+    width: 90%;
+  }
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription #pager {
+    display: inline-block;
+    float: right;
+    margin-right: 5%;
+    margin-top: 20px;
+  }
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription #pager .pages {
+    background: #999999;
+    width: 8px;
+    height: 8px;
+    margin-left: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription #pager .selectedPage {
+    background: #00a2ff;
+    box-shadow: 0 0 6px #00a2ff;
+  }
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription a {
+    font-family: Nunito;
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 10px;
+    background-color: #00a2ff;
+    font-size: 20px;
+    color: white;
+    box-shadow: 0 0 8px rgba(0, 162, 255, 0.4);
+    max-width: 30%;
+    margin-left: 0%;
+    margin-bottom: 30px;
+  }
+  #mainDiv #topMainBox #maintopmainbox #topMainDescription a:hover {
+    background-color: #008ada;
+    cursor: pointer;
+  }
+  #mainDiv #topMainBox .Arrow {
+    display: none;
+  }
+  #mainDiv #bottomLeftMainDiv {
+    display: none;
+    width: 300px;
+    height: 300px;
+    background: #f1f1f1;
+    margin-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    font-family: Nunito;
+    position: absolute;
+  }
+  #mainDiv #bottomLeftMainDiv h1 {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 1px;
+    font-size: 24px;
+    font-family: Nimbus;
+  }
+  #mainDiv #bottomLeftMainDiv .range-input {
+    position: relative;
+    margin-top: 25px;
+  }
+  #mainDiv #bottomLeftMainDiv .range-input div {
+    height: 2px;
+    width: 80%;
+    background: #7a7a7a;
+    position: absolute;
+    top: 18px;
+    margin-left: 10%;
+  }
+  #mainDiv #bottomLeftMainDiv .range-input input {
+    position: absolute;
+    width: 80%;
+    height: 5px;
+    top: 15px;
+    background: none;
+    margin-left: 10%;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  #mainDiv #bottomLeftMainDiv .range-input input[type=range]::-webkit-slider-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #17A2B8;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(94, 94, 94, 0.35);
+  }
+  #mainDiv #bottomLeftMainDiv .range-input input[type=range]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #17A2B8;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(94, 94, 94, 0.35);
+  }
+  #mainDiv #bottomLeftMainDiv .setPriceDiv {
+    display: inline-block;
+    margin-left: 9%;
+    margin-top: 55px;
+    width: 22%;
+  }
+  #mainDiv #bottomLeftMainDiv .setPriceDiv p {
+    font-size: 16px;
+  }
+  #mainDiv #bottomLeftMainDiv .setPriceDiv div {
+    padding: 10px 0px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #a3a3a3;
+    color: #5c5c5c;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+  #mainDiv #bottomLeftMainDiv #seprator {
+    display: inline-block;
+    width: 20%;
+    height: 2px;
+    background: #afafaf;
+    margin-left: 10%;
+  }
+  #mainDiv #bottomLeftMainDiv #MaxDiv {
+    margin-left: 10%;
+  }
+  #mainDiv #bottomLeftMainDiv button {
+    width: 84%;
+    margin-left: 9%;
+    border-style: none;
+    margin-top: 20px;
+    background: #00a2ff;
+    padding: 12px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  #mainDiv #bottomLeftMainDiv button:hover {
+    background: #008ada;
+    transition: 0.2s;
+  }
+  #mainDiv #leftCheckboxDiv {
+    width: 300px;
+    display: none;
+    height: 300px;
+    background: #f1f1f1;
+    margin-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    font-family: Nunito;
+    position: absolute;
+    margin-top: 450px;
+  }
+  #mainDiv #leftCheckboxDiv h1 {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 1px;
+    font-size: 24px;
+    font-family: Nimbus;
+  }
+  #mainDiv #leftCheckboxDiv div input {
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    top: 2px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  #mainDiv #leftCheckboxDiv div label {
+    margin-left: 15px;
+    display: inline-block;
+    width: 80%;
+  }
+  #mainDiv #leftCheckboxDiv div label p {
+    display: inline-block;
+    float: right;
+    margin-right: 30px;
+    background: #00a2ff;
+    padding: 5px 10px;
+    margin-top: -8px;
+    border-radius: 20px;
+    color: white;
+  }
+  #mainDiv #leftRatingDiv {
+    display: none;
+    width: 300px;
+    height: 250px;
+    background: #f1f1f1;
+    margin-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    font-family: Nunito;
+    position: absolute;
+    margin-top: 850px;
+  }
+  #mainDiv #leftRatingDiv h1 {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 1px;
+    font-size: 24px;
+    font-family: Nimbus;
+  }
+  #mainDiv #leftRatingDiv .rateStars {
+    display: block;
+  }
+  #mainDiv #leftRatingDiv .rateStars input {
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    top: 2px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  #mainDiv #leftRatingDiv .rateStars label {
+    margin-left: 15px;
+    display: inline-block;
+    width: 80%;
+  }
+  #mainDiv #leftRatingDiv .rateStars label span {
+    margin-left: 4px;
+    font-size: 20px;
+    color: #94d1f5;
+  }
+  #mainDiv #leftRatingDiv .rateStars label .checked {
+    color: #00a2ff;
+  }
+  #mainDiv #Mobile {
+    position: relative;
+    width: 100%;
+    top: 10px;
+    background: white;
+    box-shadow: 0 0 3px #cccccc;
+  }
+  #mainDiv #Mobile #sortBox {
+    margin-left: 5%;
+    width: 90%;
+    padding-bottom: 15px;
+    border-bottom-style: solid;
+    border-color: black;
+    border-width: 1px;
+  }
+  #mainDiv #Mobile #sortBox i {
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 25px;
+  }
+  #mainDiv #Mobile #sortBox #showSortTop {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  #mainDiv #Mobile .mobileBox {
+    width: 90%;
+    margin-left: 5%;
+    display: inline-block;
+    border-bottom-width: 3px;
+    border-color: #eeeeee;
+    border-style: solid;
+  }
+  #mainDiv #Mobile .mobileBox .mobileImage {
+    margin-left: 2%;
+    width: 25%;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox {
+    display: inline-block;
+    position: absolute;
+    width: 60%;
+    margin-left: 5%;
+    margin-top: 20px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox .mobileTitle {
+    font-family: Nunito;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    text-align: left;
+    font-weight: bolder;
+    max-width: 100%;
+    display: inline-block;
+    margin-top: 30px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox .mobilePrice {
+    font-family: nunito;
+    font-weight: bold;
+    color: black;
+    font-size: 22px;
+    margin-top: 40px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox span {
+    color: #ffd900;
+    margin-top: 40px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox span p {
+    display: inline-block;
+    color: black;
+    font-family: Nunito;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox .archive {
+    margin-top: 40px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox .archive i {
+    color: #17A2B8;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox .archive p {
+    display: inline-block;
+    color: black;
+    font-family: Nunito;
+    margin-left: 10px;
+  }
+  #mainDiv #MMenu #mobileMenu {
+    width: 60%;
+    height: 100%;
+    background: #d6d6d6;
+    position: fixed;
+    top: 0px;
+    margin-left: 40%;
+    overflow-y: scroll;
+  }
+  #mainDiv #MMenu #mobileMenu .closeMenu {
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 15px;
+  }
+  #mainDiv #MMenu #mobileMenu .closeMenu i {
+    color: #3b3b3b;
+    font-size: 20px;
+  }
+  #mainDiv #MMenu #mobileMenu #bottomLeftMainDiv {
+    display: block;
+    width: 220px;
+    height: 220px;
+    background: #f1f1f1;
+    margin-left: 5%;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: Nunito;
+    position: absolute;
+  }
+  #mainDiv #MMenu #mobileMenu #bottomLeftMainDiv h1 {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 1px;
+    font-size: 18px;
+    font-family: Nimbus;
+  }
+  #mainDiv #MMenu #mobileMenu #bottomLeftMainDiv .range-input {
+    position: relative;
+    margin-top: 5px;
+  }
+  #mainDiv #MMenu #mobileMenu #bottomLeftMainDiv .range-input div {
+    height: 2px;
+    width: 80%;
+    background: #7a7a7a;
+    position: absolute;
+    top: 18px;
+    margin-left: 10%;
+  }
+  #mainDiv #MMenu #mobileMenu #bottomLeftMainDiv .range-input input {
+    position: absolute;
+    width: 80%;
+    height: 5px;
+    top: 15px;
+    background: none;
+    margin-left: 10%;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  #mainDiv #MMenu #mobileMenu #bottomLeftMainDiv .range-input input[type=range]::-webkit-slider-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #17A2B8;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(94, 94, 94, 0.35);
+  }
+  #mainDiv #MMenu #mobileMenu #bottomLeftMainDiv .range-input input[type=range]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #17A2B8;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(94, 94, 94, 0.35);
+  }
+  #mainDiv #MMenu #mobileMenu #bottomLeftMainDiv .setPriceDiv {
+    display: inline-block;
+    margin-left: 9%;
+    margin-top: 45px;
+    width: 22%;
+  }
+  #mainDiv #MMenu #mobileMenu #bottomLeftMainDiv .setPriceDiv p {
+    font-size: 14px;
+  }
+  #mainDiv #MMenu #mobileMenu #bottomLeftMainDiv .setPriceDiv div {
+    padding: 6px 0px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #a3a3a3;
+    color: #5c5c5c;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 13px;
+    text-align: center;
+  }
+  #mainDiv #MMenu #mobileMenu #bottomLeftMainDiv #seprator {
+    display: inline-block;
+    width: 20%;
+    height: 2px;
+    background: #afafaf;
+    margin-left: 10%;
+  }
+  #mainDiv #MMenu #mobileMenu #bottomLeftMainDiv #MaxDiv {
+    margin-left: 10%;
+  }
+  #mainDiv #MMenu #mobileMenu #bottomLeftMainDiv button {
+    width: 84%;
+    margin-left: 9%;
+    border-style: none;
+    margin-top: 20px;
+    background: #00a2ff;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+  }
+  #mainDiv #MMenu #mobileMenu #bottomLeftMainDiv button:hover {
+    background: #008ada;
+    transition: 0.2s;
+  }
+  #mainDiv #MMenu #mobileMenu #leftCheckboxDiv {
+    width: 220px;
+    display: block;
+    height: 250px;
+    background: #f1f1f1;
+    margin-left: 5%;
+    border-radius: 10px;
+    font-family: Nunito;
+    position: absolute;
+    margin-top: 260px;
+  }
+  #mainDiv #MMenu #mobileMenu #leftCheckboxDiv h1 {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 1px;
+    font-size: 18px;
+    font-family: Nimbus;
+  }
+  #mainDiv #MMenu #mobileMenu #leftCheckboxDiv div input {
+    width: 16px;
+    height: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    top: 2px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  #mainDiv #MMenu #mobileMenu #leftCheckboxDiv div label {
+    margin-left: 0px;
+    display: inline-block;
+    width: 80%;
+    font-size: 14px;
+  }
+  #mainDiv #MMenu #mobileMenu #leftCheckboxDiv div label p {
+    display: inline-block;
+    float: right;
+    margin-right: 30px;
+    background: #00a2ff;
+    padding: 3px 6px;
+    margin-top: -8px;
+    border-radius: 20px;
+    color: white;
+  }
+  #mainDiv #MMenu #mobileMenu #leftRatingDiv {
+    width: 220px;
+    display: block;
+    height: 220px;
+    background: #f1f1f1;
+    margin-left: 5%;
+    border-radius: 10px;
+    font-family: Nunito;
+    position: absolute;
+    margin-top: 530px;
+  }
+  #mainDiv #MMenu #mobileMenu #leftRatingDiv h1 {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 1px;
+    font-size: 18px;
+    font-family: Nimbus;
+  }
+  #mainDiv #MMenu #mobileMenu #leftRatingDiv .rateStars {
+    display: block;
+  }
+  #mainDiv #MMenu #mobileMenu #leftRatingDiv .rateStars input {
+    width: 16px;
+    height: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    top: 2px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  #mainDiv #MMenu #mobileMenu #leftRatingDiv .rateStars label {
+    margin-left: 0px;
+    display: inline-block;
+    width: 80%;
+    font-size: 14px;
+  }
+  #mainDiv #MMenu #mobileMenu #leftRatingDiv .rateStars label span {
+    margin-left: 4px;
+    font-size: 20px;
+    color: #94d1f5;
+  }
+  #mainDiv #MMenu #mobileMenu #leftRatingDiv .rateStars label .checked {
+    color: #00a2ff;
+  }
+  #mainDiv #MMenu #mobileMenu {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+  #mainDiv #MMenu #mobileMenu::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+  }
+  #mainDiv #MMenu #hidder {
+    width: 40%;
+    height: 100%;
+    background: #d6d6d6;
+    position: fixed;
+    top: 0px;
+    transition: 0.4s;
+  }
+
+  #poshanande {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    left: 0px;
+    height: 100%;
+    bottom: 0px;
+    background: #b9b9b9;
+    opacity: 0.5;
+  }
+
+  #sortMenu {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    height: 250px;
+    background: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-size: 20px;
+    bottom: -250px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+  }
+  #sortMenu i {
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  #sortMenu p {
+    display: inline-block;
+    margin-left: 20px;
+    font-weight: bold;
+  }
+  #sortMenu p i {
+    float: right;
+    margin: 0px 5%;
+  }
+  #sortMenu .optionM {
+    display: block;
+    margin-top: 25px;
+    padding-bottom: 15px;
+    width: 90%;
+    border-bottom-color: #cbcbcb;
+    border-bottom-width: 1px;
+    font-weight: 100;
+    border-style: solid;
+  }
+
+  .justMobileMenu {
+    z-index: 120;
+  }
+  .justMobileMenu #mobileMMenu {
+    width: 40%;
+    min-width: 250px;
+    height: 100%;
+    background: white;
+    position: fixed;
+    top: 0px;
+    overflow-y: scroll;
+    left: 100%;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+  }
+  .justMobileMenu #mobileMMenu .closeMenu {
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 15px;
+  }
+  .justMobileMenu #mobileMMenu .closeMenu i {
+    color: #3b3b3b;
+    font-size: 20px;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv {
+    display: block;
+    width: 100%;
+    height: 220px;
+    background: white;
+    margin-left: 0%;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: Nunito;
+    position: absolute;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv h1 {
+    width: 90%;
+    text-align: left;
+    margin-left: 5%;
+    padding: 10px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 1px;
+    font-size: 18px;
+    font-family: Nimbus;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv h1 i {
+    float: right;
+    margin-right: 5%;
+    font-weight: 100;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv .range-input {
+    position: relative;
+    margin-top: 5px;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv .range-input div {
+    height: 2px;
+    width: 80%;
+    background: #7a7a7a;
+    position: absolute;
+    top: 18px;
+    margin-left: 10%;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv .range-input input {
+    position: absolute;
+    width: 80%;
+    height: 5px;
+    top: 15px;
+    background: none;
+    margin-left: 10%;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv .range-input input[type=range]::-webkit-slider-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #17A2B8;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(94, 94, 94, 0.35);
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv .range-input input[type=range]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #17A2B8;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(94, 94, 94, 0.35);
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv .setPriceDiv {
+    display: inline-block;
+    margin-left: 9%;
+    margin-top: 45px;
+    width: 22%;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv .setPriceDiv p {
+    font-size: 14px;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv .setPriceDiv div {
+    padding: 6px 0px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #a3a3a3;
+    color: #5c5c5c;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 13px;
+    text-align: center;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv #seprator {
+    display: inline-block;
+    width: 20%;
+    height: 2px;
+    background: #afafaf;
+    margin-left: 10%;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv #MaxDiv {
+    margin-left: 10%;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv button {
+    width: 84%;
+    margin-left: 9%;
+    border-style: none;
+    margin-top: 20px;
+    background: #00a2ff;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+  }
+  .justMobileMenu #mobileMMenu #bottomLeftMainDiv button:hover {
+    background: #008ada;
+    transition: 0.2s;
+  }
+  .justMobileMenu #mobileMMenu #leftCheckboxDiv {
+    width: 90%;
+    display: block;
+    height: 250px;
+    background: white;
+    margin-left: 5%;
+    border-radius: 10px;
+    font-family: Nunito;
+    position: absolute;
+    margin-top: 260px;
+  }
+  .justMobileMenu #mobileMMenu #leftCheckboxDiv h1 {
+    width: 100%;
+    text-align: left;
+    padding: 10px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 1px;
+    font-size: 18px;
+    font-family: Nimbus;
+  }
+  .justMobileMenu #mobileMMenu #leftCheckboxDiv h1 i {
+    float: right;
+    margin-right: 5%;
+    font-weight: 100;
+  }
+  .justMobileMenu #mobileMMenu #leftCheckboxDiv div input {
+    width: 16px;
+    height: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    top: 2px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  .justMobileMenu #mobileMMenu #leftCheckboxDiv div label {
+    margin-left: 0px;
+    display: inline-block;
+    width: 80%;
+    font-size: 14px;
+  }
+  .justMobileMenu #mobileMMenu #leftCheckboxDiv div label p {
+    display: inline-block;
+    float: right;
+    margin-right: 30px;
+    background: #00a2ff;
+    padding: 3px 6px;
+    margin-top: -8px;
+    border-radius: 20px;
+    color: white;
+  }
+  .justMobileMenu #mobileMMenu #leftRatingDiv {
+    width: 90%;
+    display: block;
+    height: 220px;
+    background: white;
+    margin-left: 5%;
+    border-radius: 10px;
+    font-family: Nunito;
+    position: absolute;
+    margin-top: 530px;
+  }
+  .justMobileMenu #mobileMMenu #leftRatingDiv h1 {
+    width: 100%;
+    text-align: left;
+    padding: 10px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c5c5c5;
+    border-bottom-width: 1px;
+    font-size: 18px;
+    font-family: Nimbus;
+  }
+  .justMobileMenu #mobileMMenu #leftRatingDiv h1 i {
+    float: right;
+    margin-right: 5%;
+    font-weight: 100;
+  }
+  .justMobileMenu #mobileMMenu #leftRatingDiv .rateStars {
+    display: block;
+  }
+  .justMobileMenu #mobileMMenu #leftRatingDiv .rateStars input {
+    width: 16px;
+    height: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    top: 2px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  .justMobileMenu #mobileMMenu #leftRatingDiv .rateStars label {
+    margin-left: 0px;
+    display: inline-block;
+    width: 80%;
+    font-size: 14px;
+  }
+  .justMobileMenu #mobileMMenu #leftRatingDiv .rateStars label span {
+    margin-left: 4px;
+    font-size: 20px;
+    color: #94d1f5;
+  }
+  .justMobileMenu #mobileMMenu #leftRatingDiv .rateStars label .checked {
+    color: #00a2ff;
+  }
+  .justMobileMenu #mobileMMenu {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+  .justMobileMenu #mobileMMenu::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+  }
+
+  #hidder {
+    width: 100%;
+    height: 100%;
+    background: #d6d6d6;
+    position: fixed;
+    top: 0px;
+    transition: 0.4s;
+    opacity: 0.5;
+  }
+
+  .JD {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #mainDiv #Mobile .mobileBox #mobileRightBox .mobileTitle {
+    margin-top: 10px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox .mobilePrice {
+    margin-top: 30px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox span {
+    margin-top: 30px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox .archive {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 490px) {
+  #mainDiv #Mobile .mobileBox #mobileRightBox .mobileTitle {
+    font-size: 23px;
+    margin-top: 10px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox .mobilePrice {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox span {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox .archive {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #mainDiv #Mobile .mobileBox #mobileRightBox .mobileTitle {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox .mobilePrice {
+    margin-top: 18px;
+    font-size: 14px;
+    position: relative;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox span {
+    margin-top: 18px;
+    font-size: 12px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox .archive {
+    margin-top: 18px;
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  #mainDiv #Mobile .mobileBox #mobileRightBox .mobileTitle {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox .mobilePrice {
+    margin-top: 15px;
+    font-size: 12px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox span {
+    margin-top: 15px;
+    font-size: 11px;
+  }
+  #mainDiv #Mobile .mobileBox #mobileRightBox .archive {
+    margin-top: 15px;
+    font-size: 11px;
+  }
+}
 @media only screen and (max-width: 1200px) and (min-width: 768px) {
+  .JND {
+    display: none;
+  }
+
   #mainDiv {
     width: 100%;
     min-height: 1500px;
@@ -418,6 +1445,10 @@
   }
 }
 @media only screen and (max-width: 1450px) and (min-width: 1200px) {
+  .JND {
+    display: none;
+  }
+
   #mainDiv {
     width: 100%;
     overflow-x: hidden;
@@ -825,6 +1856,10 @@
   }
 }
 @media only screen and (min-width: 1450px) {
+  .JND {
+    display: none;
+  }
+
   #mainDiv {
     width: 100%;
     min-height: 1500px;
@@ -1134,6 +2169,7 @@
     width: 70%;
     left: 500px;
     top: 50px;
+    min-height: 900px;
   }
   #mainDiv #Mobile #sortBox {
     width: 90%;

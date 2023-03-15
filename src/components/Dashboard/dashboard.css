@@ -387,6 +387,424 @@ body {
   transition: 0.2s;
 }
 
+@media only screen and (max-width: 768px) {
+  body {
+    background: white;
+    font-family: nunito;
+  }
+
+  #OuterBox {
+    width: 100%;
+    background: white;
+    margin-left: 0px;
+    margin-top: 0px;
+    border-radius: 0px;
+    position: absolute;
+  }
+
+  #LeftSide {
+    position: absolute;
+    width: 294px;
+    height: 680px;
+    z-index: 40;
+    font-size: 40px;
+  }
+  #LeftSide #logo {
+    background: url("black.png");
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+    display: none;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 35px;
+  }
+  #LeftSide #topLogo {
+    display: none;
+    font-size: 70px;
+    font-family: nimbus;
+    margin-left: 200px;
+    margin-top: 57px;
+  }
+  #LeftSide .innerLogoName {
+    display: inline;
+  }
+  #LeftSide .rightLogoName {
+    color: #4747f0;
+  }
+  #LeftSide #LeftMenu {
+    position: fixed;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 0px;
+    z-index: 40;
+    bottom: -10px;
+    text-align: center;
+    background: #f8f8f8;
+  }
+  #LeftSide #LeftMenu a {
+    display: inline-block;
+    margin-top: 0px;
+    border-radius: 50px;
+    color: #3d3d3d;
+    font-size: 25px;
+    padding: 7px 2%;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    width: 25px;
+    height: 25px;
+  }
+  #LeftSide #LeftMenu a .FAMenu {
+    color: white;
+    float: right;
+  }
+  #LeftSide #LeftMenu a p {
+    display: none;
+  }
+  #LeftSide #LeftMenu a:hover {
+    background: #9e42c9;
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  #LeftSide #LeftMenu a:hover .FAMenu {
+    display: none;
+  }
+  #LeftSide #LeftMenu #on {
+    background: #9e42c9;
+    color: white;
+    margin-left: 0px;
+  }
+  #LeftSide #LeftMenu #on .FAMenu {
+    display: none;
+  }
+
+  #leftButtomMenu {
+    height: 200px;
+    width: 10%;
+    margin-left: 0%;
+    left: 90%;
+    top: 0px;
+    position: fixed;
+    display: none;
+  }
+  #leftButtomMenu #LBMTitle {
+    color: #686868;
+    margin-top: 20px;
+    font-size: 12px;
+    margin-left: 25px;
+    display: none;
+  }
+  #leftButtomMenu a {
+    display: block;
+    padding: 15px 25px;
+    margin-top: 10px;
+    border-radius: 20px;
+    color: black;
+    font-weight: 900;
+    left: 90%;
+    font-size: 60px;
+    text-align: center;
+  }
+  #leftButtomMenu a p {
+    display: none;
+  }
+  #leftButtomMenu a .LBMNumber {
+    background: orange;
+    display: inline;
+    float: right;
+    color: white;
+    padding: 9px 12px;
+    border-radius: 100%;
+    margin-top: -9px;
+    display: none;
+    text-align: center;
+    padding-top: auto;
+  }
+  #leftButtomMenu a .LBMNumber p {
+    margin: auto auto;
+    margin-top: 9px;
+  }
+  #leftButtomMenu a:hover {
+    background: #9e42c9;
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+
+  #MiddleSide {
+    position: absolute;
+    background: white;
+    width: 100%;
+    top: 0px;
+    height: 1100px;
+    margin-top: 20px;
+    left: 0px;
+    border-radius: 0px;
+    display: block;
+    overflow-x: hidden;
+  }
+  #MiddleSide #MTLBox {
+    position: absolute;
+    width: 100%;
+    height: 270px;
+  }
+  #MiddleSide #MTLBox #MTLBTitle {
+    font-family: neometricBold;
+    font-size: 37px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-left: 20px;
+    font-weight: bolder;
+    display: block;
+  }
+  #MiddleSide #MTLBox #MTLBDisc {
+    margin-left: 20px;
+    margin-top: 20px;
+    display: block;
+    font-size: 20px;
+    width: 80%;
+  }
+  #MiddleSide #MTLBox #MTLBButton {
+    background: #9e42c9;
+    display: inline-block;
+    padding: 13px 20px;
+    width: 90px;
+    margin-left: 20px;
+    margin-top: 240px;
+    border-radius: 15px;
+    padding: 10px 10px;
+    z-index: 6;
+    color: white;
+    font-size: 12px;
+  }
+  #MiddleSide #MTLBox #MTLBButton i {
+    display: in;
+    float: right;
+  }
+  #MiddleSide #MTLBox #MTLBButton:hover {
+    cursor: pointer;
+    background: #8c35b4;
+    transition: 0.2s;
+  }
+  #MiddleSide #MTRBox {
+    position: absolute;
+    width: 100%;
+    margin-left: 20%;
+    margin-top: 140px;
+    background: url("3d.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #MiddleSide #MMBBox {
+    position: absolute;
+    width: 100%;
+    height: 340px;
+    margin-left: 20px;
+    margin-top: 420px;
+    background: white;
+  }
+  #MiddleSide #MMBBox #week {
+    font-weight: 700;
+    margin-left: 0%;
+    font-size: 13px;
+  }
+  #MiddleSide #MMBBox #menu {
+    background: #ececec;
+    border-radius: 10px;
+    position: absolute;
+    overflow: hidden;
+    z-index: 22;
+  }
+  #MiddleSide #MMBBox #menu .weekDay {
+    font-size: 13px;
+    padding: 10px 12px;
+    width: 120px;
+  }
+  #MiddleSide #MMBBox #menu .weekDay i {
+    float: right;
+    display: none;
+    color: white;
+  }
+  #MiddleSide #MMBBox #menu .weekDay:hover {
+    background: #8c35b4;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  #MiddleSide #MMBBox #menu .weekDay:hover i {
+    display: inline-block;
+  }
+  #MiddleSide #MMBBox #week:hover #menu {
+    cursor: pointer;
+    display: inline-block;
+  }
+  #MiddleSide #MMBBox #challenge {
+    width: 90%;
+    height: 150px;
+    background: #ececec;
+    margin-top: 10px;
+    margin-left: 0px;
+    border-radius: 10px;
+  }
+  #MiddleSide #MMBBox #challenge #leftChallenge {
+    width: 10px;
+    height: 120px;
+    margin-top: 15px;
+    margin-left: 15px;
+    background: purple;
+    position: absolute;
+    border-radius: 10px;
+  }
+  #MiddleSide #MMBBox #challenge #challengeBackground {
+    height: 90px;
+    width: 90px;
+    background: url("business.png");
+    background-size: contain;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  #MiddleSide #MMBBox #challenge #challengeTime {
+    position: absolute;
+    color: blue;
+    margin-left: 130px;
+    margin-top: 20px;
+    font-size: 13px;
+  }
+  #MiddleSide #MMBBox #challenge #challengeTime p {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  #MiddleSide #MMBBox #challenge #challengeTitle {
+    position: absolute;
+    display: inline-block;
+    font-weight: 900;
+    margin-left: 130px;
+    margin-top: 50px;
+    width: 390px;
+    font-size: 13px;
+  }
+  #MiddleSide #MMBBox #challenge #challengeDesc {
+    position: absolute;
+    width: 50%;
+    margin-left: 130px;
+    margin-top: 80px;
+    font-size: 13px;
+  }
+  #MiddleSide #MMBBox #challenge #models {
+    position: absolute;
+    width: 50%;
+    margin-left: 130px;
+    margin-top: 110px;
+    font-size: 13px;
+  }
+  #MiddleSide #MMBBox #challenge #CArrow {
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 310px;
+    font-size: 18px;
+  }
+  #MiddleSide #MMBBox #challenge:hover {
+    background: #e0dfdf;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+
+  #RightSide {
+    width: 294px;
+    position: absolute;
+    left: 0px;
+    height: 50px;
+    width: 90%;
+    margin-top: 680px;
+    margin-left: 5%;
+  }
+  #RightSide #RSBox {
+    margin-top: 135px;
+    margin-left: 0px;
+    font-family: nimbus;
+    font-size: 20px;
+  }
+  #RightSide #RSBox #RSBInput {
+    border-style: none;
+    padding-left: 10px;
+    background: none;
+    outline: none;
+    font-size: 20px;
+  }
+  #RightSide #RMBox {
+    display: block;
+    margin-top: 25px;
+    margin-left: 0px;
+    font-family: nimbus;
+  }
+  #RightSide #RMBox a {
+    font-weight: 100;
+    color: blue;
+    font-size: 15px;
+  }
+  #RightSide #RMBox p {
+    font-family: neometricBold;
+    font-size: 25px;
+    margin-top: 0px;
+  }
+  #RightSide #RMBox #TBYCC {
+    margin-top: 30px;
+  }
+  #RightSide #RBBox {
+    display: block;
+    margin-top: 0px;
+    margin-left: 0px;
+    position: absolute;
+    width: 100%;
+  }
+  #RightSide #RBBox .MeetingTime {
+    margin-top: 50px;
+  }
+  #RightSide #RBBox .MeetingTime i {
+    background: #e3c6ee;
+    padding: 10px;
+    border-radius: 10px;
+    padding: 12px;
+    position: absolute;
+    font-size: 20px;
+  }
+  #RightSide #RBBox .MeetingTime p {
+    display: inline-block;
+    margin-left: 15px;
+    margin-left: 60px;
+    position: absolute;
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  #RightSide #RBBox .MeetingTime .MT {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  #RightSide #RBBox #RTLBButton {
+    margin-top: 50px;
+    color: white;
+    background: #9e42c9;
+    display: inline-block;
+    padding: 13px 20px;
+    width: 90px;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 6;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 70px;
+  }
+  #RightSide #RBBox #RTLBButton i {
+    float: right;
+  }
+  #RightSide #RBBox #RTLBButton:hover {
+    cursor: pointer;
+    background: #8c35b4;
+    transition: 0.2s;
+  }
+}
 @media only screen and (max-device-width: 768px) {
   body {
     background: white;
