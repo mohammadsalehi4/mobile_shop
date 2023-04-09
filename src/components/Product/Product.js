@@ -154,6 +154,7 @@ const Product = (props) => {
       const [selectedCap,SetselectedCap]=useState(0)
       const [selectedImage,SetselectedImage]=useState(0)
       const [getImage,SetImage]=useState([])
+      const [isAdded,SetisAdded]=useState(false)
 
        useEffect(()=>{
         for(let i=0;i<devices.length;i++){
@@ -172,6 +173,15 @@ const Product = (props) => {
        
        const iClick=(val,num)=>{
         SetselectedImage(num)
+       }
+
+       const AddtoCartP=()=>{
+        if(!isAdded){
+          const ProductN=States.cartPNumber
+          dispatch({type:"ADDTOCARTPRODUCT",value:ProductN+1})
+          SetisAdded(true)
+        }
+
        }
 
   return (
@@ -220,7 +230,11 @@ const Product = (props) => {
                     </div>
                 </div>
                 <p id='PPrice'>${getDevice.price}</p>
-                <button id='AddButton'>Add to Cart</button>
+                {!isAdded ? 
+                  <button id='AddButton' onClick={AddtoCartP}>Add to Cart</button>
+                  :
+                  <button id='AddButton' className='Added'>Added to cart</button>
+                }
             </div>
         </div>
     </div>

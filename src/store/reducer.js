@@ -202,6 +202,12 @@ const reducer=(state=initialState,action)=>{
             thisPage:action.value
         }
     }
+    if(action.type==="ADDTOCARTPRODUCT"){
+      return {
+          ...state,
+          cartPNumber:action.value
+      }
+  }
     return state
 }
 
