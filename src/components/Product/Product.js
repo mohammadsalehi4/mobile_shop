@@ -239,6 +239,7 @@ const Product = (props) => {
         </div>
     </div>
   )
+  
 }
 
 
