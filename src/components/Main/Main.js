@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Footer from '../Footer/Footer';
 import Loading from '../Loading/Loading';
 import './main.css'
+import { fa2, fa3 } from '@fortawesome/free-solid-svg-icons';
 const Main = () => {
 
   const States = useSelector(state => state);
@@ -183,7 +184,8 @@ const Main = () => {
   const [sortMenu,SetSortMenu]=useState(false)
 
   const nextTopPage=(side)=>{
-    const all=HeaderDetails.length
+
+      const all=HeaderDetails.length
     if(side===true){
       const getPageNum=topBoxPage
       if(getPageNum<=all-2){
@@ -199,7 +201,21 @@ const Main = () => {
         SettopBoxPage(all-1)
       }
     }
+
+    document.getElementById('maintopmainbox').style.transition='0s'
+    document.getElementById('maintopmainbox').style.opacity='0.2'
+    const aaa=setInterval(() => {
+      
+      document.getElementById('maintopmainbox').style.transition='0.2s'
+      document.getElementById('maintopmainbox').style.opacity='1'
+      clearInterval(aaa);
+    }, 10);
   }
+
+  useEffect(()=>{
+    
+  },[topBoxPage])
+
 
   const setminPrice=(newPrice,index)=>{
     if(newPrice<maxPrice){
