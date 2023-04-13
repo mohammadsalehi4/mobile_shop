@@ -206,7 +206,7 @@ const Main = () => {
     document.getElementById('maintopmainbox').style.opacity='0.2'
     const aaa=setInterval(() => {
       
-      document.getElementById('maintopmainbox').style.transition='0.2s'
+      document.getElementById('maintopmainbox').style.transition='0.3s'
       document.getElementById('maintopmainbox').style.opacity='1'
       clearInterval(aaa);
     }, 10);
@@ -259,6 +259,7 @@ const Main = () => {
   const Apply=()=>{
     dispatch({type:"CHANGEMAX",value:maxPrice})
     dispatch({type:"CHANGEMIN",value:minPrice})
+    dispatch({type:"CHANGEOPENMENU",value:false})
   }
 
   useEffect(()=>{
