@@ -3,7 +3,7 @@
     src: url('../Main/Nunito.ttf');
 }
 
-@media only screen and (min-device-width:768px) and (max-width:800px) {
+@media only screen and (min-device-width:768px) and (max-width:768px) {
     #productDiv{
         width: 100%;
         overflow: hidden;
@@ -139,25 +139,25 @@
     }
 }
 
-@media only screen and (min-width:800px) and (max-width:1200px){
+@media only screen and (min-width:768.1px) and (max-width:1200px){
     #productDiv{
         width: 100%;
-        min-width: 1536px;
+        min-width: 1050px;
         #innerPDiv{
             width: 90%;
             margin-left: 5%;
             #selectImageBox{
                 width: 100px;
-                display: inline-block;
+            display: inline-block;
                 .PImage{
-                    width: 100%;
+                    width: 90%;
                     height: 100%;
                     margin-top: 20px;
                     border-radius: 20px;
                     img{
                         width: 30px;
                         height: 60px;
-                        margin: 10px 25px;
+                        margin: 10px 30px;
                     }
                 }
                 .PImage:hover {
@@ -179,7 +179,7 @@
             #PDescription2{
                 display: inline-block;
                 margin-left: 80px;
-                width: 800px;
+                width: 55%;
                 margin-top: 45px;
                 h1{
                     font-size: 50px;
@@ -255,10 +255,10 @@
     }
 }
 
-@media only screen and (min-width:1200px) and (max-width:1440px){
+@media only screen and (min-width:1200.1px) and (max-width:1440px){
     #productDiv{
         width: 100%;
-        min-width: 1536px;
+        min-width: 1200px;
         #innerPDiv{
             width: 90%;
             margin-left: 5%;
@@ -295,10 +295,10 @@
             #PDescription2{
                 display: inline-block;
                 margin-left: 130px;
-                width: 800px;
+                width: 50%;
                 margin-top: 50px;
                 h1{
-                    font-size: 60px;
+                    font-size: 50px;
                     font-family: Nimbus;
                     font-weight: 100;
                 }
@@ -371,10 +371,10 @@
     }
 }
 
-@media only screen and (min-width:1440px){
+@media only screen and (min-width:1440.1px){
     #productDiv{
         width: 100%;
-        min-width: 1536px;
+        min-width: 1400px;
         #innerPDiv{
             width: 90%;
             margin-left: 5%;
@@ -411,7 +411,7 @@
             #PDescription2{
                 display: inline-block;
                 margin-left: 200px;
-                width: 800px;
+                width: 55%;
                 margin-top: 50px;
                 h1{
                     font-size: 70px;
