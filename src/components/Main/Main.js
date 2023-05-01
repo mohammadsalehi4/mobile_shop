@@ -319,14 +319,16 @@ const Main = () => {
 
     }
   },[States.openMenu])
-
+  
+  /////////////////////////////////////////// touch
+  
   let touchstartX = 0
   let touchendX = 0
   function checkDirection() {
-    if (touchendX < touchstartX) {
+    if (touchendX < touchstartX && (touchstartX-touchendX)>100) {
       nextTopPage(true)
     }
-    if (touchendX > touchstartX) {
+    if (touchendX > touchstartX && (touchendX-touchstartX)>100) {
       nextTopPage(false)
     }
   }
@@ -338,6 +340,9 @@ const Main = () => {
     touchendX = e.changedTouches[0].screenX
     checkDirection()
   }
+
+  /////////////////////////////////////////// touch
+
 
   useEffect(()=>{
     dispatch({type:"CHANGEPAGE",value:'main'})
